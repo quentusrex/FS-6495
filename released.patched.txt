@@ -1,0 +1,3917 @@
+
+;; Function switch_core_media_negotiate_sdp (switch_core_media_negotiate_sdp)
+
+Released 268 names, 17.28%
+switch_core_media_negotiate_sdp (struct switch_core_session_t * session, const char * r_sdp, uint8_t * proceed, switch_sdp_type_t sdp_type)
+{
+  int iftmp.104;
+  uint32_t D.47966;
+  uint32_t D.47965;
+  struct switch_mutex_t * D.47964;
+  struct switch_codec_interface_t * D.47963;
+  const struct switch_codec_implementation_t * D.47962;
+  const char D.47958;
+  int D.47957;
+  const char D.47951;
+  int D.47950;
+  int D.47947;
+  const char D.47944;
+  int D.47943;
+  const char D.47940;
+  int D.47939;
+  int iftmp.104;
+  uint32_t D.47935;
+  uint32_t D.47934;
+  struct switch_mutex_t * D.47933;
+  struct switch_codec_interface_t * D.47932;
+  const struct switch_codec_implementation_t * D.47931;
+  const char D.47927;
+  int D.47926;
+  int D.47923;
+  const char D.47920;
+  int D.47919;
+  const char D.47916;
+  int D.47915;
+  unsigned char csui.173;
+  const char D.47901;
+  int D.47900;
+  int D.47891;
+  const char D.47888;
+  int D.47887;
+  const char D.47878;
+  int D.47877;
+  uint8_t D.47875;
+  struct payload_map_t * pmap;
+  uint8_t D.47872;
+  struct payload_map_t * pmap;
+  struct payload_map_t * pmap;
+  int j;
+  char tmp[50];
+  const struct switch_codec_implementation_t * imp;
+  int crypto_tag;
+  register int __result;
+  const unsigned char * __s1;
+  int i;
+  int vmatch;
+  const struct switch_codec_implementation_t * mimp;
+  const char * rm_encoding;
+  struct sdp_rtpmap_t * map;
+  char tmp[50];
+  struct payload_map_t * pmap;
+  int j;
+  const struct switch_codec_implementation_t * timp;
+  int num;
+  char tmp[80];
+  char * prefs[1];
+  const struct switch_codec_implementation_t * search[1];
+  int j;
+  uint32_t codec_rate;
+  uint32_t bit_rate;
+  const struct switch_codec_implementation_t * imp;
+  struct switch_codec_fmtp_t codec_fmtp;
+  uint32_t map_bit_rate;
+  const char * rm_encoding;
+  int32_t i;
+  int crypto_tag;
+  struct sdp_rtpmap_t * map;
+  const char * err;
+  char tmp[32];
+  switch_port_t remote_port;
+  char * remote_host;
+  struct switch_core_session_message_t * msg;
+  struct switch_channel_t * other_channel;
+  int pass;
+  const char * var;
+  struct switch_t38_options_t * t38_options;
+  struct switch_core_session_t * other_session;
+  struct sdp_connection_t * connection;
+  register int __result;
+  static const char __func__[32] = "switch_core_media_negotiate_sdp";
+  static const char __PRETTY_FUNCTION__[32] = "switch_core_media_negotiate_sdp";
+  int nm_idx;
+  int m_idx;
+  const char * tmp;
+  uint32_t fmtp_remote_codec_rate;
+  uint32_t remote_codec_rate;
+  int codec_ms;
+  struct matches near_matches[30];
+  struct matches matches[30];
+  struct sdp_rtpmap_t * near_map;
+  struct sdp_rtpmap_t * mmap;
+  const struct switch_codec_implementation_t * near_match;
+  const struct switch_codec_implementation_t * mimp;
+  uint32_t near_rate;
+  struct switch_media_handle_t * smh;
+  int total_codecs;
+  const struct switch_codec_implementation_t * * codec_array;
+  int reneg;
+  struct sdp_session_t * sdp;
+  struct sdp_parser_t * parser;
+  int scrooge;
+  int got_webrtc;
+  int got_udptl;
+  int got_savp;
+  int got_avp;
+  int got_audio;
+  int got_video_crypto;
+  int got_crypto;
+  const char * crypto;
+  const char * val;
+  struct switch_channel_t * channel;
+  int x;
+  int greedy;
+  int recvonly;
+  int sendonly;
+  int dmaxptime;
+  int maxptime;
+  int dptime;
+  int ptime;
+  struct sdp_attribute_t * attr;
+  struct sdp_media_t * m;
+  switch_payload_t cng_pt;
+  switch_payload_t te;
+  switch_payload_t best_te;
+  uint8_t match;
+  switch_status_t D.45317;
+  struct switch_codec_t * D.45313;
+  int D.45307;
+  switch_payload_t D.45306;
+  int D.45305;
+  switch_payload_t D.45304;
+  char * D.45303;
+  char * D.45302;
+  int D.45301;
+  switch_port_t D.45300;
+  char * D.45299;
+  const char * D.45298;
+  char * D.45297;
+  uint32_t D.45296;
+  int D.45295;
+  const int D.45294;
+  unsigned char D.45293;
+  char * D.45292;
+  switch_payload_t D.45291;
+  struct switch_rtp_t * D.45288;
+  struct payload_map_t * D.45287;
+  uint32_t D.45284;
+  int D.45283;
+  const int D.45282;
+  const uint32_t D.45281;
+  const struct switch_codec_implementation_t * D.45280;
+  uint32_t D.45279;
+  <unnamed-unsigned:7> D.45278;
+  const char * D.45277;
+  const char * D.45276;
+  struct sdp_rtpmap_t * D.45275;
+  _Bool D.45268;
+  _Bool D.45267;
+  const uint32_t D.45264;
+  long unsigned int D.45263;
+  int D.45260;
+  const char * D.45256;
+  int D.45252;
+  const switch_payload_t D.45251;
+  char * const D.45250;
+  int D.45249;
+  <unnamed-unsigned:7> D.45248;
+  uint32_t D.45245;
+  switch_call_direction_t D.45242;
+  const switch_codec_type_t D.45239;
+  const struct switch_codec_implementation_t * * D.45238;
+  unsigned int D.45237;
+  unsigned int i.99;
+  int D.45229;
+  const char * D.45228;
+  int D.45220;
+  char * D.45215;
+  short unsigned int D.45214;
+  int D.45187;
+  const unsigned char D.45186;
+  int D.45176;
+  const unsigned char D.45175;
+  int D.45169;
+  uint8_t D.45165;
+  uint8_t D.45164;
+  const char * D.45161;
+  int D.45155;
+  int D.45152;
+  int D.45144;
+  int D.45141;
+  int D.45138;
+  int D.45126;
+  const char * D.45125;
+  int D.45121;
+  switch_call_direction_t D.45115;
+  int D.45112;
+  switch_payload_t D.45111;
+  uint32_t D.45110;
+  int32_t D.45108;
+  switch_status_t D.45100;
+  uint32_t D.45099;
+  struct switch_codec_t * D.45095;
+  int D.45094;
+  switch_payload_t D.45093;
+  int D.45090;
+  char * D.45089;
+  short unsigned int D.45088;
+  char * D.45087;
+  const char * D.45086;
+  const char * D.45083;
+  const char * D.45080;
+  int D.45074;
+  int D.45071;
+  const char * D.45067;
+  uint32_t D.45065;
+  const int D.45064;
+  uint32_t D.45063;
+  int D.45062;
+  const int D.45061;
+  const uint32_t D.45060;
+  int D.45057;
+  const uint32_t D.45056;
+  unsigned char D.45055;
+  <unnamed-unsigned:7> D.45054;
+  char * D.45053;
+  char * const D.45052;
+  char * D.45051;
+  const char * D.45050;
+  switch_payload_t D.45049;
+  uint32_t D.45044;
+  int D.45043;
+  const int D.45042;
+  const uint32_t D.45041;
+  const struct switch_codec_implementation_t * D.45040;
+  uint32_t D.45039;
+  <unnamed-unsigned:7> D.45038;
+  const char * D.45037;
+  const char * D.45036;
+  struct sdp_rtpmap_t * D.45035;
+  int near_rate.96;
+  int D.45029;
+  const uint32_t D.45028;
+  char * const D.45027;
+  int D.45026;
+  const int D.45025;
+  char * const D.45014;
+  int D.45013;
+  _Bool D.45010;
+  _Bool D.45009;
+  _Bool D.45008;
+  _Bool D.45005;
+  _Bool D.45004;
+  _Bool D.45003;
+  switch_rtp_crypto_mode_t D.45002;
+  _Bool D.45000;
+  _Bool D.44999;
+  _Bool D.44998;
+  int D.44997;
+  int codec_rate.94;
+  int D.44994;
+  _Bool D.44992;
+  _Bool D.44991;
+  _Bool D.44990;
+  const uint32_t D.44985;
+  int D.44980;
+  int D.44978;
+  _Bool D.44975;
+  _Bool D.44974;
+  _Bool D.44973;
+  _Bool D.44970;
+  _Bool D.44969;
+  int D.44964;
+  int D.44961;
+  _Bool D.44958;
+  _Bool D.44957;
+  _Bool D.44956;
+  _Bool D.44953;
+  _Bool D.44952;
+  _Bool D.44951;
+  const uint32_t D.44948;
+  int D.44945;
+  int iftmp.93;
+  int D.44938;
+  int D.44937;
+  int D.44931;
+  const int D.44930;
+  int D.44929;
+  const switch_payload_t D.44928;
+  char * const D.44927;
+  int remote_codec_rate.92;
+  int D.44925;
+  const switch_codec_type_t D.44922;
+  const int D.44921;
+  const struct switch_codec_implementation_t * * D.44920;
+  unsigned int D.44919;
+  unsigned int i.91;
+  uint32_t D.44915;
+  int D.44912;
+  int D.44909;
+  switch_status_t D.44906;
+  int D.44901;
+  int D.44897;
+  const char * D.44893;
+  int D.44890;
+  const char * D.44889;
+  uint32_t D.44885;
+  uint32_t D.44884;
+  _Bool D.44879;
+  _Bool D.44878;
+  _Bool D.44877;
+  switch_payload_t D.44869;
+  int D.44868;
+  int D.44863;
+  int32_t D.44858;
+  int D.44857;
+  <unnamed-unsigned:7> D.44856;
+  long unsigned int D.44855;
+  long unsigned int D.44854;
+  int D.44848;
+  int D.44839;
+  _Bool D.44836;
+  _Bool D.44835;
+  _Bool D.44834;
+  _Bool D.44831;
+  _Bool D.44830;
+  _Bool D.44829;
+  int D.44826;
+  const char * D.44825;
+  unsigned int D.44822;
+  switch_core_media_NDLB_t D.44821;
+  int D.44815;
+  int D.44810;
+  int D.44805;
+  char * D.44800;
+  short unsigned int D.44799;
+  int D.44795;
+  int D.44787;
+  int D.44784;
+  int D.44781;
+  _Bool D.44779;
+  _Bool D.44778;
+  _Bool D.44777;
+  char * D.44773;
+  struct switch_channel_t * D.44772;
+  const char * err.90;
+  switch_status_t D.44768;
+  int D.44767;
+  int D.44766;
+  char * D.44765;
+  char * D.44764;
+  switch_port_t D.44762;
+  char * D.44760;
+  int D.39032;
+  _Bool D.44758;
+  _Bool D.44757;
+  _Bool D.44756;
+  uint16_t D.44753;
+  char * D.44752;
+  const char * D.44751;
+  struct payload_map_t * D.44750;
+  int D.44747;
+  const char * D.44746;
+  int D.44743;
+  const char * D.44742;
+  char * D.44741;
+  char * D.44740;
+  uint32_t D.44737;
+  struct switch_core_session_t * other_session.89;
+  switch_status_t D.44733;
+  uint8_t D.44730;
+  uint32_t D.44728;
+  uint32_t D.44726;
+  uint32_t D.44724;
+  uint32_t D.44723;
+  int D.44716;
+  int D.44707;
+  uint32_t D.44706;
+  int D.44703;
+  const char * D.44702;
+  int D.44699;
+  long unsigned int D.44697;
+  sdp_media_e D.44681;
+  _Bool D.44678;
+  _Bool D.44677;
+  _Bool D.44676;
+  sdp_proto_e D.44675;
+  int D.44672;
+  const char * D.44669;
+  sdp_proto_e D.44666;
+  const char * D.44665;
+  const char * D.44663;
+  const char * D.44661;
+  int D.44655;
+  struct switch_media_bug_t * D.44649;
+  int D.44640;
+  int D.44639;
+  int D.44636;
+  int D.44635;
+  int32_t D.44631;
+  _Bool D.44626;
+  _Bool D.44625;
+  _Bool D.44624;
+  int D.44621;
+  const char * D.44619;
+  int D.44616;
+  int D.44614;
+  uint8_t D.44606;
+  struct switch_rtp_t * D.44605;
+  int D.44602;
+  int D.44598;
+  int D.44594;
+  const char * D.44590;
+  const char * D.44548;
+  struct sdp_connection_t * D.44546;
+  _Bool D.44544;
+  _Bool D.44543;
+  _Bool D.44542;
+  unsigned char D.44541;
+  unsigned char D.44540;
+  int D.44533;
+  struct switch_channel_t * D.44530;
+  unsigned int D.44529;
+  char * D.44526;
+  unsigned int D.44523;
+  unsigned int D.44522;
+  switch_rtp_bug_flag_t D.44521;
+  char * D.44518;
+  int D.44514;
+  int D.44513;
+  switch_rtp_bug_flag_t D.44512;
+  char * D.44509;
+  char * D.44508;
+  const char * D.44507;
+  struct sdp_origin_t * D.44506;
+  int D.44502;
+  int D.44498;
+  int D.44494;
+  int32_t D.44491;
+  int32_t D.44490;
+  int D.44485;
+  struct switch_channel_t * D.44482;
+  struct switch_core_session_t * D.44481;
+  int D.44478;
+  int D.44473;
+  size_t D.44472;
+  struct switch_core_media_params_t * D.44471;
+
+<bb 2>:
+  # DEBUG match => 0
+  # DEBUG best_te => 0
+  # DEBUG te => 0
+  # DEBUG cng_pt => 0
+  # DEBUG ptime => 0
+  # DEBUG dptime => 0
+  # DEBUG maxptime => 0
+  # DEBUG dmaxptime => 0
+  # DEBUG sendonly => 0
+  # DEBUG recvonly => 0
+  # DEBUG greedy => 0
+  # DEBUG x => 0
+  # DEBUG skip => 0
+  channel_162 = switch_core_session_get_channel (session_161(D));
+  # DEBUG channel => channel_162
+  # DEBUG crypto => 0B
+  # DEBUG got_crypto => 0
+  # DEBUG got_video_crypto => 0
+  # DEBUG got_audio => 0
+  # DEBUG got_avp => 0
+  # DEBUG got_video_avp => 0
+  # DEBUG got_video_savp => 0
+  # DEBUG got_savp => 0
+  # DEBUG got_udptl => 0
+  # DEBUG got_webrtc => 0
+  # DEBUG scrooge => 0
+  # DEBUG parser => 0B
+  # DEBUG reneg => 1
+  # DEBUG near_rate => 0
+  # DEBUG mimp => 0B
+  # DEBUG near_match => 0B
+  # DEBUG mmap => 0B
+  # DEBUG near_map => 0B
+  matches = {};
+  near_matches = {};
+  # DEBUG codec_ms => 0
+  # DEBUG remote_codec_rate => 0
+  # DEBUG fmtp_remote_codec_rate => 0
+  # DEBUG m_idx => 0
+  # DEBUG nm_idx => 0
+  if (session_161(D) == 0B)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+<bb 3>:
+  __assert_fail ("session", "src/switch_core_media.c", 2922, &__PRETTY_FUNCTION__);
+
+<bb 4>:
+  smh_186 = session_161(D)->media_handle;
+  # DEBUG smh => smh_186
+  if (smh_186 == 0B)
+    goto <bb 423>;
+  else
+    goto <bb 5>;
+
+<bb 5>:
+  # DEBUG D#15 => &smh_186->engines
+  # DEBUG a_engine => D#15
+  # DEBUG D#14 => &smh_186->engines[1]
+  # DEBUG v_engine => D#14
+  codec_array_190 = &smh_186->codecs;
+  # DEBUG codec_array => codec_array_190
+  D.44471_191 = smh_186->mparams;
+  total_codecs_192 = D.44471_191->num_codecs;
+  # DEBUG total_codecs => total_codecs_192
+  D.44472_194 = strlen (r_sdp_193(D));
+  D.44473_195 = (int) D.44472_194;
+  parser_196 = sdp_parse (0B, r_sdp_193(D), D.44473_195, 0);
+  # DEBUG parser => parser_196
+  if (parser_196 == 0B)
+    goto <bb 423>;
+  else
+    goto <bb 6>;
+
+<bb 6>:
+  sdp_198 = sdp_session (parser_196);
+  # DEBUG sdp => sdp_198
+  if (sdp_198 == 0B)
+    goto <bb 7>;
+  else
+    goto <bb 8>;
+
+<bb 7>:
+  sdp_parser_free (parser_196);
+  goto <bb 423>;
+
+<bb 8>:
+  D.44478_200 = dtls_ok (session_161(D));
+  if (D.44478_200 != 0)
+    goto <bb 9>;
+  else
+    goto <bb 12>;
+
+<bb 9>:
+  D.44481_201 = smh_186->session;
+  D.44482_202 = D.44481_201->channel;
+  tmp_203 = switch_channel_get_variable_dup (D.44482_202, "webrtc_enable_dtls", 1, -1);
+  # DEBUG tmp => tmp_203
+  if (tmp_203 != 0B)
+    goto <bb 10>;
+  else
+    goto <bb 12>;
+
+<bb 10>:
+  D.44485_204 = switch_false (tmp_203);
+  if (D.44485_204 != 0)
+    goto <bb 11>;
+  else
+    goto <bb 12>;
+
+<bb 11>:
+  D.44481_205 = smh_186->session;
+  D.44482_206 = D.44481_205->channel;
+  switch_channel_clear_flag (D.44482_206, 111);
+  D.44481_207 = smh_186->session;
+  D.44482_208 = D.44481_207->channel;
+  switch_channel_clear_flag (D.44482_208, 109);
+
+<bb 12>:
+  switch_core_session_parse_crypto_prefs (session_161(D));
+  # DEBUG engine => D#15
+  pmap_1458 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].payload_map;
+  # DEBUG pmap => pmap_1458
+  goto <bb 14>;
+
+<bb 13>:
+  pmap_1459->negotiated = 0;
+  pmap_1459->current = 0;
+  pmap_1460 = pmap_1459->next;
+  # DEBUG pmap => pmap_1460
+
+<bb 14>:
+  # pmap_1459 = PHI <pmap_1458(12), pmap_1460(13)>
+  # DEBUG pmap => pmap_1459
+  if (pmap_1459 != 0B)
+    goto <bb 15>;
+  else
+    goto <bb 16>;
+
+<bb 15>:
+  D.47872_1461 = pmap_1459->allocated;
+  if (D.47872_1461 != 0)
+    goto <bb 13>;
+  else
+    goto <bb 16>;
+
+<bb 16>:
+  # DEBUG engine => D#14
+  pmap_1462 = MEM[(struct switch_rtp_engine_t *)smh_186 + 11496B].payload_map;
+  # DEBUG pmap => pmap_1462
+  goto <bb 18>;
+
+<bb 17>:
+  pmap_1463->negotiated = 0;
+  pmap_1463->current = 0;
+  pmap_1464 = pmap_1463->next;
+  # DEBUG pmap => pmap_1464
+
+<bb 18>:
+  # pmap_1463 = PHI <pmap_1462(16), pmap_1464(17)>
+  # DEBUG pmap => pmap_1463
+  if (pmap_1463 != 0B)
+    goto <bb 19>;
+  else
+    goto <bb 20>;
+
+<bb 19>:
+  D.47875_1465 = pmap_1463->allocated;
+  if (D.47875_1465 != 0)
+    goto <bb 17>;
+  else
+    goto <bb 20>;
+
+<bb 20>:
+  if (proceed_209(D) != 0B)
+    goto <bb 21>;
+  else
+    goto <bb 22>;
+
+<bb 21>:
+  *proceed_209(D) = 1;
+
+<bb 22>:
+  D.44490_210 = switch_media_handle_test_media_flag (smh_186, 3);
+  greedy_211 = D.44490_210 != 0;
+  # DEBUG greedy => greedy_211
+  D.44491_212 = switch_media_handle_test_media_flag (smh_186, 4);
+  scrooge_213 = D.44491_212 != 0;
+  # DEBUG scrooge => scrooge_213
+  val_214 = switch_channel_get_variable_dup (channel_162, "rtp_codec_negotiation", 1, -1);
+  # DEBUG val => val_214
+  if (val_214 != 0B)
+    goto <bb 23>;
+  else
+    goto <bb 27>;
+
+<bb 23>:
+  D.44494_215 = strcasecmp (val_214, "generous");
+  if (D.44494_215 == 0)
+    goto <bb 27>;
+  else
+    goto <bb 24>;
+
+<bb 24>:
+  D.44498_218 = strcasecmp (val_214, "greedy");
+  if (D.44498_218 == 0)
+    goto <bb 27>;
+  else
+    goto <bb 25>;
+
+<bb 25>:
+  D.44502_221 = strcasecmp (val_214, "scrooge");
+  if (D.44502_221 == 0)
+    goto <bb 27>;
+  else
+    goto <bb 26>;
+
+<bb 26>:
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 2969, session_161(D), 7, "rtp_codec_negotiation ignored invalid value : \'%s\' \n", val_214);
+
+<bb 27>:
+  # greedy_47 = PHI <greedy_211(22), 0(23), 1(24), 1(25), greedy_211(26)>
+  # scrooge_80 = PHI <scrooge_213(22), 0(23), 0(24), 1(25), scrooge_213(26)>
+  # DEBUG scrooge => scrooge_80
+  # DEBUG greedy => greedy_47
+  D.44506_224 = sdp_198->sdp_origin;
+  D.44507_225 = D.44506_224->o_username;
+  D.44508_226 = switch_core_perform_session_strdup (session_161(D), D.44507_225, "src/switch_core_media.c", &__func__, 2973);
+  smh_186->origin = D.44508_226;
+  D.44509_227 = smh_186->origin;
+  if (D.44509_227 != 0B)
+    goto <bb 28>;
+  else
+    goto <bb 34>;
+
+<bb 28>:
+  D.44471_228 = smh_186->mparams;
+  D.44512_229 = D.44471_228->auto_rtp_bugs;
+  D.44513_230 = (int) D.44512_229;
+  D.44514_231 = D.44513_230 & 1;
+  if (D.44514_231 != 0)
+    goto <bb 29>;
+  else
+    goto <bb 31>;
+
+<bb 29>:
+  D.44509_233 = smh_186->origin;
+  D.44518_234 = strstr (D.44509_233, "CiscoSystemsSIP-GW-UserAgent");
+  if (D.44518_234 != 0B)
+    goto <bb 30>;
+  else
+    goto <bb 31>;
+
+<bb 30>:
+  D.44521_235 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].rtp_bugs;
+  D.44522_236 = D.44521_235 | 1;
+  MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].rtp_bugs = D.44522_236;
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 2979, session_161(D), 7, "Activate Buggy RFC2833 Mode!\n");
+
+<bb 31>:
+  D.44471_237 = smh_186->mparams;
+  D.44512_238 = D.44471_237->auto_rtp_bugs;
+  D.44523_239 = D.44512_238 & 2;
+  if (D.44523_239 != 0)
+    goto <bb 32>;
+  else
+    goto <bb 34>;
+
+<bb 32>:
+  D.44509_240 = smh_186->origin;
+  D.44526_241 = strstr (D.44509_240, "Sonus_UAC");
+  if (D.44526_241 != 0B)
+    goto <bb 33>;
+  else
+    goto <bb 34>;
+
+<bb 33>:
+  D.44521_242 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].rtp_bugs;
+  D.44529_243 = D.44521_242 | 2;
+  MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].rtp_bugs = D.44529_243;
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 2986, session_161(D), 4, "Hello,\nI see you have a Sonus!\nFYI, Sonus cannot follow the RFC on the proper way to send DTMF.\nSadly, my creator had to spend several hours figuring this out so I thought you\'d like to know that!\nDon\'t worry, DTMF will work but you may want to ask them to fix it......\n");
+
+<bb 34>:
+  D.44530_244 = session_161(D)->channel;
+  val_245 = switch_channel_get_variable_dup (D.44530_244, "rtp_liberal_dtmf", 1, -1);
+  # DEBUG val => val_245
+  if (val_245 != 0B)
+    goto <bb 35>;
+  else
+    goto <bb 37>;
+
+<bb 35>:
+  D.44533_246 = switch_true (val_245);
+  if (D.44533_246 != 0)
+    goto <bb 36>;
+  else
+    goto <bb 37>;
+
+<bb 36>:
+  D.44530_247 = session_161(D)->channel;
+  switch_channel_set_flag_value (D.44530_247, 93, 1);
+
+<bb 37>:
+  m_248 = sdp_198->sdp_media;
+  # DEBUG m => m_248
+  if (m_248 != 0B)
+    goto <bb 38>;
+  else
+    goto <bb 43>;
+
+<bb 38>:
+  D.44540_249 = BIT_FIELD_REF <*m_248, 8, 544>;
+  D.44541_250 = D.44540_249 & 6;
+  D.44542_251 = D.44541_250 == 2;
+  D.44543_252 = D.44541_250 == 0;
+  D.44544_253 = D.44542_251 || D.44543_252;
+  if (D.44544_253 != 0)
+    goto <bb 42>;
+  else
+    goto <bb 39>;
+
+<bb 39>:
+  D.44546_254 = m_248->m_connections;
+  if (D.44546_254 != 0B)
+    goto <bb 40>;
+  else
+    goto <bb 43>;
+
+<bb 40>:
+  D.44546_255 = m_248->m_connections;
+  D.44548_256 = D.44546_255->c_address;
+  if (D.44548_256 != 0B)
+    goto <bb 41>;
+  else
+    goto <bb 43>;
+
+<bb 41>:
+  # DEBUG __s2_len => 7
+  D.44546_298 = m_248->m_connections;
+  D.44548_299 = D.44546_298->c_address;
+  __result_300 = __builtin_strcmp (D.44548_299, "0.0.0.0");
+  if (__result_300 == 0)
+    goto <bb 42>;
+  else
+    goto <bb 43>;
+
+<bb 42>:
+  # DEBUG sendonly => 2
+
+<bb 43>:
+  # sendonly_42 = PHI <0(37), 0(39), 0(40), 0(41), 2(42)>
+  # DEBUG sendonly => sendonly_42
+  attr_303 = sdp_198->sdp_attributes;
+  # DEBUG attr => attr_303
+  goto <bb 64>;
+
+<bb 44>:
+  D.44590_304 = attr_29->a_name;
+  # DEBUG s => D.44590_304
+  if (D.44590_304 == 0B)
+    goto <bb 47>;
+  else
+    goto <bb 45>;
+
+<bb 45>:
+  D.47878_1466 = *D.44590_304;
+  if (D.47878_1466 == 0)
+    goto <bb 47>;
+  else
+    goto <bb 46>;
+
+<bb 46>:
+
+<bb 47>:
+  # D.47877_1467 = PHI <1(44), 1(45), 0(46)>
+  if (D.47877_1467 != 0)
+    goto <bb 48>;
+  else
+    goto <bb 49>;
+
+<bb 48>:
+  // predicted unlikely by continue predictor.
+  goto <bb 63>;
+
+<bb 49>:
+  D.44590_306 = attr_29->a_name;
+  D.44594_307 = strcasecmp (D.44590_306, "sendonly");
+  if (D.44594_307 == 0)
+    goto <bb 50>;
+  else
+    goto <bb 51>;
+
+<bb 50>:
+  # DEBUG sendonly => 1
+  D.44530_309 = session_161(D)->channel;
+  switch_channel_set_variable_var_check (D.44530_309, "media_audio_mode", "recvonly", 1);
+  goto <bb 63>;
+
+<bb 51>:
+  D.44590_310 = attr_29->a_name;
+  D.44598_311 = strcasecmp (D.44590_310, "inactive");
+  if (D.44598_311 == 0)
+    goto <bb 52>;
+  else
+    goto <bb 53>;
+
+<bb 52>:
+  # DEBUG sendonly => 1
+  D.44530_313 = session_161(D)->channel;
+  switch_channel_set_variable_var_check (D.44530_313, "media_audio_mode", "inactive", 1);
+  goto <bb 63>;
+
+<bb 53>:
+  D.44590_314 = attr_29->a_name;
+  D.44602_315 = strcasecmp (D.44590_314, "recvonly");
+  if (D.44602_315 == 0)
+    goto <bb 54>;
+  else
+    goto <bb 57>;
+
+<bb 54>:
+  D.44530_316 = session_161(D)->channel;
+  switch_channel_set_variable_var_check (D.44530_316, "media_audio_mode", "sendonly", 1);
+  # DEBUG recvonly => 1
+  D.44605_318 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].rtp_session;
+  D.44606_319 = switch_rtp_ready (D.44605_318);
+  if (D.44606_319 != 0)
+    goto <bb 55>;
+  else
+    goto <bb 56>;
+
+<bb 55>:
+  D.44605_320 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].rtp_session;
+  switch_rtp_set_max_missed_packets (D.44605_320, 0);
+  MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].max_missed_hold_packets = 0;
+  MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].max_missed_packets = 0;
+  goto <bb 63>;
+
+<bb 56>:
+  D.44530_321 = session_161(D)->channel;
+  switch_channel_set_variable_var_check (D.44530_321, "rtp_timeout_sec", "0", 1);
+  D.44530_322 = session_161(D)->channel;
+  switch_channel_set_variable_var_check (D.44530_322, "rtp_hold_timeout_sec", "0", 1);
+  goto <bb 63>;
+
+<bb 57>:
+  if (sendonly_44 <= 1)
+    goto <bb 58>;
+  else
+    goto <bb 59>;
+
+<bb 58>:
+  D.44590_323 = attr_29->a_name;
+  D.44614_324 = strcasecmp (D.44590_323, "sendrecv");
+  if (D.44614_324 == 0)
+    goto <bb 63>;
+  else
+    goto <bb 59>;
+
+<bb 59>:
+  D.44590_326 = attr_29->a_name;
+  D.44616_327 = strcasecmp (D.44590_326, "ptime");
+  if (D.44616_327 == 0)
+    goto <bb 60>;
+  else
+    goto <bb 61>;
+
+<bb 60>:
+  D.44619_328 = attr_29->a_value;
+  # DEBUG __nptr => D.44619_328
+  dptime_1468 = strtol (D.44619_328, 0B, 10);
+  # DEBUG dptime => NULL
+  goto <bb 63>;
+
+<bb 61>:
+  D.44590_330 = attr_29->a_name;
+  D.44621_331 = strcasecmp (D.44590_330, "maxptime");
+  if (D.44621_331 == 0)
+    goto <bb 62>;
+  else
+    goto <bb 63>;
+
+<bb 62>:
+  D.44619_332 = attr_29->a_value;
+  # DEBUG __nptr => D.44619_332
+  dmaxptime_1469 = strtol (D.44619_332, 0B, 10);
+  # DEBUG dmaxptime => NULL
+
+<bb 63>:
+  # dptime_36 = PHI <dptime_37(48), dptime_37(50), dptime_37(52), dptime_37(56), dptime_37(58), dptime_1468(60), dptime_37(61), dptime_37(62), dptime_37(55)>
+  # dmaxptime_40 = PHI <dmaxptime_41(48), dmaxptime_41(50), dmaxptime_41(52), dmaxptime_41(56), dmaxptime_41(58), dmaxptime_41(60), dmaxptime_41(61), dmaxptime_1469(62), dmaxptime_41(55)>
+  # sendonly_43 = PHI <sendonly_44(48), 1(50), 1(52), sendonly_44(56), 0(58), sendonly_44(60), sendonly_44(61), sendonly_44(62), sendonly_44(55)>
+  # recvonly_45 = PHI <recvonly_46(48), recvonly_46(50), recvonly_46(52), 1(56), recvonly_46(58), recvonly_46(60), recvonly_46(61), recvonly_46(62), 1(55)>
+  # DEBUG recvonly => recvonly_45
+  # DEBUG sendonly => sendonly_43
+  # DEBUG dmaxptime => dmaxptime_40
+  # DEBUG dptime => dptime_36
+  attr_334 = attr_29->a_next;
+  # DEBUG attr => attr_334
+
+<bb 64>:
+  # attr_29 = PHI <attr_303(43), attr_334(63)>
+  # dptime_37 = PHI <0(43), dptime_36(63)>
+  # dmaxptime_41 = PHI <0(43), dmaxptime_40(63)>
+  # sendonly_44 = PHI <sendonly_42(43), sendonly_43(63)>
+  # recvonly_46 = PHI <0(43), recvonly_45(63)>
+  # DEBUG recvonly => recvonly_46
+  # DEBUG sendonly => sendonly_44
+  # DEBUG dmaxptime => dmaxptime_41
+  # DEBUG dptime => dptime_37
+  # DEBUG attr => attr_29
+  if (attr_29 != 0B)
+    goto <bb 44>;
+  else
+    goto <bb 65>;
+
+<bb 65>:
+  D.44624_335 = sendonly_44 != 1;
+  D.44625_336 = recvonly_46 != 1;
+  D.44626_337 = D.44624_335 && D.44625_336;
+  if (D.44626_337 != 0)
+    goto <bb 66>;
+  else
+    goto <bb 67>;
+
+<bb 66>:
+  D.44530_338 = session_161(D)->channel;
+  switch_channel_set_variable_var_check (D.44530_338, "media_audio_mode", 0B, 1);
+
+<bb 67>:
+  D.44631_339 = switch_media_handle_test_media_flag (smh_186, 5);
+  if (D.44631_339 == 0)
+    goto <bb 68>;
+  else
+    goto <bb 74>;
+
+<bb 68>:
+  D.44530_340 = session_161(D)->channel;
+  val_341 = switch_channel_get_variable_dup (D.44530_340, "rtp_disable_hold", 1, -1);
+  # DEBUG val => val_341
+  if (val_341 == 0B)
+    goto <bb 70>;
+  else
+    goto <bb 69>;
+
+<bb 69>:
+  D.44635_342 = switch_true (val_341);
+  if (D.44635_342 == 0)
+    goto <bb 70>;
+  else
+    goto <bb 74>;
+
+<bb 70>:
+  D.44471_343 = smh_186->mparams;
+  D.44636_344 = D.44471_343->hold_laps;
+  if (D.44636_344 == 0)
+    goto <bb 71>;
+  else
+    goto <bb 74>;
+
+<bb 71>:
+  D.44471_345 = smh_186->mparams;
+  D.44636_346 = D.44471_345->hold_laps;
+  D.44639_347 = D.44636_346 + 1;
+  D.44471_345->hold_laps = D.44639_347;
+  D.44640_348 = switch_core_media_toggle_hold (session_161(D), sendonly_44);
+  if (D.44640_348 != 0)
+    goto <bb 72>;
+  else
+    goto <bb 74>;
+
+<bb 72>:
+  reneg_349 = switch_media_handle_test_media_flag (smh_186, 6);
+  # DEBUG reneg => reneg_349
+  D.44530_350 = session_161(D)->channel;
+  val_351 = switch_channel_get_variable_dup (D.44530_350, "rtp_renegotiate_codec_on_hold", 1, -1);
+  # DEBUG val => val_351
+  if (val_351 != 0B)
+    goto <bb 73>;
+  else
+    goto <bb 74>;
+
+<bb 73>:
+  reneg_352 = switch_true (val_351);
+  # DEBUG reneg => reneg_352
+
+<bb 74>:
+  # reneg_81 = PHI <1(67), 1(69), 1(70), 1(71), reneg_349(72), reneg_352(73)>
+  # DEBUG reneg => reneg_81
+  if (reneg_81 != 0)
+    goto <bb 75>;
+  else
+    goto <bb 77>;
+
+<bb 75>:
+  reneg_353 = switch_media_handle_test_media_flag (smh_186, 7);
+  # DEBUG reneg => reneg_353
+  D.44530_354 = session_161(D)->channel;
+  val_355 = switch_channel_get_variable_dup (D.44530_354, "rtp_renegotiate_codec_on_reinvite", 1, -1);
+  # DEBUG val => val_355
+  if (val_355 != 0B)
+    goto <bb 76>;
+  else
+    goto <bb 77>;
+
+<bb 76>:
+  reneg_356 = switch_true (val_355);
+  # DEBUG reneg => reneg_356
+
+<bb 77>:
+  # reneg_82 = PHI <reneg_81(74), reneg_353(75), reneg_356(76)>
+  # DEBUG reneg => reneg_82
+  D.44649_357 = session_161(D)->bugs;
+  if (D.44649_357 != 0B)
+    goto <bb 78>;
+  else
+    goto <bb 79>;
+
+<bb 78>:
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3063, session_161(D), 7, "Session is connected to a media bug. Re-Negotiation implicitly disabled.\n");
+  # DEBUG reneg => 0
+
+<bb 79>:
+  # reneg_83 = PHI <reneg_82(77), 0(78)>
+  # DEBUG reneg => reneg_83
+  if (reneg_83 == 0)
+    goto <bb 80>;
+  else
+    goto <bb 82>;
+
+<bb 80>:
+  D.44655_359 = smh_186->num_negotiated_codecs;
+  if (D.44655_359 != 0)
+    goto <bb 81>;
+  else
+    goto <bb 82>;
+
+<bb 81>:
+  codec_array_360 = &smh_186->negotiated_codecs;
+  # DEBUG codec_array => codec_array_360
+  total_codecs_361 = smh_186->num_negotiated_codecs;
+  # DEBUG total_codecs => total_codecs_361
+  goto <bb 84>;
+
+<bb 82>:
+  if (reneg_83 != 0)
+    goto <bb 83>;
+  else
+    goto <bb 84>;
+
+<bb 83>:
+  D.44471_362 = smh_186->mparams;
+  D.44471_362->num_codecs = 0;
+  switch_core_media_prepare_codecs (session_161(D), 0);
+  codec_array_363 = &smh_186->codecs;
+  # DEBUG codec_array => codec_array_363
+  D.44471_364 = smh_186->mparams;
+  total_codecs_365 = D.44471_364->num_codecs;
+  # DEBUG total_codecs => total_codecs_365
+
+<bb 84>:
+  # codec_array_84 = PHI <codec_array_360(81), codec_array_190(82), codec_array_363(83)>
+  # total_codecs_85 = PHI <total_codecs_361(81), total_codecs_192(82), total_codecs_365(83)>
+  # DEBUG total_codecs => total_codecs_85
+  # DEBUG codec_array => codec_array_84
+  D.44661_366 = switch_stristr ("T38FaxFillBitRemoval:", r_sdp_193(D));
+  if (D.44661_366 != 0B)
+    goto <bb 87>;
+  else
+    goto <bb 85>;
+
+<bb 85>:
+  D.44663_367 = switch_stristr ("T38FaxTranscodingMMR:", r_sdp_193(D));
+  if (D.44663_367 != 0B)
+    goto <bb 87>;
+  else
+    goto <bb 86>;
+
+<bb 86>:
+  D.44665_368 = switch_stristr ("T38FaxTranscodingJBIG:", r_sdp_193(D));
+  if (D.44665_368 != 0B)
+    goto <bb 87>;
+  else
+    goto <bb 88>;
+
+<bb 87>:
+  D.44530_369 = session_161(D)->channel;
+  switch_channel_set_variable_var_check (D.44530_369, "t38_broken_boolean", "true", 1);
+
+<bb 88>:
+  switch_core_media_find_zrtp_hash (session_161(D), sdp_198);
+  switch_core_media_pass_zrtp_hash (session_161(D));
+  check_ice (smh_186, 0, sdp_198, 0B);
+  check_ice (smh_186, 1, sdp_198, 0B);
+  m_370 = sdp_198->sdp_media;
+  # DEBUG m => m_370
+  goto <bb 419>;
+
+<bb 89>:
+  # DEBUG ptime => dptime_37
+  # DEBUG maxptime => dmaxptime_41
+  D.44666_373 = m_28->m_proto;
+  if (D.44666_373 == 261)
+    goto <bb 90>;
+  else
+    goto <bb 91>;
+
+<bb 90>:
+  got_webrtc_374 = got_webrtc_79 + 1;
+  # DEBUG got_webrtc => got_webrtc_374
+  switch_core_session_set_ice (session_161(D));
+
+<bb 91>:
+  # got_webrtc_78 = PHI <got_webrtc_79(89), got_webrtc_374(90)>
+  # DEBUG got_webrtc => got_webrtc_78
+  D.44669_375 = m_28->m_proto_name;
+  if (D.44669_375 != 0B)
+    goto <bb 92>;
+  else
+    goto <bb 94>;
+
+<bb 92>:
+  D.44669_376 = m_28->m_proto_name;
+  D.44672_377 = strcasecmp (D.44669_376, "UDP/TLS/RTP/SAVPF");
+  if (D.44672_377 == 0)
+    goto <bb 93>;
+  else
+    goto <bb 94>;
+
+<bb 93>:
+  D.44530_378 = session_161(D)->channel;
+  switch_channel_set_flag_value (D.44530_378, 107, 1);
+
+<bb 94>:
+  D.44675_379 = m_28->m_proto;
+  D.44676_380 = D.44675_379 == 257;
+  D.44677_381 = D.44675_379 == 261;
+  D.44678_382 = D.44676_380 || D.44677_381;
+  if (D.44678_382 != 0)
+    goto <bb 95>;
+  else
+    goto <bb 97>;
+
+<bb 95>:
+  D.44681_383 = m_28->m_type;
+  if (D.44681_383 == 2)
+    goto <bb 96>;
+  else
+    goto <bb 102>;
+
+<bb 96>:
+  got_savp_384 = got_savp_75 + 1;
+  # DEBUG got_savp => got_savp_384
+  goto <bb 102>;
+
+<bb 97>:
+  D.44666_386 = m_28->m_proto;
+  if (D.44666_386 == 256)
+    goto <bb 98>;
+  else
+    goto <bb 100>;
+
+<bb 98>:
+  D.44681_387 = m_28->m_type;
+  if (D.44681_387 == 2)
+    goto <bb 99>;
+  else
+    goto <bb 102>;
+
+<bb 99>:
+  got_avp_388 = got_avp_69 + 1;
+  # DEBUG got_avp => got_avp_388
+  goto <bb 102>;
+
+<bb 100>:
+  D.44666_390 = m_28->m_proto;
+  if (D.44666_390 == 258)
+    goto <bb 101>;
+  else
+    goto <bb 102>;
+
+<bb 101>:
+  got_udptl_391 = got_udptl_77 + 1;
+  # DEBUG got_udptl => got_udptl_391
+
+<bb 102>:
+  # got_avp_68 = PHI <got_avp_69(95), got_avp_69(98), got_avp_69(100), got_avp_69(101), got_avp_69(96), got_avp_388(99)>
+  # got_savp_74 = PHI <got_savp_75(95), got_savp_75(98), got_savp_75(100), got_savp_75(101), got_savp_384(96), got_savp_75(99)>
+  # got_udptl_76 = PHI <got_udptl_77(95), got_udptl_77(98), got_udptl_77(100), got_udptl_391(101), got_udptl_77(96), got_udptl_77(99)>
+  # DEBUG got_udptl => got_udptl_76
+  # DEBUG got_savp => got_savp_74
+  # DEBUG got_video_savp => NULL
+  # DEBUG got_video_avp => NULL
+  # DEBUG got_avp => got_avp_68
+  if (got_udptl_76 != 0)
+    goto <bb 103>;
+  else
+    goto <bb 136>;
+
+<bb 103>:
+  D.44681_392 = m_28->m_type;
+  if (D.44681_392 == 8)
+    goto <bb 104>;
+  else
+    goto <bb 136>;
+
+<bb 104>:
+  D.44697_393 = m_28->m_port;
+  if (D.44697_393 != 0)
+    goto <bb 105>;
+  else
+    goto <bb 136>;
+
+<bb 105>:
+  t38_options_394 = switch_core_media_process_udptl (session_161(D), sdp_198, m_28);
+  # DEBUG t38_options => t38_options_394
+  D.44530_395 = session_161(D)->channel;
+  D.44699_396 = switch_channel_test_app_flag_key ("T38", D.44530_395, 16);
+  if (D.44699_396 != 0)
+    goto <bb 420> (done);
+  else
+    goto <bb 106>;
+
+<bb 106>:
+  D.44702_398 = switch_channel_get_variable_dup (channel_162, "refuse_t38", 1, -1);
+  D.44703_399 = switch_true (D.44702_398);
+  if (D.44703_399 != 0)
+    goto <bb 107>;
+  else
+    goto <bb 108>;
+
+<bb 107>:
+  D.44530_400 = session_161(D)->channel;
+  switch_channel_clear_app_flag_key ("T38", D.44530_400, 2);
+  # DEBUG match => 0
+  goto <bb 420> (done);
+
+<bb 108>:
+  var_402 = switch_channel_get_variable_dup (channel_162, "t38_passthru", 1, -1);
+  # DEBUG var => var_402
+  D.44481_403 = smh_186->session;
+  D.44482_404 = D.44481_403->channel;
+  D.44706_405 = switch_channel_test_flag (D.44482_404, 101);
+  pass_406 = (int) D.44706_405;
+  # DEBUG pass => pass_406
+  D.44530_407 = session_161(D)->channel;
+  D.44707_408 = switch_channel_test_app_flag_key ("T38", D.44530_407, 2);
+  if (D.44707_408 != 0)
+    goto <bb 109>;
+  else
+    goto <bb 111>;
+
+<bb 109>:
+  if (proceed_209(D) != 0B)
+    goto <bb 110>;
+  else
+    goto <bb 111>;
+
+<bb 110>:
+  *proceed_209(D) = 0;
+
+<bb 111>:
+  if (var_402 != 0B)
+    goto <bb 112>;
+  else
+    goto <bb 115>;
+
+<bb 112>:
+  pass_409 = switch_true (var_402);
+  # DEBUG pass => pass_409
+  if (pass_409 == 0)
+    goto <bb 113>;
+  else
+    goto <bb 115>;
+
+<bb 113>:
+  D.44716_410 = strcasecmp (var_402, "once");
+  if (D.44716_410 == 0)
+    goto <bb 114>;
+  else
+    goto <bb 115>;
+
+<bb 114>:
+  # DEBUG pass => 2
+
+<bb 115>:
+  # pass_126 = PHI <pass_406(111), pass_409(112), pass_409(113), 2(114)>
+  # DEBUG pass => pass_126
+  if (pass_126 == 2)
+    goto <bb 116>;
+  else
+    goto <bb 117>;
+
+<bb 116>:
+  D.44481_412 = smh_186->session;
+  D.44482_413 = D.44481_412->channel;
+  D.44723_414 = switch_channel_test_flag (D.44482_413, 101);
+  if (D.44723_414 != 0)
+    goto <bb 122>;
+  else
+    goto <bb 117>;
+
+<bb 117>:
+  D.44530_415 = session_161(D)->channel;
+  D.44724_416 = switch_channel_test_flag (D.44530_415, 103);
+  if (D.44724_416 == 0)
+    goto <bb 122>;
+  else
+    goto <bb 118>;
+
+<bb 118>:
+  D.44530_417 = session_161(D)->channel;
+  D.44726_418 = switch_channel_test_flag (D.44530_417, 15);
+  if (D.44726_418 != 0)
+    goto <bb 122>;
+  else
+    goto <bb 119>;
+
+<bb 119>:
+  D.44530_419 = session_161(D)->channel;
+  D.44728_420 = switch_channel_test_flag (D.44530_419, 29);
+  if (D.44728_420 != 0)
+    goto <bb 122>;
+  else
+    goto <bb 120>;
+
+<bb 120>:
+  D.44605_421 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].rtp_session;
+  D.44730_422 = switch_rtp_ready (D.44605_421);
+  if (D.44730_422 == 0)
+    goto <bb 121>;
+  else
+    goto <bb 122>;
+
+<bb 121>:
+
+<bb 122>:
+  # pass_127 = PHI <pass_126(120), 0(117), 0(116), 0(121), 0(119), 0(118)>
+  # DEBUG pass => pass_127
+  if (pass_127 != 0)
+    goto <bb 123>;
+  else
+    goto <bb 420> (done);
+
+<bb 123>:
+  D.44733_424 = switch_core_session_perform_get_partner (session_161(D), &other_session, "src/switch_core_media.c", &__func__, 3161);
+  if (D.44733_424 == 0)
+    goto <bb 124>;
+  else
+    goto <bb 420> (done);
+
+<bb 124>:
+  other_session.89_425 = other_session;
+  other_channel_426 = switch_core_session_get_channel (other_session.89_425);
+  # DEBUG other_channel => other_channel_426
+  D.44605_427 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].rtp_session;
+  remote_host_428 = switch_rtp_get_remote_host (D.44605_427);
+  # DEBUG remote_host => remote_host_428
+  D.44605_429 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].rtp_session;
+  remote_port_430 = switch_rtp_get_remote_port (D.44605_429);
+  # DEBUG remote_port => remote_port_430
+  tmp = "";
+  D.44737_431 = switch_channel_test_flag (other_channel_426, 1);
+  if (D.44737_431 == 0)
+    goto <bb 125>;
+  else
+    goto <bb 126>;
+
+<bb 125>:
+  D.44530_432 = session_161(D)->channel;
+  D.44740_433 = switch_channel_get_name (D.44530_432);
+  D.44741_434 = switch_channel_get_name (other_channel_426);
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3170, session_161(D), 4, "%s Error Passing T.38 to unanswered channel %s\n", D.44740_433, D.44741_434);
+  other_session.89_435 = other_session;
+  switch_core_session_rwunlock (other_session.89_435);
+  # DEBUG pass => 0
+  # DEBUG match => 0
+  goto <bb 420> (done);
+
+<bb 126>:
+  D.44530_438 = session_161(D)->channel;
+  D.44742_439 = switch_channel_get_variable_dup (D.44530_438, "t38_broken_boolean", 1, -1);
+  D.44743_440 = switch_true (D.44742_439);
+  if (D.44743_440 != 0)
+    goto <bb 127>;
+  else
+    goto <bb 129>;
+
+<bb 127>:
+  D.44530_441 = session_161(D)->channel;
+  D.44746_442 = switch_channel_get_variable_dup (D.44530_441, "t38_pass_broken_boolean", 1, -1);
+  D.44747_443 = switch_true (D.44746_442);
+  if (D.44747_443 != 0)
+    goto <bb 128>;
+  else
+    goto <bb 129>;
+
+<bb 128>:
+  switch_channel_set_variable_var_check (other_channel_426, "t38_broken_boolean", "true", 1);
+
+<bb 129>:
+  D.44750_444 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].cur_payload_map;
+  D.44751_445 = t38_options_394->remote_ip;
+  D.44752_446 = switch_core_perform_session_strdup (session_161(D), D.44751_445, "src/switch_core_media.c", &__func__, 3186);
+  D.44750_444->remote_sdp_ip = D.44752_446;
+  D.44750_447 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].cur_payload_map;
+  D.44753_448 = t38_options_394->remote_port;
+  D.44750_447->remote_sdp_port = D.44753_448;
+  D.44756_449 = remote_host_428 != 0B;
+  D.44757_450 = remote_port_430 != 0;
+  D.44758_451 = D.44756_449 && D.44757_450;
+  if (D.44758_451 != 0)
+    goto <bb 130>;
+  else
+    goto <bb 133>;
+
+<bb 130>:
+  D.44750_452 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].cur_payload_map;
+  D.44760_453 = D.44750_452->remote_sdp_ip;
+  D.39032_454 = __builtin_strcmp (remote_host_428, D.44760_453);
+  if (D.39032_454 == 0)
+    goto <bb 131>;
+  else
+    goto <bb 133>;
+
+<bb 131>:
+  D.44750_455 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].cur_payload_map;
+  D.44762_456 = D.44750_455->remote_sdp_port;
+  if (D.44762_456 == remote_port_430)
+    goto <bb 132>;
+  else
+    goto <bb 133>;
+
+<bb 132>:
+  D.44530_457 = session_161(D)->channel;
+  D.44764_458 = switch_channel_get_name (D.44530_457);
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3190, session_161(D), 7, "Audio params are unchanged for %s.\n", D.44764_458);
+  goto <bb 135>;
+
+<bb 133>:
+  err = 0B;
+  D.44530_459 = session_161(D)->channel;
+  D.44765_460 = switch_channel_get_name (D.44530_459);
+  D.44766_461 = (int) remote_port_430;
+  D.44750_462 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].cur_payload_map;
+  D.44760_463 = D.44750_462->remote_sdp_ip;
+  D.44750_464 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].cur_payload_map;
+  D.44762_465 = D.44750_464->remote_sdp_port;
+  D.44767_466 = (int) D.44762_465;
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3195, session_161(D), 7, "Audio params changed for %s from %s:%d to %s:%d\n", D.44765_460, remote_host_428, D.44766_461, D.44760_463, D.44767_466);
+  D.44750_467 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].cur_payload_map;
+  D.44762_468 = D.44750_467->remote_sdp_port;
+  D.44767_469 = (int) D.44762_468;
+  switch_snprintf (&tmp, 32, "%d", D.44767_469);
+  D.44530_470 = session_161(D)->channel;
+  D.44750_471 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].cur_payload_map;
+  D.44760_472 = D.44750_471->remote_sdp_ip;
+  switch_channel_set_variable_var_check (D.44530_470, "remote_media_ip", D.44760_472, 1);
+  D.44530_473 = session_161(D)->channel;
+  switch_channel_set_variable_var_check (D.44530_473, "remote_media_port", &tmp, 1);
+  D.44605_474 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].rtp_session;
+  D.44750_475 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].cur_payload_map;
+  D.44760_476 = D.44750_475->remote_sdp_ip;
+  D.44750_477 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].cur_payload_map;
+  D.44762_478 = D.44750_477->remote_sdp_port;
+  D.44768_479 = switch_rtp_set_remote_address (D.44605_474, D.44760_476, D.44762_478, 0, 1, &err);
+  if (D.44768_479 != 0)
+    goto <bb 134>;
+  else
+    goto <bb 135>;
+
+<bb 134>:
+  err.90_480 = err;
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3205, session_161(D), 3, "AUDIO RTP REPORTS ERROR: [%s]\n", err.90_480);
+  switch_channel_perform_hangup (channel_162, "src/switch_core_media.c", &__func__, 3206, 88);
+
+<bb 135>:
+  other_session.89_481 = other_session;
+  switch_core_media_copy_t38_options (t38_options_394, other_session.89_481);
+  D.44481_482 = smh_186->session;
+  D.44482_483 = D.44481_482->channel;
+  switch_channel_set_flag_value (D.44482_483, 101, 1);
+  other_session.89_484 = other_session;
+  D.44772_485 = other_session.89_484->channel;
+  switch_channel_set_flag_value (D.44772_485, 101, 1);
+  other_session.89_486 = other_session;
+  msg_487 = switch_core_perform_session_alloc (other_session.89_486, 108, "src/switch_core_media.c", &__func__, 3218);
+  # DEBUG msg => msg_487
+  msg_487->message_id = 21;
+  msg_487->from = "src/switch_core_media.c";
+  other_session.89_488 = other_session;
+  D.44773_489 = switch_core_perform_session_strdup (other_session.89_488, r_sdp_193(D), "src/switch_core_media.c", &__func__, 3221);
+  msg_487->string_arg = D.44773_489;
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3222, session_161(D), 7, "Passing T38 req to other leg.\n%s\n", r_sdp_193(D));
+  other_session.89_490 = other_session;
+  switch_core_session_queue_message (other_session.89_490, msg_487);
+  other_session.89_491 = other_session;
+  switch_core_session_rwunlock (other_session.89_491);
+  goto <bb 420> (done);
+
+<bb 136>:
+  D.44681_493 = m_28->m_type;
+  if (D.44681_493 == 2)
+    goto <bb 137>;
+  else
+    goto <bb 323>;
+
+<bb 137>:
+  D.44697_494 = m_28->m_port;
+  D.44777_495 = D.44697_494 != 0;
+  D.44778_496 = got_audio_67 == 0;
+  D.44779_497 = D.44777_495 && D.44778_496;
+  if (D.44779_497 != 0)
+    goto <bb 138>;
+  else
+    goto <bb 323>;
+
+<bb 138>:
+  D.44781_498 = switch_rtp_has_dtls ();
+  if (D.44781_498 != 0)
+    goto <bb 139>;
+  else
+    goto <bb 149>;
+
+<bb 139>:
+  D.44784_499 = dtls_ok (session_161(D));
+  if (D.44784_499 != 0)
+    goto <bb 140>;
+  else
+    goto <bb 149>;
+
+<bb 140>:
+  attr_500 = m_28->m_attributes;
+  # DEBUG attr => attr_500
+  goto <bb 148>;
+
+<bb 141>:
+  D.44590_501 = attr_30->a_name;
+  D.44787_502 = strcasecmp (D.44590_501, "fingerprint");
+  if (D.44787_502 == 0)
+    goto <bb 142>;
+  else
+    goto <bb 147>;
+
+<bb 142>:
+  D.44619_503 = attr_30->a_value;
+  # DEBUG s => D.44619_503
+  if (D.44619_503 == 0B)
+    goto <bb 145>;
+  else
+    goto <bb 143>;
+
+<bb 143>:
+  D.47888_1470 = *D.44619_503;
+  if (D.47888_1470 == 0)
+    goto <bb 145>;
+  else
+    goto <bb 144>;
+
+<bb 144>:
+
+<bb 145>:
+  # D.47887_1471 = PHI <1(142), 1(143), 0(144)>
+  if (D.47887_1471 == 0)
+    goto <bb 146>;
+  else
+    goto <bb 147>;
+
+<bb 146>:
+  # DEBUG got_crypto => 1
+
+<bb 147>:
+  # got_crypto_50 = PHI <got_crypto_51(141), got_crypto_51(145), 1(146)>
+  # DEBUG got_crypto => got_crypto_50
+  attr_506 = attr_30->a_next;
+  # DEBUG attr => attr_506
+
+<bb 148>:
+  # attr_30 = PHI <attr_500(140), attr_506(147)>
+  # got_crypto_51 = PHI <got_crypto_56(140), got_crypto_50(147)>
+  # DEBUG got_crypto => got_crypto_51
+  # DEBUG attr => attr_30
+  if (attr_30 != 0B)
+    goto <bb 141>;
+  else
+    goto <bb 149>;
+
+<bb 149>:
+  # got_crypto_52 = PHI <got_crypto_56(138), got_crypto_56(139), got_crypto_51(148)>
+  # DEBUG got_crypto => got_crypto_52
+  attr_507 = m_28->m_attributes;
+  # DEBUG attr => attr_507
+  goto <bb 172>;
+
+<bb 150>:
+  D.44590_508 = attr_31->a_name;
+  D.44795_509 = strcasecmp (D.44590_508, "rtcp");
+  if (D.44795_509 == 0)
+    goto <bb 151>;
+  else
+    goto <bb 154>;
+
+<bb 151>:
+  D.44619_510 = attr_31->a_value;
+  if (D.44619_510 != 0B)
+    goto <bb 152>;
+  else
+    goto <bb 154>;
+
+<bb 152>:
+  D.44530_511 = session_161(D)->channel;
+  D.44619_512 = attr_31->a_value;
+  switch_channel_set_variable_var_check (D.44530_511, "rtp_remote_audio_rtcp_port", D.44619_512, 1);
+  D.44619_513 = attr_31->a_value;
+  # DEBUG __nptr => D.44619_513
+  D.47891_1472 = strtol (D.44619_513, 0B, 10);
+  D.44799_515 = (short unsigned int) D.47891_1472;
+  MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].remote_rtcp_port = D.44799_515;
+  D.44471_516 = smh_186->mparams;
+  D.44800_517 = D.44471_516->rtcp_audio_interval_msec;
+  if (D.44800_517 == 0B)
+    goto <bb 153>;
+  else
+    goto <bb 171>;
+
+<bb 153>:
+  D.44471_518 = smh_186->mparams;
+  D.44471_518->rtcp_audio_interval_msec = "5000";
+  goto <bb 171>;
+
+<bb 154>:
+  D.44590_519 = attr_31->a_name;
+  D.44805_520 = strcasecmp (D.44590_519, "ptime");
+  if (D.44805_520 == 0)
+    goto <bb 155>;
+  else
+    goto <bb 157>;
+
+<bb 155>:
+  D.44619_521 = attr_31->a_value;
+  if (D.44619_521 != 0B)
+    goto <bb 156>;
+  else
+    goto <bb 157>;
+
+<bb 156>:
+  D.44619_522 = attr_31->a_value;
+  # DEBUG __nptr => D.44619_522
+  ptime_1473 = strtol (D.44619_522, 0B, 10);
+  # DEBUG ptime => NULL
+  goto <bb 171>;
+
+<bb 157>:
+  D.44590_524 = attr_31->a_name;
+  D.44810_525 = strcasecmp (D.44590_524, "maxptime");
+  if (D.44810_525 == 0)
+    goto <bb 158>;
+  else
+    goto <bb 160>;
+
+<bb 158>:
+  D.44619_526 = attr_31->a_value;
+  if (D.44619_526 != 0B)
+    goto <bb 159>;
+  else
+    goto <bb 160>;
+
+<bb 159>:
+  D.44619_527 = attr_31->a_value;
+  # DEBUG __nptr => D.44619_527
+  maxptime_1474 = strtol (D.44619_527, 0B, 10);
+  # DEBUG maxptime => NULL
+  goto <bb 171>;
+
+<bb 160>:
+  if (got_crypto_54 <= 0)
+    goto <bb 161>;
+  else
+    goto <bb 171>;
+
+<bb 161>:
+  D.44590_529 = attr_31->a_name;
+  D.44815_530 = strcasecmp (D.44590_529, "crypto");
+  if (D.44815_530 == 0)
+    goto <bb 162>;
+  else
+    goto <bb 171>;
+
+<bb 162>:
+  D.44619_531 = attr_31->a_value;
+  # DEBUG s => D.44619_531
+  if (D.44619_531 == 0B)
+    goto <bb 165>;
+  else
+    goto <bb 163>;
+
+<bb 163>:
+  D.47901_1475 = *D.44619_531;
+  if (D.47901_1475 == 0)
+    goto <bb 165>;
+  else
+    goto <bb 164>;
+
+<bb 164>:
+
+<bb 165>:
+  # D.47900_1476 = PHI <1(162), 1(163), 0(164)>
+  if (D.47900_1476 == 0)
+    goto <bb 166>;
+  else
+    goto <bb 171>;
+
+<bb 166>:
+  D.44471_533 = smh_186->mparams;
+  D.44821_534 = D.44471_533->ndlb;
+  D.44822_535 = D.44821_534 & 4;
+  if (D.44822_535 == 0)
+    goto <bb 167>;
+  else
+    goto <bb 170>;
+
+<bb 167>:
+  D.44530_536 = session_161(D)->channel;
+  D.44825_537 = switch_channel_get_variable_dup (D.44530_536, "rtp_allow_crypto_in_avp", 1, -1);
+  D.44826_538 = switch_true (D.44825_537);
+  if (D.44826_538 == 0)
+    goto <bb 168>;
+  else
+    goto <bb 170>;
+
+<bb 168>:
+  D.44666_539 = m_28->m_proto;
+  D.44829_540 = D.44666_539 != 257;
+  D.44830_541 = got_webrtc_78 == 0;
+  D.44831_542 = D.44829_540 && D.44830_541;
+  if (D.44831_542 != 0)
+    goto <bb 169>;
+  else
+    goto <bb 170>;
+
+<bb 169>:
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3262, session_161(D), 3, "a=crypto in RTP/AVP, refer to rfc3711\n");
+  # DEBUG match => 0
+  goto <bb 420> (done);
+
+<bb 170>:
+  crypto_544 = attr_31->a_value;
+  # DEBUG crypto => crypto_544
+  # DEBUG __nptr => crypto_544
+  crypto_tag_1477 = strtol (crypto_544, 0B, 10);
+  # DEBUG crypto_tag => NULL
+  got_crypto_547 = switch_core_session_check_incoming_crypto (session_161(D), "rtp_has_crypto", 0, crypto_544, crypto_tag_1477, sdp_type_546(D));
+  # DEBUG got_crypto => got_crypto_547
+
+<bb 171>:
+  # ptime_34 = PHI <ptime_35(153), ptime_1473(156), ptime_35(159), ptime_35(160), ptime_35(161), ptime_35(165), ptime_35(170), ptime_35(152)>
+  # maxptime_38 = PHI <maxptime_39(153), maxptime_39(156), maxptime_1474(159), maxptime_39(160), maxptime_39(161), maxptime_39(165), maxptime_39(170), maxptime_39(152)>
+  # got_crypto_53 = PHI <got_crypto_54(153), got_crypto_54(156), got_crypto_54(159), got_crypto_54(160), got_crypto_54(161), got_crypto_54(165), got_crypto_547(170), got_crypto_54(152)>
+  # DEBUG got_crypto => got_crypto_53
+  # DEBUG maxptime => maxptime_38
+  # DEBUG ptime => ptime_34
+  attr_548 = attr_31->a_next;
+  # DEBUG attr => attr_548
+
+<bb 172>:
+  # attr_31 = PHI <attr_507(149), attr_548(171)>
+  # ptime_35 = PHI <dptime_37(149), ptime_34(171)>
+  # maxptime_39 = PHI <dmaxptime_41(149), maxptime_38(171)>
+  # got_crypto_54 = PHI <got_crypto_52(149), got_crypto_53(171)>
+  # DEBUG got_crypto => got_crypto_54
+  # DEBUG maxptime => maxptime_39
+  # DEBUG ptime => ptime_35
+  # DEBUG attr => attr_31
+  if (attr_31 != 0B)
+    goto <bb 150>;
+  else
+    goto <bb 173>;
+
+<bb 173>:
+  D.44834_549 = got_crypto_54 == -1;
+  D.44835_550 = got_savp_74 != 0;
+  D.44836_551 = D.44834_549 && D.44835_550;
+  if (D.44836_551 != 0)
+    goto <bb 174>;
+  else
+    goto <bb 176>;
+
+<bb 174>:
+  D.44839_552 = got_avp_68 | got_webrtc_78;
+  if (D.44839_552 == 0)
+    goto <bb 175>;
+  else
+    goto <bb 176>;
+
+<bb 175>:
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3277, session_161(D), 4, "Declining invite with only SAVP because secure media is administratively disabled\n");
+  # DEBUG match => 0
+  goto <bb 420> (done);
+
+<bb 176>:
+  connection_554 = sdp_198->sdp_connection;
+  # DEBUG connection => connection_554
+  D.44546_555 = m_28->m_connections;
+  if (D.44546_555 != 0B)
+    goto <bb 177>;
+  else
+    goto <bb 178>;
+
+<bb 177>:
+  connection_556 = m_28->m_connections;
+  # DEBUG connection => connection_556
+
+<bb 178>:
+  # connection_124 = PHI <connection_554(176), connection_556(177)>
+  # DEBUG connection => connection_124
+  if (connection_124 == 0B)
+    goto <bb 179>;
+  else
+    goto <bb 180>;
+
+<bb 179>:
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3288, session_161(D), 3, "Cannot find a c= line in the sdp at media or session level!\n");
+  # DEBUG match => 0
+  goto <bb 420> (done);
+
+<bb 180>:
+  # DEBUG x => 0
+  map_559 = m_28->m_rtpmaps;
+  # DEBUG map => map_559
+  goto <bb 260>;
+
+<bb 181>:
+  # DEBUG map_bit_rate => 0
+  codec_fmtp = {};
+  rm_encoding_561 = map_128->rm_encoding;
+  # DEBUG rm_encoding => rm_encoding_561
+  if (rm_encoding_561 == 0B)
+    goto <bb 182>;
+  else
+    goto <bb 183>;
+
+<bb 182>:
+  # DEBUG rm_encoding => ""
+
+<bb 183>:
+  # rm_encoding_130 = PHI <rm_encoding_561(181), ""(182)>
+  # DEBUG rm_encoding => rm_encoding_130
+  D.44848_563 = strcasecmp (rm_encoding_130, "telephone-event");
+  if (D.44848_563 == 0)
+    goto <bb 184>;
+  else
+    goto <bb 188>;
+
+<bb 184>:
+  if (best_te_20 == 0)
+    goto <bb 186>;
+  else
+    goto <bb 185>;
+
+<bb 185>:
+  D.44854_564 = map_128->rm_rate;
+  D.44750_565 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].cur_payload_map;
+  D.44855_566 = D.44750_565->rm_rate;
+  if (D.44854_564 == D.44855_566)
+    goto <bb 186>;
+  else
+    goto <bb 187>;
+
+<bb 186>:
+  D.44856_567 = map_128->rm_pt;
+  best_te_568 = (switch_payload_t) D.44856_567;
+  # DEBUG best_te => best_te_568
+  D.44857_569 = (int) best_te_568;
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3309, session_161(D), 7, "Set telephone-event payload to %u\n", D.44857_569);
+
+<bb 187>:
+  # best_te_18 = PHI <best_te_20(185), best_te_568(186)>
+  # DEBUG best_te => best_te_18
+  // predicted unlikely by continue predictor.
+  goto <bb 259>;
+
+<bb 188>:
+  D.44858_570 = switch_media_handle_test_media_flag (smh_186, 9);
+  if (D.44858_570 == 0)
+    goto <bb 189>;
+  else
+    goto <bb 194>;
+
+<bb 189>:
+  if (cng_pt_25 == 0)
+    goto <bb 190>;
+  else
+    goto <bb 194>;
+
+<bb 190>:
+  D.44863_571 = strcasecmp (rm_encoding_130, "CN");
+  if (D.44863_571 == 0)
+    goto <bb 191>;
+  else
+    goto <bb 194>;
+
+<bb 191>:
+  D.44856_572 = map_128->rm_pt;
+  cng_pt_573 = (switch_payload_t) D.44856_572;
+  # DEBUG cng_pt => cng_pt_573
+  D.44605_574 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].rtp_session;
+  if (D.44605_574 != 0B)
+    goto <bb 192>;
+  else
+    goto <bb 193>;
+
+<bb 192>:
+  D.44868_575 = (int) cng_pt_573;
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3317, session_161(D), 7, "Set comfort noise payload to %u\n", D.44868_575);
+  D.44605_576 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].rtp_session;
+  D.44471_577 = smh_186->mparams;
+  D.44869_578 = D.44471_577->cng_pt;
+  switch_rtp_set_cng_pt (D.44605_576, D.44869_578);
+
+<bb 193>:
+  // predicted unlikely by continue predictor.
+  goto <bb 259>;
+
+<bb 194>:
+  x_580 = x_49 + 1;
+  # DEBUG x => x_580
+  if (x_49 < 0)
+    goto <bb 195>;
+  else
+    goto <bb 196>;
+
+<bb 195>:
+  // predicted unlikely by continue predictor.
+  goto <bb 259>;
+
+<bb 196>:
+  if (match_8 != 0)
+    goto <bb 197>;
+  else
+    goto <bb 198>;
+
+<bb 197>:
+  // predicted unlikely by continue predictor.
+  goto <bb 259>;
+
+<bb 198>:
+  # DEBUG codec_ms => ptime_35
+  if (maxptime_39 != 0)
+    goto <bb 199>;
+  else
+    goto <bb 201>;
+
+<bb 199>:
+  D.44877_582 = ptime_35 == 0;
+  D.44878_583 = ptime_35 > maxptime_39;
+  D.44879_584 = D.44877_582 || D.44878_583;
+  if (D.44879_584 != 0)
+    goto <bb 200>;
+  else
+    goto <bb 201>;
+
+<bb 200>:
+  # DEBUG codec_ms => maxptime_39
+
+<bb 201>:
+  # codec_ms_86 = PHI <ptime_35(198), ptime_35(199), maxptime_39(200)>
+  # DEBUG codec_ms => codec_ms_86
+  if (codec_ms_86 == 0)
+    goto <bb 202>;
+  else
+    goto <bb 203>;
+
+<bb 202>:
+  D.44856_586 = map_128->rm_pt;
+  D.44884_587 = (uint32_t) D.44856_586;
+  D.44885_588 = switch_default_ptime (rm_encoding_130, D.44884_587);
+  codec_ms_589 = (int) D.44885_588;
+  # DEBUG codec_ms => codec_ms_589
+
+<bb 203>:
+  # codec_ms_87 = PHI <codec_ms_86(201), codec_ms_589(202)>
+  # DEBUG codec_ms => codec_ms_87
+  D.44856_590 = map_128->rm_pt;
+  csui.173_591 = (unsigned char) D.44856_590;
+  # DEBUG payload => csui.173_591
+  if (csui.173_591 <= 18)
+    goto <bb 204> (<L500>);
+  else
+    goto <bb 205> (<L501>);
+
+<L500>:
+  map_bit_rate_1480 = CSWTCH.174[csui.173_591];
+
+  # map_bit_rate_1481 = PHI <0(203), map_bit_rate_1480(204)>
+<L501>:
+<L502>:
+  # DEBUG map_bit_rate => NULL
+  if (ptime_35 == 0)
+    goto <bb 206>;
+  else
+    goto <bb 208>;
+
+<bb 206>:
+  D.44889_593 = map_128->rm_encoding;
+  D.44890_594 = strcasecmp (D.44889_593, "g723");
+  if (D.44890_594 == 0)
+    goto <bb 207>;
+  else
+    goto <bb 208>;
+
+<bb 207>:
+  # DEBUG codec_ms => 33
+
+<bb 208>:
+  # codec_ms_88 = PHI <codec_ms_87(205), codec_ms_87(206), 33(207)>
+  # DEBUG codec_ms => codec_ms_88
+  remote_codec_rate_596 = map_128->rm_rate;
+  # DEBUG remote_codec_rate => remote_codec_rate_596
+  # DEBUG fmtp_remote_codec_rate => 0
+  memset (&codec_fmtp, 0, 16);
+  D.44893_598 = map_128->rm_fmtp;
+  # DEBUG s => D.44893_598
+  if (D.44893_598 == 0B)
+    goto <bb 211>;
+  else
+    goto <bb 209>;
+
+<bb 209>:
+  D.47916_1482 = *D.44893_598;
+  if (D.47916_1482 == 0)
+    goto <bb 211>;
+  else
+    goto <bb 210>;
+
+<bb 210>:
+
+<bb 211>:
+  # D.47915_1483 = PHI <1(208), 1(209), 0(210)>
+  if (D.47915_1483 != 0)
+    goto <bb 212>;
+  else
+    goto <bb 215>;
+
+<bb 212>:
+  D.44889_600 = map_128->rm_encoding;
+  D.44897_601 = strcasecmp (D.44889_600, "ilbc");
+  if (D.44897_601 == 0)
+    goto <bb 222>;
+  else
+    goto <bb 213>;
+
+<bb 213>:
+  D.44889_604 = map_128->rm_encoding;
+  D.44901_605 = strcasecmp (D.44889_604, "isac");
+  if (D.44901_605 == 0)
+    goto <bb 222>;
+  else
+    goto <bb 214>;
+
+<bb 214>:
+  # DEBUG map_bit_rate => 32099
+  goto <bb 222>;
+
+<bb 215>:
+  D.44889_609 = map_128->rm_encoding;
+  D.44893_610 = map_128->rm_fmtp;
+  D.44854_611 = map_128->rm_rate;
+  D.44906_612 = switch_core_codec_parse_fmtp (D.44889_609, D.44893_610, D.44854_611, &codec_fmtp);
+  if (D.44906_612 == 0)
+    goto <bb 216>;
+  else
+    goto <bb 222>;
+
+<bb 216>:
+  D.44909_613 = codec_fmtp.bits_per_second;
+  if (D.44909_613 != 0)
+    goto <bb 217>;
+  else
+    goto <bb 218>;
+
+<bb 217>:
+  D.44909_614 = codec_fmtp.bits_per_second;
+  map_bit_rate_615 = (uint32_t) D.44909_614;
+  # DEBUG map_bit_rate => map_bit_rate_615
+
+<bb 218>:
+  # map_bit_rate_131 = PHI <map_bit_rate_1481(216), map_bit_rate_615(217)>
+  # DEBUG map_bit_rate => map_bit_rate_131
+  D.44912_616 = codec_fmtp.microseconds_per_packet;
+  if (D.44912_616 != 0)
+    goto <bb 219>;
+  else
+    goto <bb 220>;
+
+<bb 219>:
+  D.44912_617 = codec_fmtp.microseconds_per_packet;
+  codec_ms_618 = D.44912_617 / 1000;
+  # DEBUG codec_ms => codec_ms_618
+
+<bb 220>:
+  # codec_ms_89 = PHI <codec_ms_88(218), codec_ms_618(219)>
+  # DEBUG codec_ms => codec_ms_89
+  D.44915_619 = codec_fmtp.actual_samples_per_second;
+  if (D.44915_619 != 0)
+    goto <bb 221>;
+  else
+    goto <bb 222>;
+
+<bb 221>:
+  fmtp_remote_codec_rate_620 = codec_fmtp.actual_samples_per_second;
+  # DEBUG fmtp_remote_codec_rate => fmtp_remote_codec_rate_620
+
+<bb 222>:
+  # codec_ms_90 = PHI <39(213), codec_ms_88(215), codec_ms_89(220), codec_ms_89(221), 32(212), codec_ms_88(214)>
+  # fmtp_remote_codec_rate_99 = PHI <0(213), 0(215), 0(220), fmtp_remote_codec_rate_620(221), 0(212), 0(214)>
+  # map_bit_rate_132 = PHI <32001(213), map_bit_rate_1481(215), map_bit_rate_131(220), map_bit_rate_131(221), 13332(212), 32099(214)>
+  # DEBUG map_bit_rate => map_bit_rate_132
+  # DEBUG fmtp_remote_codec_rate => fmtp_remote_codec_rate_99
+  # DEBUG codec_ms => codec_ms_90
+  # DEBUG i => 0
+  goto <bb 257>;
+
+<bb 223>:
+  i.91_627 = (unsigned int) i_129;
+  D.44919_628 = i.91_627 * 4;
+  D.44920_629 = codec_array_84 + D.44919_628;
+  imp_630 = *D.44920_629;
+  # DEBUG imp => imp_630
+  D.44921_631 = imp_630->bits_per_second;
+  bit_rate_632 = (uint32_t) D.44921_631;
+  # DEBUG bit_rate => bit_rate_632
+  codec_rate_633 = imp_630->samples_per_second;
+  # DEBUG codec_rate => codec_rate_633
+  D.44922_634 = imp_630->codec_type;
+  if (D.44922_634 != 0)
+    goto <bb 224>;
+  else
+    goto <bb 225>;
+
+<bb 224>:
+  // predicted unlikely by continue predictor.
+  goto <bb 256>;
+
+<bb 225>:
+  D.44856_635 = map_128->rm_pt;
+  D.44925_636 = (int) D.44856_635;
+  remote_codec_rate.92_637 = (int) remote_codec_rate_98;
+  D.44927_638 = imp_630->iananame;
+  D.44928_639 = imp_630->ianacode;
+  D.44929_640 = (int) D.44928_639;
+  D.44930_641 = imp_630->microseconds_per_packet;
+  D.44931_642 = D.44930_641 / 1000;
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3383, session_161(D), 7, "Audio Codec Compare [%s:%d:%u:%d:%u]/[%s:%d:%u:%d:%u]\n", rm_encoding_130, D.44925_636, remote_codec_rate.92_637, codec_ms_90, map_bit_rate_132, D.44927_638, D.44929_640, codec_rate_633, D.44931_642, bit_rate_632);
+  D.44889_643 = map_128->rm_encoding;
+  # DEBUG s => D.44889_643
+  if (D.44889_643 == 0B)
+    goto <bb 228>;
+  else
+    goto <bb 226>;
+
+<bb 226>:
+  D.47920_1484 = *D.44889_643;
+  if (D.47920_1484 == 0)
+    goto <bb 228>;
+  else
+    goto <bb 227>;
+
+<bb 227>:
+
+<bb 228>:
+  # D.47919_1485 = PHI <1(225), 1(226), 0(227)>
+  if (D.47919_1485 != 0)
+    goto <bb 230>;
+  else
+    goto <bb 229>;
+
+<bb 229>:
+  D.44471_645 = smh_186->mparams;
+  D.44821_646 = D.44471_645->ndlb;
+  D.44937_647 = (int) D.44821_646;
+  D.44938_648 = D.44937_647 & 1;
+  if (D.44938_648 != 0)
+    goto <bb 230>;
+  else
+    goto <bb 232>;
+
+<bb 230>:
+  D.44856_650 = map_128->rm_pt;
+  D.44925_651 = (int) D.44856_650;
+  if (D.44925_651 <= 95)
+    goto <bb 231>;
+  else
+    goto <bb 232>;
+
+<bb 231>:
+  D.44856_652 = map_128->rm_pt;
+  D.44925_653 = (int) D.44856_652;
+  D.44928_654 = imp_630->ianacode;
+  D.44929_655 = (int) D.44928_654;
+  match_656 = D.44925_653 == D.44929_655;
+  # DEBUG match => match_656
+  goto <bb 238>;
+
+<bb 232>:
+  D.44927_657 = imp_630->iananame;
+  D.44945_658 = strcasecmp (rm_encoding_130, D.44927_657);
+  if (D.44945_658 == 0)
+    goto <bb 233>;
+  else
+    goto <bb 235>;
+
+<bb 233>:
+  if (remote_codec_rate_98 == codec_rate_633)
+    goto <bb 236>;
+  else
+    goto <bb 234>;
+
+<bb 234>:
+  D.44948_659 = imp_630->actual_samples_per_second;
+  if (D.44948_659 == fmtp_remote_codec_rate_99)
+    goto <bb 236>;
+  else
+    goto <bb 235>;
+
+<bb 235>:
+
+<bb 236>:
+  # iftmp.93_144 = PHI <1(234), 0(235), 1(233)>
+  match_662 = (uint8_t) iftmp.93_144;
+  # DEBUG match => match_662
+  if (fmtp_remote_codec_rate_99 != 0)
+    goto <bb 237>;
+  else
+    goto <bb 238>;
+
+<bb 237>:
+  # DEBUG remote_codec_rate => fmtp_remote_codec_rate_99
+
+<bb 238>:
+  # match_1 = PHI <match_656(231), match_662(236), match_662(237)>
+  # remote_codec_rate_96 = PHI <remote_codec_rate_98(231), remote_codec_rate_98(236), fmtp_remote_codec_rate_99(237)>
+  # DEBUG remote_codec_rate => remote_codec_rate_96
+  # DEBUG match => match_1
+  D.44951_664 = match_1 != 0;
+  D.44952_665 = bit_rate_632 != 0;
+  D.44953_666 = D.44951_664 && D.44952_665;
+  if (D.44953_666 != 0)
+    goto <bb 239>;
+  else
+    goto <bb 243>;
+
+<bb 239>:
+  D.44956_667 = map_bit_rate_132 != 0;
+  D.44957_668 = map_bit_rate_132 != bit_rate_632;
+  D.44958_669 = D.44956_667 && D.44957_668;
+  if (D.44958_669 != 0)
+    goto <bb 240>;
+  else
+    goto <bb 243>;
+
+<bb 240>:
+  D.44889_670 = map_128->rm_encoding;
+  D.44961_671 = strcasecmp (D.44889_670, "ilbc");
+  if (D.44961_671 != 0)
+    goto <bb 241>;
+  else
+    goto <bb 243>;
+
+<bb 241>:
+  D.44889_672 = map_128->rm_encoding;
+  D.44964_673 = strcasecmp (D.44889_672, "isac");
+  if (D.44964_673 != 0)
+    goto <bb 242>;
+  else
+    goto <bb 243>;
+
+<bb 242>:
+  # DEBUG match => 0
+
+<bb 243>:
+  # match_2 = PHI <match_1(238), match_1(239), match_1(240), match_1(241), 0(242)>
+  # DEBUG match => match_2
+  D.44951_675 = match_2 != 0;
+  D.44969_676 = remote_codec_rate_96 != 0;
+  D.44970_677 = D.44951_675 && D.44969_676;
+  if (D.44970_677 != 0)
+    goto <bb 244>;
+  else
+    goto <bb 248>;
+
+<bb 244>:
+  D.44973_678 = codec_rate_633 != 0;
+  D.44974_679 = remote_codec_rate_96 != codec_rate_633;
+  D.44975_680 = D.44973_678 && D.44974_679;
+  if (D.44975_680 != 0)
+    goto <bb 245>;
+  else
+    goto <bb 248>;
+
+<bb 245>:
+  D.44889_681 = map_128->rm_encoding;
+  D.44978_682 = strcasecmp (D.44889_681, "pcma");
+  if (D.44978_682 == 0)
+    goto <bb 247>;
+  else
+    goto <bb 246>;
+
+<bb 246>:
+  D.44889_683 = map_128->rm_encoding;
+  D.44980_684 = strcasecmp (D.44889_683, "pcmu");
+  if (D.44980_684 == 0)
+    goto <bb 247>;
+  else
+    goto <bb 248>;
+
+<bb 247>:
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3405, session_161(D), 7, "sampling rates have to match for G.711\n");
+  # DEBUG match => 0
+
+<bb 248>:
+  # match_3 = PHI <match_2(243), match_2(244), match_2(246), 0(247)>
+  # DEBUG match => match_3
+  if (match_3 != 0)
+    goto <bb 249>;
+  else
+    goto <bb 256>;
+
+<bb 249>:
+  if (scrooge_80 != 0)
+    goto <bb 250>;
+  else
+    goto <bb 251>;
+
+<bb 250>:
+  D.44927_686 = imp_630->iananame;
+  D.44985_687 = imp_630->samples_per_second;
+  D.44930_688 = imp_630->microseconds_per_packet;
+  D.44931_689 = D.44930_688 / 1000;
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3411, session_161(D), 7, "Bah HUMBUG! Sticking with %s@%uh@%ui\n", D.44927_686, D.44985_687, D.44931_689);
+  goto <bb 255>;
+
+<bb 251>:
+  D.44990_690 = ptime_35 != 0;
+  D.44991_691 = codec_ms_90 != 0;
+  D.44992_692 = D.44990_690 && D.44991_691;
+  if (D.44992_692 != 0)
+    goto <bb 252>;
+  else
+    goto <bb 253>;
+
+<bb 252>:
+  D.44994_693 = codec_ms_90 * 1000;
+  D.44930_694 = imp_630->microseconds_per_packet;
+  if (D.44994_693 != D.44930_694)
+    goto <bb 254>;
+  else
+    goto <bb 253>;
+
+<bb 253>:
+  if (remote_codec_rate_96 != codec_rate_633)
+    goto <bb 254>;
+  else
+    goto <bb 255>;
+
+<bb 254>:
+  # DEBUG match => 0
+  D.44927_696 = imp_630->iananame;
+  D.44928_697 = imp_630->ianacode;
+  D.44929_698 = (int) D.44928_697;
+  D.44930_699 = imp_630->microseconds_per_packet;
+  D.44931_700 = D.44930_699 / 1000;
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3418, session_161(D), 7, "Audio Codec Compare [%s:%d:%u:%d:%u] is saved as a near-match\n", D.44927_696, D.44929_698, codec_rate_633, D.44931_700, bit_rate_632);
+  near_matches[nm_idx_116].codec_idx = i_129;
+  remote_codec_rate.92_701 = (int) remote_codec_rate_96;
+  near_matches[nm_idx_116].rate = remote_codec_rate.92_701;
+  near_matches[nm_idx_116].imp = imp_630;
+  near_matches[nm_idx_116].map = map_128;
+  nm_idx_702 = nm_idx_116 + 1;
+  # DEBUG nm_idx => nm_idx_702
+  // predicted unlikely by continue predictor.
+  goto <bb 256>;
+
+<bb 255>:
+  matches[m_idx_101].codec_idx = i_129;
+  codec_rate.94_703 = (int) codec_rate_633;
+  matches[m_idx_101].rate = codec_rate.94_703;
+  matches[m_idx_101].imp = imp_630;
+  matches[m_idx_101].map = map_128;
+  m_idx_704 = m_idx_101 + 1;
+  # DEBUG m_idx => m_idx_704
+  D.44927_705 = imp_630->iananame;
+  D.44928_706 = imp_630->ianacode;
+  D.44929_707 = (int) D.44928_706;
+  D.44930_708 = imp_630->microseconds_per_packet;
+  D.44931_709 = D.44930_708 / 1000;
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3437, session_161(D), 7, "Audio Codec Compare [%s:%d:%u:%d:%u] ++++ is saved as a match\n", D.44927_705, D.44929_707, codec_rate_633, D.44931_709, bit_rate_632);
+  if (m_idx_704 > 29)
+    goto <bb 258>;
+  else
+    goto <bb 256>;
+
+<bb 256>:
+  # match_4 = PHI <match_5(224), match_3(248), 0(254), 0(255)>
+  # remote_codec_rate_97 = PHI <remote_codec_rate_98(224), remote_codec_rate_96(248), remote_codec_rate_96(254), remote_codec_rate_96(255)>
+  # m_idx_100 = PHI <m_idx_101(224), m_idx_101(248), m_idx_101(254), m_idx_704(255)>
+  # nm_idx_115 = PHI <nm_idx_116(224), nm_idx_116(248), nm_idx_702(254), nm_idx_116(255)>
+  # DEBUG nm_idx => nm_idx_115
+  # DEBUG m_idx => m_idx_100
+  # DEBUG remote_codec_rate => remote_codec_rate_97
+  # DEBUG match => match_4
+  i_711 = i_129 + 1;
+  # DEBUG i => i_711
+
+<bb 257>:
+  # match_5 = PHI <match_8(222), match_4(256)>
+  # remote_codec_rate_98 = PHI <remote_codec_rate_596(222), remote_codec_rate_97(256)>
+  # m_idx_101 = PHI <m_idx_104(222), m_idx_100(256)>
+  # nm_idx_116 = PHI <nm_idx_118(222), nm_idx_115(256)>
+  # i_129 = PHI <0(222), i_711(256)>
+  # DEBUG i => i_129
+  # DEBUG nm_idx => nm_idx_116
+  # DEBUG m_idx => m_idx_101
+  # DEBUG remote_codec_rate => remote_codec_rate_98
+  # DEBUG match => match_5
+  D.44471_622 = smh_186->mparams;
+  D.44997_623 = D.44471_622->num_codecs;
+  D.44998_624 = D.44997_623 > i_129;
+  D.44999_625 = i_129 < total_codecs_85;
+  D.45000_626 = D.44998_624 && D.44999_625;
+  if (D.45000_626 != 0)
+    goto <bb 223>;
+  else
+    goto <bb 258>;
+
+<bb 258>:
+  # match_6 = PHI <match_3(255), match_5(257)>
+  # m_idx_102 = PHI <m_idx_704(255), m_idx_101(257)>
+  # DEBUG m_idx => m_idx_102
+  # DEBUG match => match_6
+  if (m_idx_102 > 29)
+    goto <bb 261>;
+  else
+    goto <bb 259>;
+
+<bb 259>:
+  # match_7 = PHI <match_8(187), match_8(193), match_8(195), match_8(197), match_6(258)>
+  # best_te_19 = PHI <best_te_18(187), best_te_20(193), best_te_20(195), best_te_20(197), best_te_20(258)>
+  # cng_pt_24 = PHI <cng_pt_25(187), cng_pt_573(193), cng_pt_25(195), cng_pt_25(197), cng_pt_25(258)>
+  # x_48 = PHI <x_49(187), x_49(193), x_580(195), x_580(197), x_580(258)>
+  # codec_ms_91 = PHI <codec_ms_92(187), codec_ms_92(193), codec_ms_92(195), codec_ms_92(197), codec_ms_90(258)>
+  # m_idx_103 = PHI <m_idx_104(187), m_idx_104(193), m_idx_104(195), m_idx_104(197), m_idx_102(258)>
+  # nm_idx_117 = PHI <nm_idx_118(187), nm_idx_118(193), nm_idx_118(195), nm_idx_118(197), nm_idx_116(258)>
+  # DEBUG nm_idx => nm_idx_117
+  # DEBUG m_idx => m_idx_103
+  # DEBUG codec_ms => codec_ms_91
+  # DEBUG x => x_48
+  # DEBUG cng_pt => cng_pt_24
+  # DEBUG best_te => best_te_19
+  # DEBUG match => match_7
+  map_712 = map_128->rm_next;
+  # DEBUG map => map_712
+
+<bb 260>:
+  # match_8 = PHI <match_16(180), match_7(259)>
+  # best_te_20 = PHI <best_te_23(180), best_te_19(259)>
+  # cng_pt_25 = PHI <cng_pt_27(180), cng_pt_24(259)>
+  # x_49 = PHI <0(180), x_48(259)>
+  # codec_ms_92 = PHI <codec_ms_95(180), codec_ms_91(259)>
+  # m_idx_104 = PHI <m_idx_114(180), m_idx_103(259)>
+  # nm_idx_118 = PHI <nm_idx_122(180), nm_idx_117(259)>
+  # map_128 = PHI <map_559(180), map_712(259)>
+  # DEBUG map => map_128
+  # DEBUG nm_idx => nm_idx_118
+  # DEBUG m_idx => m_idx_104
+  # DEBUG codec_ms => codec_ms_92
+  # DEBUG x => x_49
+  # DEBUG cng_pt => cng_pt_25
+  # DEBUG best_te => best_te_20
+  # DEBUG match => match_8
+  if (map_128 != 0B)
+    goto <bb 181>;
+  else
+    goto <bb 261>;
+
+<bb 261>:
+  # match_9 = PHI <match_6(258), match_8(260)>
+  # codec_ms_93 = PHI <codec_ms_90(258), codec_ms_92(260)>
+  # m_idx_105 = PHI <m_idx_102(258), m_idx_104(260)>
+  # nm_idx_119 = PHI <nm_idx_116(258), nm_idx_118(260)>
+  # DEBUG nm_idx => nm_idx_119
+  # DEBUG m_idx => m_idx_105
+  # DEBUG codec_ms => codec_ms_93
+  # DEBUG match => match_9
+  D.45002_713 = smh_186->crypto_mode;
+  D.45003_714 = D.45002_713 == 1;
+  D.45004_715 = got_crypto_54 <= 0;
+  D.45005_716 = D.45003_714 && D.45004_715;
+  if (D.45005_716 != 0)
+    goto <bb 262>;
+  else
+    goto <bb 263>;
+
+<bb 262>:
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3455, session_161(D), 4, "Crypto not negotiated but required.\n");
+  # DEBUG match => 0
+  # DEBUG nm_idx => 0
+  # DEBUG m_idx => 0
+
+<bb 263>:
+  # match_10 = PHI <match_9(261), 0(262)>
+  # m_idx_106 = PHI <m_idx_105(261), 0(262)>
+  # nm_idx_120 = PHI <nm_idx_119(261), 0(262)>
+  # DEBUG nm_idx => nm_idx_120
+  # DEBUG m_idx => m_idx_106
+  # DEBUG match => match_10
+  D.45008_720 = m_idx_106 == 0;
+  D.45009_721 = nm_idx_120 != 0;
+  D.45010_722 = D.45008_720 && D.45009_721;
+  if (D.45010_722 != 0)
+    goto <bb 264>;
+  else
+    goto <bb 274>;
+
+<bb 264>:
+  # j_1118 = PHI <0(263)>
+  goto <bb 273>;
+
+<bb 265>:
+  # DEBUG timp => 0B
+  D.45013_725 = near_matches[j_133].rate;
+  near_rate_726 = (uint32_t) D.45013_725;
+  # DEBUG near_rate => near_rate_726
+  near_match_727 = near_matches[j_133].imp;
+  # DEBUG near_match => near_match_727
+  near_map_728 = near_matches[j_133].map;
+  # DEBUG near_map => near_map_728
+  D.45014_729 = near_match_727->iananame;
+  if (near_rate_726 == 0)
+    goto <bb 266>;
+  else
+    goto <bb 267>;
+
+<bb 266>:
+  near_rate_730 = near_match_727->samples_per_second;
+
+<bb 267>:
+  # near_rate_145 = PHI <near_rate_730(266), near_rate_726(265)>
+  switch_snprintf (&tmp, 80, "%s@%uh@%ui", D.45014_729, near_rate_145, codec_ms_93);
+  prefs[0] = &tmp;
+  num_732 = switch_loadable_module_get_codecs_sorted (&search, 1, &prefs, 1);
+  # DEBUG num => num_732
+  if (num_732 != 0)
+    goto <bb 268>;
+  else
+    goto <bb 269>;
+
+<bb 268>:
+  timp_733 = search[0];
+  # DEBUG timp => timp_733
+
+<bb 269>:
+  # timp_134 = PHI <timp_733(268), near_match_727(267)>
+  # DEBUG timp => timp_134
+  if (maxptime_39 == 0)
+    goto <bb 271>;
+  else
+    goto <bb 270>;
+
+<bb 270>:
+  D.45025_735 = timp_134->microseconds_per_packet;
+  D.45026_736 = D.45025_735 / 1000;
+  if (D.45026_736 <= maxptime_39)
+    goto <bb 271>;
+  else
+    goto <bb 272>;
+
+<bb 271>:
+  D.45027_738 = timp_134->iananame;
+  D.45025_739 = timp_134->microseconds_per_packet;
+  D.45026_740 = D.45025_739 / 1000;
+  D.45028_741 = timp_134->actual_samples_per_second;
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3488, session_161(D), 7, "Substituting codec %s@%ui@%uh\n", D.45027_738, D.45026_740, D.45028_741);
+  # DEBUG match => 1
+  D.45029_743 = near_matches[j_133].codec_idx;
+  matches[m_idx_106].codec_idx = D.45029_743;
+  near_rate.96_744 = (int) near_rate_726;
+  matches[m_idx_106].rate = near_rate.96_744;
+  matches[m_idx_106].imp = timp_134;
+  matches[m_idx_106].map = near_map_728;
+  m_idx_745 = m_idx_106 + 1;
+  # DEBUG m_idx => m_idx_745
+  goto <bb 274>;
+
+<bb 272>:
+  j_737 = j_133 + 1;
+  # DEBUG j => j_737
+
+<bb 273>:
+  # j_133 = PHI <j_1118(264), j_737(272)>
+  # DEBUG j => j_133
+  if (j_133 < nm_idx_120)
+    goto <bb 265>;
+  else
+    goto <bb 274>;
+
+<bb 274>:
+  # match_11 = PHI <match_10(263), 1(271), match_10(273)>
+  # m_idx_107 = PHI <m_idx_106(263), m_idx_745(271), m_idx_106(273)>
+  # DEBUG m_idx => m_idx_107
+  # DEBUG match => match_11
+  if (m_idx_107 != 0)
+    goto <bb 275>;
+  else
+    goto <bb 299>;
+
+<bb 275>:
+  if (greedy_47 != 0)
+    goto <bb 276>;
+  else
+    goto <bb 277>;
+
+<bb 276>:
+  greedy_sort (smh_186, &matches, m_idx_107, codec_array_84, total_codecs_85);
+
+<bb 277>:
+  # DEBUG match => 1
+  MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].codec_negotiated = 1;
+  smh_186->num_negotiated_codecs = 0;
+  # DEBUG j => 0
+  goto <bb 298>;
+
+<bb 278>:
+  D.45035_748 = matches[j_135].map;
+  D.45036_749 = D.45035_748->rm_encoding;
+  D.45035_750 = matches[j_135].map;
+  D.45037_751 = D.45035_750->rm_fmtp;
+  D.45035_752 = matches[j_135].map;
+  D.45038_753 = D.45035_752->rm_pt;
+  D.45039_754 = (uint32_t) D.45038_753;
+  D.45040_755 = matches[j_135].imp;
+  D.45041_756 = D.45040_755->samples_per_second;
+  D.45040_757 = matches[j_135].imp;
+  D.45042_758 = D.45040_757->microseconds_per_packet;
+  D.45043_759 = D.45042_758 / 1000;
+  D.45044_760 = (uint32_t) D.45043_759;
+  pmap_761 = switch_core_media_add_payload_map (session_161(D), 0, D.45036_749, D.45037_751, sdp_type_546(D), D.45039_754, D.45041_756, D.45044_760, 1);
+  # DEBUG pmap => pmap_761
+  mimp_762 = matches[j_135].imp;
+  # DEBUG mimp => mimp_762
+  mmap_763 = matches[j_135].map;
+  # DEBUG mmap => mmap_763
+  if (j_135 == 0)
+    goto <bb 279>;
+  else
+    goto <bb 281>;
+
+<bb 279>:
+  MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].cur_payload_map = pmap_761;
+  D.44750_764 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].cur_payload_map;
+  D.44750_764->current = 1;
+  D.44605_765 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].rtp_session;
+  if (D.44605_765 != 0B)
+    goto <bb 280>;
+  else
+    goto <bb 281>;
+
+<bb 280>:
+  D.44605_766 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].rtp_session;
+  D.45049_767 = pmap_761->pt;
+  switch_rtp_set_default_payload (D.44605_766, D.45049_767);
+
+<bb 281>:
+  D.45050_768 = mmap_763->rm_encoding;
+  D.45051_769 = switch_core_perform_session_strdup (session_161(D), D.45050_768, "src/switch_core_media.c", &__func__, 3535);
+  pmap_761->rm_encoding = D.45051_769;
+  D.45052_770 = mimp_762->iananame;
+  D.45053_771 = switch_core_perform_session_strdup (session_161(D), D.45052_770, "src/switch_core_media.c", &__func__, 3536);
+  pmap_761->iananame = D.45053_771;
+  D.45054_772 = mmap_763->rm_pt;
+  D.45055_773 = (unsigned char) D.45054_772;
+  pmap_761->recv_pt = D.45055_773;
+  D.45056_774 = mimp_762->samples_per_second;
+  pmap_761->rm_rate = D.45056_774;
+  D.45056_775 = mimp_762->samples_per_second;
+  pmap_761->adv_rm_rate = D.45056_775;
+  D.45052_776 = mimp_762->iananame;
+  D.45057_777 = strcasecmp (D.45052_776, "g722");
+  if (D.45057_777 != 0)
+    goto <bb 282>;
+  else
+    goto <bb 283>;
+
+<bb 282>:
+  D.45060_778 = mimp_762->actual_samples_per_second;
+  pmap_761->rm_rate = D.45060_778;
+
+<bb 283>:
+  D.45061_779 = mimp_762->microseconds_per_packet;
+  D.45062_780 = D.45061_779 / 1000;
+  D.45063_781 = (uint32_t) D.45062_780;
+  pmap_761->codec_ms = D.45063_781;
+  D.45064_782 = mimp_762->bits_per_second;
+  D.45065_783 = (uint32_t) D.45064_782;
+  pmap_761->bitrate = D.45065_783;
+  D.45067_784 = mmap_763->rm_params;
+  if (D.45067_784 != 0B)
+    goto <bb 284>;
+  else
+    goto <bb 285>;
+
+<bb 284>:
+  D.45067_785 = mmap_763->rm_params;
+  # DEBUG __nptr => D.45067_785
+  D.47923_1486 = strtol (D.45067_785, 0B, 10);
+
+<bb 285>:
+  # D.47923_146 = PHI <D.47923_1486(284), 1(283)>
+  pmap_761->channels = D.47923_146;
+  D.45050_788 = mmap_763->rm_encoding;
+  D.45071_789 = strcasecmp (D.45050_788, "opus");
+  if (D.45071_789 == 0)
+    goto <bb 286>;
+  else
+    goto <bb 296>;
+
+<bb 286>:
+  D.45074_790 = pmap_761->channels;
+  if (D.45074_790 == 1)
+    goto <bb 287>;
+  else
+    goto <bb 288>;
+
+<bb 287>:
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3549, session_161(D), 4, "Invalid SDP for opus.  Don\'t ask.. but it needs a /2\n");
+  pmap_761->adv_channels = 1;
+  goto <bb 289>;
+
+<bb 288>:
+  pmap_761->adv_channels = 2;
+
+<bb 289>:
+  D.45080_791 = mmap_763->rm_fmtp;
+  # DEBUG s => D.45080_791
+  if (D.45080_791 == 0B)
+    goto <bb 292>;
+  else
+    goto <bb 290>;
+
+<bb 290>:
+  D.47927_1487 = *D.45080_791;
+  if (D.47927_1487 == 0)
+    goto <bb 292>;
+  else
+    goto <bb 291>;
+
+<bb 291>:
+
+<bb 292>:
+  # D.47926_1488 = PHI <1(289), 1(290), 0(291)>
+  if (D.47926_1488 == 0)
+    goto <bb 293>;
+  else
+    goto <bb 295>;
+
+<bb 293>:
+  D.45080_793 = mmap_763->rm_fmtp;
+  D.45083_794 = switch_stristr ("stereo=1", D.45080_793);
+  if (D.45083_794 != 0B)
+    goto <bb 294>;
+  else
+    goto <bb 295>;
+
+<bb 294>:
+  pmap_761->channels = 2;
+  goto <bb 297>;
+
+<bb 295>:
+  pmap_761->channels = 1;
+  goto <bb 297>;
+
+<bb 296>:
+  D.45074_795 = pmap_761->channels;
+  pmap_761->adv_channels = D.45074_795;
+
+<bb 297>:
+  D.45086_796 = connection_124->c_address;
+  D.45087_797 = switch_core_perform_session_strdup (session_161(D), D.45086_796, "src/switch_core_media.c", &__func__, 3563);
+  pmap_761->remote_sdp_ip = D.45087_797;
+  D.44697_798 = m_28->m_port;
+  D.45088_799 = (short unsigned int) D.44697_798;
+  pmap_761->remote_sdp_port = D.45088_799;
+  D.45080_800 = mmap_763->rm_fmtp;
+  D.45089_801 = switch_core_perform_session_strdup (session_161(D), D.45080_800, "src/switch_core_media.c", &__func__, 3565);
+  pmap_761->rm_fmtp = D.45089_801;
+  D.45054_802 = mmap_763->rm_pt;
+  D.45055_803 = (unsigned char) D.45054_802;
+  pmap_761->agreed_pt = D.45055_803;
+  D.44655_804 = smh_186->num_negotiated_codecs;
+  smh_186->negotiated_codecs[D.44655_804] = mimp_762;
+  D.45090_805 = D.44655_804 + 1;
+  smh_186->num_negotiated_codecs = D.45090_805;
+  D.45054_806 = mmap_763->rm_pt;
+  D.45055_807 = (unsigned char) D.45054_806;
+  pmap_761->recv_pt = D.45055_807;
+  j_808 = j_135 + 1;
+  # DEBUG j => j_808
+
+<bb 298>:
+  # j_135 = PHI <0(277), j_808(297)>
+  # DEBUG j => j_135
+  if (j_135 < m_idx_107)
+    goto <bb 278>;
+  else
+    goto <bb 299>;
+
+<bb 299>:
+  # match_12 = PHI <match_11(274), 1(298)>
+  # DEBUG match => match_12
+  if (match_12 != 0)
+    goto <bb 300>;
+  else
+    goto <bb 310>;
+
+<bb 300>:
+  D.44750_809 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].cur_payload_map;
+  D.44762_810 = D.44750_809->remote_sdp_port;
+  D.44767_811 = (int) D.44762_810;
+  switch_snprintf (&tmp, 50, "%d", D.44767_811);
+  D.44530_812 = session_161(D)->channel;
+  D.44750_813 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].cur_payload_map;
+  D.44760_814 = D.44750_813->remote_sdp_ip;
+  switch_channel_set_variable_var_check (D.44530_812, "remote_media_ip", D.44760_814, 1);
+  D.44530_815 = session_161(D)->channel;
+  switch_channel_set_variable_var_check (D.44530_815, "remote_media_port", &tmp, 1);
+  D.44750_816 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].cur_payload_map;
+  D.45093_817 = D.44750_816->recv_pt;
+  D.45094_818 = (int) D.45093_817;
+  switch_snprintf (&tmp, 50, "%d", D.45094_818);
+  D.44530_819 = session_161(D)->channel;
+  switch_channel_set_variable_var_check (D.44530_819, "rtp_audio_recv_pt", &tmp, 1);
+  D.45095_820 = &MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].read_codec;
+  # DEBUG codec => D.45095_820
+  if (D.45095_820 != 0B)
+    goto <bb 301>;
+  else
+    goto <bb 305>;
+
+<bb 301>:
+  D.47935_1489 = MEM[(struct switch_codec_t *)smh_186 + 1604B].flags;
+  D.47934_1490 = D.47935_1489 & 256;
+  if (D.47934_1490 != 0)
+    goto <bb 302>;
+  else
+    goto <bb 305>;
+
+<bb 302>:
+  D.47933_1491 = MEM[(struct switch_codec_t *)smh_186 + 1604B].mutex;
+  if (D.47933_1491 != 0B)
+    goto <bb 303>;
+  else
+    goto <bb 305>;
+
+<bb 303>:
+  D.47932_1492 = MEM[(struct switch_codec_t *)smh_186 + 1604B].codec_interface;
+  if (D.47932_1492 != 0B)
+    goto <bb 304>;
+  else
+    goto <bb 305>;
+
+<bb 304>:
+  D.47931_1493 = MEM[(struct switch_codec_t *)smh_186 + 1604B].implementation;
+  if (D.47931_1493 != 0B)
+    goto <bb 306>;
+  else
+    goto <bb 305>;
+
+<bb 305>:
+
+<bb 306>:
+  # iftmp.104_1494 = PHI <1(304), 0(305)>
+  if (iftmp.104_1494 != 0)
+    goto <bb 307>;
+  else
+    goto <bb 308>;
+
+<bb 307>:
+  MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].reset_codec = 1;
+
+<bb 308>:
+  D.44471_822 = smh_186->mparams;
+  D.45099_823 = D.44471_822->codec_flags;
+  D.45100_824 = switch_core_media_set_codec (session_161(D), 0, D.45099_823);
+  if (D.45100_824 == 0)
+    goto <bb 309>;
+  else
+    goto <bb 310>;
+
+<bb 309>:
+  # DEBUG got_audio => 1
+  check_ice (smh_186, 0, sdp_198, m_28);
+
+<bb 310>:
+  # match_13 = PHI <match_12(299), match_12(309), 0(308)>
+  # got_audio_65 = PHI <got_audio_67(299), 1(309), got_audio_67(308)>
+  # DEBUG got_audio => got_audio_65
+  # DEBUG match => match_13
+  if (best_te_20 == 0)
+    goto <bb 311>;
+  else
+    goto <bb 314>;
+
+<bb 311>:
+  D.45108_827 = switch_media_handle_test_media_flag (smh_186, 8);
+  if (D.45108_827 != 0)
+    goto <bb 313>;
+  else
+    goto <bb 312>;
+
+<bb 312>:
+  D.44530_828 = session_161(D)->channel;
+  D.45110_829 = switch_channel_test_flag (D.44530_828, 93);
+  if (D.45110_829 != 0)
+    goto <bb 313>;
+  else
+    goto <bb 314>;
+
+<bb 313>:
+  D.44471_830 = smh_186->mparams;
+  D.45111_831 = D.44471_830->te;
+  D.45112_832 = (int) D.45111_831;
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3609, session_161(D), 7, "No 2833 in SDP. Liberal DTMF mode adding %d as telephone-event.\n", D.45112_832);
+  D.44471_833 = smh_186->mparams;
+  best_te_834 = D.44471_833->te;
+  # DEBUG best_te => best_te_834
+
+<bb 314>:
+  # best_te_21 = PHI <best_te_20(310), best_te_20(312), best_te_834(313)>
+  # DEBUG best_te => best_te_21
+  if (best_te_21 != 0)
+    goto <bb 315>;
+  else
+    goto <bb 320>;
+
+<bb 315>:
+  D.45115_835 = switch_channel_direction (channel_162);
+  if (D.45115_835 == 1)
+    goto <bb 316>;
+  else
+    goto <bb 318>;
+
+<bb 316>:
+  D.44471_836 = smh_186->mparams;
+  D.44471_836->te = best_te_21;
+  # DEBUG D#11 => D.44471_836->te
+  # DEBUG te => D#11
+  D.44857_838 = (int) best_te_21;
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3617, session_161(D), 7, "Set 2833 dtmf send payload to %u\n", D.44857_838);
+  D.44530_839 = session_161(D)->channel;
+  switch_channel_set_variable_var_check (D.44530_839, "dtmf_type", "rfc2833", 1);
+  D.44471_840 = smh_186->mparams;
+  D.44471_840->dtmf_type = 0;
+  D.44605_841 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].rtp_session;
+  if (D.44605_841 != 0B)
+    goto <bb 317>;
+  else
+    goto <bb 418>;
+
+<bb 317>:
+  D.44605_842 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].rtp_session;
+  switch_rtp_set_telephony_event (D.44605_842, best_te_21);
+  D.44530_843 = session_161(D)->channel;
+  D.44857_844 = (int) best_te_21;
+  switch_channel_set_variable_printf (D.44530_843, "rtp_2833_send_payload", "%d", D.44857_844);
+  goto <bb 418>;
+
+<bb 318>:
+  D.44471_846 = smh_186->mparams;
+  D.44471_846->te = best_te_21;
+  D.45111_847 = D.44471_846->te;
+  D.44471_846->recv_te = D.45111_847;
+  te_848 = D.44471_846->recv_te;
+  # DEBUG te => te_848
+  D.45121_849 = (int) te_848;
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3626, session_161(D), 7, "Set 2833 dtmf send/recv payload to %u\n", D.45121_849);
+  D.44530_850 = session_161(D)->channel;
+  switch_channel_set_variable_var_check (D.44530_850, "dtmf_type", "rfc2833", 1);
+  D.44471_851 = smh_186->mparams;
+  D.44471_851->dtmf_type = 0;
+  D.44605_852 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].rtp_session;
+  if (D.44605_852 != 0B)
+    goto <bb 319>;
+  else
+    goto <bb 418>;
+
+<bb 319>:
+  D.44605_853 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].rtp_session;
+  switch_rtp_set_telephony_event (D.44605_853, te_848);
+  D.44530_854 = session_161(D)->channel;
+  D.45121_855 = (int) te_848;
+  switch_channel_set_variable_printf (D.44530_854, "rtp_2833_send_payload", "%d", D.45121_855);
+  D.44605_856 = MEM[(struct switch_rtp_engine_t *)smh_186 + 80B].rtp_session;
+  switch_rtp_set_telephony_recv_event (D.44605_856, te_848);
+  D.44530_857 = session_161(D)->channel;
+  D.45121_858 = (int) te_848;
+  switch_channel_set_variable_printf (D.44530_857, "rtp_2833_recv_payload", "%d", D.45121_858);
+  goto <bb 418>;
+
+<bb 320>:
+  D.45125_859 = switch_channel_get_variable_dup (channel_162, "rtp_info_when_no_2833", 1, -1);
+  D.45126_860 = switch_false (D.45125_859);
+  if (D.45126_860 == 0)
+    goto <bb 321>;
+  else
+    goto <bb 322>;
+
+<bb 321>:
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3639, session_161(D), 7, "No 2833 in SDP.  Disable 2833 dtmf and switch to INFO\n");
+  D.44530_861 = session_161(D)->channel;
+  switch_channel_set_variable_var_check (D.44530_861, "dtmf_type", "info", 1);
+  D.44471_862 = smh_186->mparams;
+  D.44471_862->dtmf_type = 1;
+  D.44471_864 = smh_186->mparams;
+  D.44471_864->te = 0;
+  D.45111_865 = D.44471_864->te;
+  D.44471_864->recv_te = D.45111_865;
+  # DEBUG D#12 => D.44471_864->recv_te
+  # DEBUG te => D#12
+  goto <bb 418>;
+
+<bb 322>:
+  D.44530_867 = session_161(D)->channel;
+  switch_channel_set_variable_var_check (D.44530_867, "dtmf_type", "none", 1);
+  D.44471_868 = smh_186->mparams;
+  D.44471_868->dtmf_type = 2;
+  D.44471_870 = smh_186->mparams;
+  D.44471_870->te = 0;
+  D.45111_871 = D.44471_870->te;
+  D.44471_870->recv_te = D.45111_871;
+  # DEBUG D#13 => D.44471_870->recv_te
+  # DEBUG te => D#13
+  goto <bb 418>;
+
+<bb 323>:
+  D.44681_873 = m_28->m_type;
+  if (D.44681_873 == 3)
+    goto <bb 324>;
+  else
+    goto <bb 418>;
+
+<bb 324>:
+  D.44697_874 = m_28->m_port;
+  if (D.44697_874 != 0)
+    goto <bb 325>;
+  else
+    goto <bb 418>;
+
+<bb 325>:
+  # DEBUG mimp => 0B
+  # DEBUG vmatch => 0
+  # DEBUG nm_idx => 0
+  # DEBUG m_idx => 0
+  memset (&matches, 0, 480);
+  memset (&near_matches, 0, 480);
+  D.44530_879 = session_161(D)->channel;
+  switch_channel_set_variable_var_check (D.44530_879, "video_possible", "true", 1);
+  connection_880 = sdp_198->sdp_connection;
+  # DEBUG connection => connection_880
+  D.44546_881 = m_28->m_connections;
+  if (D.44546_881 != 0B)
+    goto <bb 326>;
+  else
+    goto <bb 327>;
+
+<bb 326>:
+  connection_882 = m_28->m_connections;
+  # DEBUG connection => connection_882
+
+<bb 327>:
+  # connection_125 = PHI <connection_880(325), connection_882(326)>
+  # DEBUG connection => connection_125
+  if (connection_125 == 0B)
+    goto <bb 328>;
+  else
+    goto <bb 329>;
+
+<bb 328>:
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3669, session_161(D), 3, "Cannot find a c= line in the sdp at media or session level!\n");
+  # DEBUG match => 0
+  goto <bb 420> (done);
+
+<bb 329>:
+  map_884 = m_28->m_rtpmaps;
+  # DEBUG map => map_884
+  goto <bb 394>;
+
+<bb 330>:
+  D.45138_885 = switch_rtp_has_dtls ();
+  if (D.45138_885 != 0)
+    goto <bb 331>;
+  else
+    goto <bb 341>;
+
+<bb 331>:
+  D.45141_886 = dtls_ok (session_161(D));
+  if (D.45141_886 != 0)
+    goto <bb 332>;
+  else
+    goto <bb 341>;
+
+<bb 332>:
+  attr_887 = m_28->m_attributes;
+  # DEBUG attr => attr_887
+  goto <bb 340>;
+
+<bb 333>:
+  D.44590_888 = attr_32->a_name;
+  D.45144_889 = strcasecmp (D.44590_888, "fingerprint");
+  if (D.45144_889 == 0)
+    goto <bb 334>;
+  else
+    goto <bb 339>;
+
+<bb 334>:
+  D.44619_890 = attr_32->a_value;
+  # DEBUG s => D.44619_890
+  if (D.44619_890 == 0B)
+    goto <bb 337>;
+  else
+    goto <bb 335>;
+
+<bb 335>:
+  D.47940_1496 = *D.44619_890;
+  if (D.47940_1496 == 0)
+    goto <bb 337>;
+  else
+    goto <bb 336>;
+
+<bb 336>:
+
+<bb 337>:
+  # D.47939_1497 = PHI <1(334), 1(335), 0(336)>
+  if (D.47939_1497 == 0)
+    goto <bb 338>;
+  else
+    goto <bb 339>;
+
+<bb 338>:
+  # DEBUG got_video_crypto => 1
+
+<bb 339>:
+  # got_video_crypto_57 = PHI <got_video_crypto_58(333), got_video_crypto_58(337), 1(338)>
+  # DEBUG got_video_crypto => got_video_crypto_57
+  attr_893 = attr_32->a_next;
+  # DEBUG attr => attr_893
+
+<bb 340>:
+  # attr_32 = PHI <attr_887(332), attr_893(339)>
+  # got_video_crypto_58 = PHI <got_video_crypto_62(332), got_video_crypto_57(339)>
+  # DEBUG got_video_crypto => got_video_crypto_58
+  # DEBUG attr => attr_32
+  if (attr_32 != 0B)
+    goto <bb 333>;
+  else
+    goto <bb 341>;
+
+<bb 341>:
+  # got_video_crypto_59 = PHI <got_video_crypto_62(330), got_video_crypto_62(331), got_video_crypto_58(340)>
+  # DEBUG got_video_crypto => got_video_crypto_59
+  attr_894 = m_28->m_attributes;
+  # DEBUG attr => attr_894
+  goto <bb 371>;
+
+<bb 342>:
+  D.44590_895 = attr_33->a_name;
+  D.45152_896 = strcasecmp (D.44590_895, "framerate");
+  if (D.45152_896 == 0)
+    goto <bb 343>;
+  else
+    goto <bb 344>;
+
+<bb 343>:
+  D.44619_897 = attr_33->a_value;
+  if (D.44619_897 != 0B)
+    goto <bb 370>;
+  else
+    goto <bb 344>;
+
+<bb 344>:
+  D.44590_898 = attr_33->a_name;
+  D.45155_899 = strcasecmp (D.44590_898, "rtcp-fb");
+  if (D.45155_899 == 0)
+    goto <bb 345>;
+  else
+    goto <bb 352>;
+
+<bb 345>:
+  D.44619_900 = attr_33->a_value;
+  # DEBUG s => D.44619_900
+  if (D.44619_900 == 0B)
+    goto <bb 348>;
+  else
+    goto <bb 346>;
+
+<bb 346>:
+  D.47944_1498 = *D.44619_900;
+  if (D.47944_1498 == 0)
+    goto <bb 348>;
+  else
+    goto <bb 347>;
+
+<bb 347>:
+
+<bb 348>:
+  # D.47943_1499 = PHI <1(345), 1(346), 0(347)>
+  if (D.47943_1499 == 0)
+    goto <bb 349>;
+  else
+    goto <bb 370>;
+
+<bb 349>:
+  D.44619_902 = attr_33->a_value;
+  D.45161_903 = switch_stristr ("fir", D.44619_902);
+  if (D.45161_903 != 0B)
+    goto <bb 350>;
+  else
+    goto <bb 351>;
+
+<bb 350>:
+  D.45164_904 = MEM[(struct switch_rtp_engine_t *)smh_186 + 11496B].fir;
+  D.45165_905 = D.45164_904 + 1;
+  MEM[(struct switch_rtp_engine_t *)smh_186 + 11496B].fir = D.45165_905;
+
+<bb 351>:
+  D.44471_906 = smh_186->mparams;
+  D.44471_906->rtcp_video_interval_msec = "10000";
+  goto <bb 370>;
+
+<bb 352>:
+  D.44590_907 = attr_33->a_name;
+  D.45169_908 = strcasecmp (D.44590_907, "rtcp");
+  if (D.45169_908 == 0)
+    goto <bb 353>;
+  else
+    goto <bb 359>;
+
+<bb 353>:
+  D.44619_909 = attr_33->a_value;
+  if (D.44619_909 != 0B)
+    goto <bb 354>;
+  else
+    goto <bb 359>;
+
+<bb 354>:
+  # DEBUG __s2_len => 1
+  __s1_911 = attr_33->a_value;
+  # DEBUG __s1 => __s1_911
+  D.45175_912 = *__s1_911;
+  D.45176_913 = (int) D.45175_912;
+  __result_917 = D.45176_913 + -49;
+  # DEBUG __result => __result_917
+  if (__result_917 == 0)
+    goto <bb 355>;
+  else
+    goto <bb 356>;
+
+<bb 355>:
+  D.45186_922 = MEM[(const unsigned char *)__s1_911 + 1B];
+  D.45187_923 = (int) D.45186_922;
+  # DEBUG __result => D.45187_923
+
+<bb 356>:
+  # __result_140 = PHI <__result_917(354), D.45187_923(355)>
+  # DEBUG __result => __result_140
+  if (__result_140 == 0)
+    goto <bb 357>;
+  else
+    goto <bb 359>;
+
+<bb 357>:
+  D.44530_953 = session_161(D)->channel;
+  D.44619_954 = attr_33->a_value;
+  switch_channel_set_variable_var_check (D.44530_953, "rtp_remote_video_rtcp_port", D.44619_954, 1);
+  D.44619_955 = attr_33->a_value;
+  # DEBUG __nptr => D.44619_955
+  D.47947_1500 = strtol (D.44619_955, 0B, 10);
+  D.45214_957 = (short unsigned int) D.47947_1500;
+  MEM[(struct switch_rtp_engine_t *)smh_186 + 11496B].remote_rtcp_port = D.45214_957;
+  D.44471_958 = smh_186->mparams;
+  D.45215_959 = D.44471_958->rtcp_video_interval_msec;
+  if (D.45215_959 == 0B)
+    goto <bb 358>;
+  else
+    goto <bb 370>;
+
+<bb 358>:
+  D.44471_960 = smh_186->mparams;
+  D.44471_960->rtcp_video_interval_msec = "5000";
+  goto <bb 370>;
+
+<bb 359>:
+  if (got_video_crypto_61 == 0)
+    goto <bb 360>;
+  else
+    goto <bb 370>;
+
+<bb 360>:
+  D.44590_961 = attr_33->a_name;
+  D.45220_962 = strcasecmp (D.44590_961, "crypto");
+  if (D.45220_962 == 0)
+    goto <bb 361>;
+  else
+    goto <bb 370>;
+
+<bb 361>:
+  D.44619_963 = attr_33->a_value;
+  # DEBUG s => D.44619_963
+  if (D.44619_963 == 0B)
+    goto <bb 364>;
+  else
+    goto <bb 362>;
+
+<bb 362>:
+  D.47951_1501 = *D.44619_963;
+  if (D.47951_1501 == 0)
+    goto <bb 364>;
+  else
+    goto <bb 363>;
+
+<bb 363>:
+
+<bb 364>:
+  # D.47950_1502 = PHI <1(361), 1(362), 0(363)>
+  if (D.47950_1502 == 0)
+    goto <bb 365>;
+  else
+    goto <bb 370>;
+
+<bb 365>:
+  D.44471_965 = smh_186->mparams;
+  D.44821_966 = D.44471_965->ndlb;
+  D.44822_967 = D.44821_966 & 4;
+  if (D.44822_967 == 0)
+    goto <bb 366>;
+  else
+    goto <bb 369>;
+
+<bb 366>:
+  D.44530_968 = session_161(D)->channel;
+  D.45228_969 = switch_channel_get_variable_dup (D.44530_968, "rtp_allow_crypto_in_avp", 1, -1);
+  D.45229_970 = switch_true (D.45228_969);
+  if (D.45229_970 == 0)
+    goto <bb 367>;
+  else
+    goto <bb 369>;
+
+<bb 367>:
+  D.44666_971 = m_28->m_proto;
+  D.44829_972 = D.44666_971 != 257;
+  D.44830_973 = got_webrtc_78 == 0;
+  D.44831_974 = D.44829_972 && D.44830_973;
+  if (D.44831_974 != 0)
+    goto <bb 368>;
+  else
+    goto <bb 369>;
+
+<bb 368>:
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3711, session_161(D), 3, "a=crypto in RTP/AVP, refer to rfc3711\n");
+  # DEBUG match => 0
+  goto <bb 420> (done);
+
+<bb 369>:
+  crypto_976 = attr_33->a_value;
+  # DEBUG crypto => crypto_976
+  # DEBUG __nptr => crypto_976
+  crypto_tag_1503 = strtol (crypto_976, 0B, 10);
+  # DEBUG crypto_tag => NULL
+  got_video_crypto_978 = switch_core_session_check_incoming_crypto (session_161(D), "rtp_has_video_crypto", 1, crypto_976, crypto_tag_1503, sdp_type_546(D));
+  # DEBUG got_video_crypto => got_video_crypto_978
+
+<bb 370>:
+  # got_video_crypto_60 = PHI <got_video_crypto_61(343), got_video_crypto_61(351), got_video_crypto_61(358), got_video_crypto_61(359), got_video_crypto_61(360), got_video_crypto_61(364), got_video_crypto_978(369), got_video_crypto_61(348), got_video_crypto_61(357)>
+  # DEBUG got_video_crypto => got_video_crypto_60
+  attr_979 = attr_33->a_next;
+  # DEBUG attr => attr_979
+
+<bb 371>:
+  # attr_33 = PHI <attr_894(341), attr_979(370)>
+  # got_video_crypto_61 = PHI <got_video_crypto_59(341), got_video_crypto_60(370)>
+  # DEBUG got_video_crypto => got_video_crypto_61
+  # DEBUG attr => attr_33
+  if (attr_33 != 0B)
+    goto <bb 342>;
+  else
+    goto <bb 372>;
+
+<bb 372>:
+  rm_encoding_980 = map_136->rm_encoding;
+  # DEBUG rm_encoding => rm_encoding_980
+  if (rm_encoding_980 == 0B)
+    goto <bb 373>;
+  else
+    goto <bb 374>;
+
+<bb 373>:
+  # DEBUG rm_encoding => ""
+
+<bb 374>:
+  # rm_encoding_137 = PHI <rm_encoding_980(372), ""(373)>
+  # DEBUG rm_encoding => rm_encoding_137
+  # DEBUG i => 0
+  goto <bb 392>;
+
+<bb 375>:
+  i.99_983 = (unsigned int) i_139;
+  D.45237_984 = i.99_983 * 4;
+  D.45238_985 = codec_array_84 + D.45237_984;
+  imp_986 = *D.45238_985;
+  # DEBUG imp => imp_986
+  D.45239_987 = imp_986->codec_type;
+  if (D.45239_987 != 1)
+    goto <bb 376>;
+  else
+    goto <bb 377>;
+
+<bb 376>:
+  // predicted unlikely by continue predictor.
+  goto <bb 391>;
+
+<bb 377>:
+  D.44530_988 = session_161(D)->channel;
+  D.45242_989 = switch_channel_direction (D.44530_988);
+  if (D.45242_989 == 0)
+    goto <bb 378>;
+  else
+    goto <bb 380>;
+
+<bb 378>:
+  D.44530_990 = session_161(D)->channel;
+  D.45245_991 = switch_channel_test_flag (D.44530_990, 114);
+  if (D.45245_991 != 0)
+    goto <bb 379>;
+  else
+    goto <bb 380>;
+
+<bb 379>:
+  // predicted unlikely by continue predictor.
+  goto <bb 391>;
+
+<bb 380>:
+  D.45248_992 = map_136->rm_pt;
+  D.45249_993 = (int) D.45248_992;
+  D.45250_994 = imp_986->iananame;
+  D.45251_995 = imp_986->ianacode;
+  D.45252_996 = (int) D.45251_995;
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3743, session_161(D), 7, "Video Codec Compare [%s:%d]/[%s:%d]\n", rm_encoding_137, D.45249_993, D.45250_994, D.45252_996);
+  D.45256_997 = map_136->rm_encoding;
+  # DEBUG s => D.45256_997
+  if (D.45256_997 == 0B)
+    goto <bb 383>;
+  else
+    goto <bb 381>;
+
+<bb 381>:
+  D.47958_1504 = *D.45256_997;
+  if (D.47958_1504 == 0)
+    goto <bb 383>;
+  else
+    goto <bb 382>;
+
+<bb 382>:
+
+<bb 383>:
+  # D.47957_1505 = PHI <1(380), 1(381), 0(382)>
+  if (D.47957_1505 != 0)
+    goto <bb 385>;
+  else
+    goto <bb 384>;
+
+<bb 384>:
+  D.44471_999 = smh_186->mparams;
+  D.44821_1000 = D.44471_999->ndlb;
+  D.44937_1001 = (int) D.44821_1000;
+  D.44938_1002 = D.44937_1001 & 1;
+  if (D.44938_1002 != 0)
+    goto <bb 385>;
+  else
+    goto <bb 387>;
+
+<bb 385>:
+  D.45248_1004 = map_136->rm_pt;
+  D.45249_1005 = (int) D.45248_1004;
+  if (D.45249_1005 <= 95)
+    goto <bb 386>;
+  else
+    goto <bb 387>;
+
+<bb 386>:
+  D.45248_1006 = map_136->rm_pt;
+  D.45249_1007 = (int) D.45248_1006;
+  D.45251_1008 = imp_986->ianacode;
+  D.45252_1009 = (int) D.45251_1008;
+  vmatch_1010 = D.45249_1007 == D.45252_1009;
+  # DEBUG vmatch => vmatch_1010
+  goto <bb 388>;
+
+<bb 387>:
+  D.45250_1011 = imp_986->iananame;
+  D.45260_1012 = strcasecmp (rm_encoding_137, D.45250_1011);
+  vmatch_1013 = D.45260_1012 == 0;
+  # DEBUG vmatch => vmatch_1013
+
+<bb 388>:
+  # vmatch_138 = PHI <vmatch_1010(386), vmatch_1013(387)>
+  # DEBUG vmatch => vmatch_138
+  if (vmatch_138 != 0)
+    goto <bb 389>;
+  else
+    goto <bb 391>;
+
+<bb 389>:
+  D.45263_1014 = map_136->rm_rate;
+  D.45264_1015 = imp_986->samples_per_second;
+  if (D.45263_1014 == D.45264_1015)
+    goto <bb 390>;
+  else
+    goto <bb 391>;
+
+<bb 390>:
+  matches[m_idx_110].imp = imp_986;
+  matches[m_idx_110].map = map_136;
+  D.45250_1016 = imp_986->iananame;
+  D.45251_1017 = imp_986->ianacode;
+  D.45252_1018 = (int) D.45251_1017;
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3756, session_161(D), 7, "Video Codec Compare [%s:%d] +++ is saved as a match\n", D.45250_1016, D.45252_1018);
+  m_idx_1019 = m_idx_110 + 1;
+  # DEBUG m_idx => m_idx_1019
+
+<bb 391>:
+  # m_idx_109 = PHI <m_idx_110(376), m_idx_110(379), m_idx_110(389), m_idx_110(388), m_idx_1019(390)>
+  # DEBUG m_idx => m_idx_109
+  i_1021 = i_139 + 1;
+  # DEBUG i => i_1021
+
+<bb 392>:
+  # m_idx_110 = PHI <m_idx_111(374), m_idx_109(391)>
+  # i_139 = PHI <0(374), i_1021(391)>
+  # DEBUG i => i_139
+  # DEBUG m_idx => m_idx_110
+  if (i_139 < total_codecs_85)
+    goto <bb 375>;
+  else
+    goto <bb 393>;
+
+<bb 393>:
+  map_1022 = map_136->rm_next;
+  # DEBUG map => map_1022
+
+<bb 394>:
+  # got_video_crypto_62 = PHI <got_video_crypto_64(329), got_video_crypto_61(393)>
+  # m_idx_111 = PHI <0(329), m_idx_110(393)>
+  # map_136 = PHI <map_884(329), map_1022(393)>
+  # DEBUG map => map_136
+  # DEBUG m_idx => m_idx_111
+  # DEBUG got_video_crypto => got_video_crypto_62
+  if (map_136 != 0B)
+    goto <bb 330>;
+  else
+    goto <bb 395>;
+
+<bb 395>:
+  D.45002_1023 = smh_186->crypto_mode;
+  D.45003_1024 = D.45002_1023 == 1;
+  D.45267_1025 = got_video_crypto_62 <= 0;
+  D.45268_1026 = D.45003_1024 && D.45267_1025;
+  if (D.45268_1026 != 0)
+    goto <bb 396>;
+  else
+    goto <bb 397>;
+
+<bb 396>:
+  switch_log_printf (3, "src/switch_core_media.c", &__func__, 3766, session_161(D), 4, "Crypto not negotiated but required.\n");
+  # DEBUG vmatch => 0
+  # DEBUG m_idx => 0
+
+<bb 397>:
+  # m_idx_112 = PHI <m_idx_111(395), 0(396)>
+  # DEBUG m_idx => m_idx_112
+  if (m_idx_112 != 0)
+    goto <bb 398>;
+  else
+    goto <bb 418>;
+
+<bb 398>:
+  # DEBUG j => 0
+  if (greedy_47 != 0)
+    goto <bb 399>;
+  else
+    goto <bb 400>;
+
+<bb 399>:
+  greedy_sort (smh_186, &matches, m_idx_112, codec_array_84, total_codecs_85);
+
+<bb 400>:
+  # DEBUG vmatch => 1
+  MEM[(struct switch_rtp_engine_t *)smh_186 + 11496B].codec_negotiated = 1;
+  # DEBUG j => 0
+  goto <bb 405>;
+
+<bb 401>:
+  D.45275_1032 = matches[j_141].map;
+  D.45276_1033 = D.45275_1032->rm_encoding;
+  D.45275_1034 = matches[j_141].map;
+  D.45277_1035 = D.45275_1034->rm_fmtp;
+  D.45275_1036 = matches[j_141].map;
+  D.45278_1037 = D.45275_1036->rm_pt;
+  D.45279_1038 = (uint32_t) D.45278_1037;
+  D.45280_1039 = matches[j_141].imp;
+  D.45281_1040 = D.45280_1039->samples_per_second;
+  D.45280_1041 = matches[j_141].imp;
+  D.45282_1042 = D.45280_1041->microseconds_per_packet;
+  D.45283_1043 = D.45282_1042 / 1000;
+  D.45284_1044 = (uint32_t) D.45283_1043;
+  pmap_1045 = switch_core_media_add_payload_map (session_161(D), 1, D.45276_1033, D.45277_1035, sdp_type_546(D), D.45279_1038, D.45281_1040, D.45284_1044, 1);
+  # DEBUG pmap => pmap_1045
+  if (j_141 == 0)
+    goto <bb 402>;
+  else
+    goto <bb 404>;
+
+<bb 402>:
+  MEM[(struct switch_rtp_engine_t *)smh_186 + 11496B].cur_payload_map = pmap_1045;
+  D.45287_1046 = MEM[(struct switch_rtp_engine_t *)smh_186 + 11496B].cur_payload_map;
+  D.45287_1046->current = 1;
+  D.45288_1047 = MEM[(struct switch_rtp_engine_t *)smh_186 + 11496B].rtp_session;
+  if (D.45288_1047 != 0B)
+    goto <bb 403>;
+  else
+    goto <bb 404>;
+
+<bb 403>:
+  D.45288_1048 = MEM[(struct switch_rtp_engine_t *)smh_186 + 11496B].rtp_session;
+  D.45291_1049 = pmap_1045->pt;
+  switch_rtp_set_default_payload (D.45288_1048, D.45291_1049);
+
+<bb 404>:
+  mimp_1050 = matches[j_141].imp;
+  # DEBUG mimp => mimp_1050
+  map_1051 = matches[j_141].map;
+  # DEBUG map => map_1051
+  D.45256_1052 = map_1051->rm_encoding;
+  D.45292_1053 = switch_core_perform_session_strdup (session_161(D), D.45256_1052, "src/switch_core_media.c", &__func__, 3804);
+  pmap_1045->rm_encoding = D.45292_1053;
+  D.45248_1054 = map_1051->rm_pt;
+  D.45293_1055 = (unsigned char) D.45248_1054;
+  pmap_1045->recv_pt = D.45293_1055;
+  D.45263_1056 = map_1051->rm_rate;
+  pmap_1045->rm_rate = D.45263_1056;
+  D.45294_1057 = mimp_1050->microseconds_per_packet;
+  D.45295_1058 = D.45294_1057 / 1000;
+  D.45296_1059 = (uint32_t) D.45295_1058;
+  pmap_1045->codec_ms = D.45296_1059;
+  D.45086_1060 = connection_125->c_address;
+  D.45297_1061 = switch_core_perform_session_strdup (session_161(D), D.45086_1060, "src/switch_core_media.c", &__func__, 3810);
+  pmap_1045->remote_sdp_ip = D.45297_1061;
+  D.44697_1062 = m_28->m_port;
+  D.45088_1063 = (short unsigned int) D.44697_1062;
+  pmap_1045->remote_sdp_port = D.45088_1063;
+  D.45298_1064 = map_1051->rm_fmtp;
+  D.45299_1065 = switch_core_perform_session_strdup (session_161(D), D.45298_1064, "src/switch_core_media.c", &__func__, 3813);
+  pmap_1045->rm_fmtp = D.45299_1065;
+  D.45248_1066 = map_1051->rm_pt;
+  D.45293_1067 = (unsigned char) D.45248_1066;
+  pmap_1045->agreed_pt = D.45293_1067;
+  j_1068 = j_141 + 1;
+  # DEBUG j => j_1068
+
+<bb 405>:
+  # j_141 = PHI <0(400), j_1068(404)>
+  # DEBUG j => j_141
+  if (j_141 < m_idx_112)
+    goto <bb 401>;
+  else
+    goto <bb 406>;
+
+<bb 406>:
+  D.45287_1069 = MEM[(struct switch_rtp_engine_t *)smh_186 + 11496B].cur_payload_map;
+  D.45300_1070 = D.45287_1069->remote_sdp_port;
+  D.45301_1071 = (int) D.45300_1070;
+  switch_snprintf (&tmp, 50, "%d", D.45301_1071);
+  D.44530_1072 = session_161(D)->channel;
+  D.45287_1073 = MEM[(struct switch_rtp_engine_t *)smh_186 + 11496B].cur_payload_map;
+  D.45302_1074 = D.45287_1073->remote_sdp_ip;
+  switch_channel_set_variable_var_check (D.44530_1072, "remote_video_ip", D.45302_1074, 1);
+  D.44530_1075 = session_161(D)->channel;
+  switch_channel_set_variable_var_check (D.44530_1075, "remote_video_port", &tmp, 1);
+  D.44530_1076 = session_161(D)->channel;
+  D.45287_1077 = MEM[(struct switch_rtp_engine_t *)smh_186 + 11496B].cur_payload_map;
+  D.45303_1078 = D.45287_1077->rm_fmtp;
+  switch_channel_set_variable_var_check (D.44530_1076, "rtp_video_fmtp", D.45303_1078, 1);
+  D.45287_1079 = MEM[(struct switch_rtp_engine_t *)smh_186 + 11496B].cur_payload_map;
+  D.45304_1080 = D.45287_1079->agreed_pt;
+  D.45305_1081 = (int) D.45304_1080;
+  switch_snprintf (&tmp, 50, "%d", D.45305_1081);
+  D.44530_1082 = session_161(D)->channel;
+  switch_channel_set_variable_var_check (D.44530_1082, "rtp_video_pt", &tmp, 1);
+  switch_core_media_check_video_codecs (session_161(D));
+  D.45287_1083 = MEM[(struct switch_rtp_engine_t *)smh_186 + 11496B].cur_payload_map;
+  D.45306_1084 = D.45287_1083->recv_pt;
+  D.45307_1085 = (int) D.45306_1084;
+  switch_snprintf (&tmp, 50, "%d", D.45307_1085);
+  D.44530_1086 = session_161(D)->channel;
+  switch_channel_set_variable_var_check (D.44530_1086, "rtp_video_recv_pt", &tmp, 1);
+  if (match_16 == 0)
+    goto <bb 407>;
+  else
+    goto <bb 408>;
+
+<bb 407>:
+  # DEBUG match => 1
+
+<bb 408>:
+  # match_14 = PHI <match_16(406), 1(407)>
+  # DEBUG match => match_14
+  D.45313_1091 = &MEM[(struct switch_rtp_engine_t *)smh_186 + 11496B].read_codec;
+  # DEBUG codec => D.45313_1091
+  if (D.45313_1091 != 0B)
+    goto <bb 409>;
+  else
+    goto <bb 413>;
+
+<bb 409>:
+  D.47966_1506 = MEM[(struct switch_codec_t *)smh_186 + 13020B].flags;
+  D.47965_1507 = D.47966_1506 & 256;
+  if (D.47965_1507 != 0)
+    goto <bb 410>;
+  else
+    goto <bb 413>;
+
+<bb 410>:
+  D.47964_1508 = MEM[(struct switch_codec_t *)smh_186 + 13020B].mutex;
+  if (D.47964_1508 != 0B)
+    goto <bb 411>;
+  else
+    goto <bb 413>;
+
+<bb 411>:
+  D.47963_1509 = MEM[(struct switch_codec_t *)smh_186 + 13020B].codec_interface;
+  if (D.47963_1509 != 0B)
+    goto <bb 412>;
+  else
+    goto <bb 413>;
+
+<bb 412>:
+  D.47962_1510 = MEM[(struct switch_codec_t *)smh_186 + 13020B].implementation;
+  if (D.47962_1510 != 0B)
+    goto <bb 414>;
+  else
+    goto <bb 413>;
+
+<bb 413>:
+
+<bb 414>:
+  # iftmp.104_1511 = PHI <1(412), 0(413)>
+  if (iftmp.104_1511 != 0)
+    goto <bb 415>;
+  else
+    goto <bb 416>;
+
+<bb 415>:
+  MEM[(struct switch_rtp_engine_t *)smh_186 + 11496B].reset_codec = 1;
+
+<bb 416>:
+  D.45317_1093 = switch_core_media_set_video_codec (session_161(D), 0);
+  if (D.45317_1093 == 0)
+    goto <bb 417>;
+  else
+    goto <bb 418>;
+
+<bb 417>:
+  check_ice (smh_186, 1, sdp_198, m_28);
+
+<bb 418>:
+  # match_15 = PHI <match_13(321), match_16(323), match_16(324), match_16(397), match_14(416), match_14(417), match_13(318), match_13(319), match_13(316), match_13(317), match_13(322)>
+  # best_te_22 = PHI <best_te_21(321), best_te_23(323), best_te_23(324), best_te_23(397), best_te_23(416), best_te_23(417), best_te_21(318), best_te_21(319), best_te_21(316), best_te_21(317), best_te_21(322)>
+  # cng_pt_26 = PHI <cng_pt_25(321), cng_pt_27(323), cng_pt_27(324), cng_pt_27(397), cng_pt_27(416), cng_pt_27(417), cng_pt_25(318), cng_pt_25(319), cng_pt_25(316), cng_pt_25(317), cng_pt_25(322)>
+  # got_crypto_55 = PHI <got_crypto_54(321), got_crypto_56(323), got_crypto_56(324), got_crypto_56(397), got_crypto_56(416), got_crypto_56(417), got_crypto_54(318), got_crypto_54(319), got_crypto_54(316), got_crypto_54(317), got_crypto_54(322)>
+  # got_video_crypto_63 = PHI <got_video_crypto_64(321), got_video_crypto_64(323), got_video_crypto_64(324), got_video_crypto_62(397), got_video_crypto_62(416), got_video_crypto_62(417), got_video_crypto_64(318), got_video_crypto_64(319), got_video_crypto_64(316), got_video_crypto_64(317), got_video_crypto_64(322)>
+  # got_audio_66 = PHI <got_audio_65(321), got_audio_67(323), got_audio_67(324), got_audio_67(397), got_audio_67(416), got_audio_67(417), got_audio_65(318), got_audio_65(319), got_audio_65(316), got_audio_65(317), got_audio_65(322)>
+  # codec_ms_94 = PHI <codec_ms_93(321), codec_ms_95(323), codec_ms_95(324), codec_ms_95(397), codec_ms_95(416), codec_ms_95(417), codec_ms_93(318), codec_ms_93(319), codec_ms_93(316), codec_ms_93(317), codec_ms_93(322)>
+  # m_idx_113 = PHI <m_idx_107(321), m_idx_114(323), m_idx_114(324), m_idx_112(397), m_idx_112(416), m_idx_112(417), m_idx_107(318), m_idx_107(319), m_idx_107(316), m_idx_107(317), m_idx_107(322)>
+  # nm_idx_121 = PHI <nm_idx_120(321), nm_idx_122(323), nm_idx_122(324), 0(397), 0(416), 0(417), nm_idx_120(318), nm_idx_120(319), nm_idx_120(316), nm_idx_120(317), nm_idx_120(322)>
+  # DEBUG nm_idx => nm_idx_121
+  # DEBUG m_idx => m_idx_113
+  # DEBUG codec_ms => codec_ms_94
+  # DEBUG got_audio => got_audio_66
+  # DEBUG got_video_crypto => got_video_crypto_63
+  # DEBUG got_crypto => got_crypto_55
+  # DEBUG cng_pt => cng_pt_26
+  # DEBUG best_te => best_te_22
+  # DEBUG match => match_15
+  m_1094 = m_28->m_next;
+  # DEBUG m => m_1094
+
+<bb 419>:
+  # match_16 = PHI <0(88), match_15(418)>
+  # best_te_23 = PHI <0(88), best_te_22(418)>
+  # cng_pt_27 = PHI <0(88), cng_pt_26(418)>
+  # m_28 = PHI <m_370(88), m_1094(418)>
+  # got_crypto_56 = PHI <0(88), got_crypto_55(418)>
+  # got_video_crypto_64 = PHI <0(88), got_video_crypto_63(418)>
+  # got_audio_67 = PHI <0(88), got_audio_66(418)>
+  # got_avp_69 = PHI <0(88), got_avp_68(418)>
+  # got_savp_75 = PHI <0(88), got_savp_74(418)>
+  # got_udptl_77 = PHI <0(88), got_udptl_76(418)>
+  # got_webrtc_79 = PHI <0(88), got_webrtc_78(418)>
+  # codec_ms_95 = PHI <0(88), codec_ms_94(418)>
+  # m_idx_114 = PHI <0(88), m_idx_113(418)>
+  # nm_idx_122 = PHI <0(88), nm_idx_121(418)>
+  # DEBUG nm_idx => nm_idx_122
+  # DEBUG m_idx => m_idx_114
+  # DEBUG codec_ms => codec_ms_95
+  # DEBUG got_webrtc => got_webrtc_79
+  # DEBUG got_udptl => got_udptl_77
+  # DEBUG got_savp => got_savp_75
+  # DEBUG got_video_savp => NULL
+  # DEBUG got_video_avp => NULL
+  # DEBUG got_avp => got_avp_69
+  # DEBUG got_audio => got_audio_67
+  # DEBUG got_video_crypto => got_video_crypto_64
+  # DEBUG got_crypto => got_crypto_56
+  # DEBUG m => m_28
+  # DEBUG cng_pt => cng_pt_27
+  # DEBUG best_te => best_te_23
+  # DEBUG match => match_16
+  if (m_28 != 0B)
+    goto <bb 89>;
+  else
+    goto <bb 420> (done);
+
+  # match_17 = PHI <1(105), 0(107), 0(125), 1(123), 0(169), 0(175), 0(179), 0(328), 0(368), match_16(419), 1(122), 1(135)>
+done:
+  # DEBUG match => match_17
+  if (parser_196 != 0B)
+    goto <bb 421>;
+  else
+    goto <bb 422>;
+
+<bb 421>:
+  sdp_parser_free (parser_196);
+
+<bb 422>:
+  D.44471_1095 = smh_186->mparams;
+  D.44471_1095->cng_pt = cng_pt_27;
+
+<bb 423>:
+  # match_142 = PHI <0(4), 0(5), 0(7), match_17(422)>
+  return match_142;
+
+}
