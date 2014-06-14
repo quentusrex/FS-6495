@@ -1,0 +1,2956 @@
+
+;; Function greedy_sort (greedy_sort)
+
+verify found no changes in insn with uid = 94.
+
+;; Function dtls_ok (dtls_ok)
+
+verify found no changes in insn with uid = 9.
+
+;; Function switch_core_media_find_zrtp_hash (switch_core_media_find_zrtp_hash)
+
+verify found no changes in insn with uid = 10.
+verify found no changes in insn with uid = 25.
+verify found no changes in insn with uid = 42.
+verify found no changes in insn with uid = 125.
+verify found no changes in insn with uid = 144.
+verify found no changes in insn with uid = 152.
+verify found no changes in insn with uid = 164.
+verify found no changes in insn with uid = 177.
+verify found no changes in insn with uid = 196.
+verify found no changes in insn with uid = 204.
+verify found no changes in insn with uid = 216.
+verify found no changes in insn with uid = 232.
+verify found no changes in insn with uid = 265.
+
+;; Function _switch_core_media_pass_zrtp_hash2 (_switch_core_media_pass_zrtp_hash2)
+
+verify found no changes in insn with uid = 24.
+verify found no changes in insn with uid = 41.
+verify found no changes in insn with uid = 45.
+verify found no changes in insn with uid = 52.
+verify found no changes in insn with uid = 70.
+verify found no changes in insn with uid = 89.
+verify found no changes in insn with uid = 107.
+verify found no changes in insn with uid = 120.
+verify found no changes in insn with uid = 130.
+verify found no changes in insn with uid = 139.
+verify found no changes in insn with uid = 157.
+verify found no changes in insn with uid = 170.
+verify found no changes in insn with uid = 180.
+
+;; Function switch_true (switch_true)
+
+verify found no changes in insn with uid = 22.
+verify found no changes in insn with uid = 31.
+verify found no changes in insn with uid = 40.
+verify found no changes in insn with uid = 49.
+verify found no changes in insn with uid = 58.
+verify found no changes in insn with uid = 67.
+verify found no changes in insn with uid = 76.
+verify found no changes in insn with uid = 82.
+verify found no changes in insn with uid = 91.
+
+;; Function switch_false (switch_false)
+
+verify found no changes in insn with uid = 22.
+verify found no changes in insn with uid = 31.
+verify found no changes in insn with uid = 40.
+verify found no changes in insn with uid = 49.
+verify found no changes in insn with uid = 58.
+verify found no changes in insn with uid = 67.
+verify found no changes in insn with uid = 76.
+verify found no changes in insn with uid = 82.
+verify found no changes in insn with uid = 91.
+
+;; Function gen_ice (gen_ice)
+
+verify found no changes in insn with uid = 51.
+verify found no changes in insn with uid = 86.
+verify found no changes in insn with uid = 102.
+verify found no changes in insn with uid = 117.
+verify found no changes in insn with uid = 133.
+verify found no changes in insn with uid = 148.
+verify found no changes in insn with uid = 164.
+verify found no changes in insn with uid = 179.
+verify found no changes in insn with uid = 192.
+verify found no changes in insn with uid = 209.
+verify found no changes in insn with uid = 225.
+verify found no changes in insn with uid = 289.
+
+;; Function generate_local_fingerprint (generate_local_fingerprint)
+
+verify found no changes in insn with uid = 34.
+
+;; Function start_video_thread (start_video_thread) (unlikely executed)
+
+verify found no changes in insn with uid = 12.
+verify found no changes in insn with uid = 33.
+verify found no changes in insn with uid = 36.
+verify found no changes in insn with uid = 55.
+verify found no changes in insn with uid = 68.
+verify found no changes in insn with uid = 77.
+verify found no changes in insn with uid = 80.
+verify found no changes in insn with uid = 87.
+verify found no changes in insn with uid = 95.
+verify found no changes in insn with uid = 103.
+verify found no changes in insn with uid = 106.
+verify found no changes in insn with uid = 123.
+
+;; Function video_helper_thread (video_helper_thread)
+
+verify found no changes in insn with uid = 23.
+verify found no changes in insn with uid = 33.
+verify found no changes in insn with uid = 38.
+verify found no changes in insn with uid = 41.
+verify found no changes in insn with uid = 45.
+verify found no changes in insn with uid = 71.
+verify found no changes in insn with uid = 73.
+verify found no changes in insn with uid = 79.
+verify found no changes in insn with uid = 86.
+verify found no changes in insn with uid = 90.
+verify found no changes in insn with uid = 116.
+verify found no changes in insn with uid = 121.
+verify found no changes in insn with uid = 124.
+verify found no changes in insn with uid = 128.
+verify found no changes in insn with uid = 154.
+verify found no changes in insn with uid = 156.
+verify found no changes in insn with uid = 161.
+verify found no changes in insn with uid = 169.
+verify found no changes in insn with uid = 177.
+verify found no changes in insn with uid = 184.
+verify found no changes in insn with uid = 194.
+verify found no changes in insn with uid = 212.
+verify found no changes in insn with uid = 219.
+verify found no changes in insn with uid = 225.
+verify found no changes in insn with uid = 228.
+verify found no changes in insn with uid = 239.
+verify found no changes in insn with uid = 249.
+verify found no changes in insn with uid = 257.
+verify found no changes in insn with uid = 265.
+verify found no changes in insn with uid = 285.
+verify found no changes in insn with uid = 288.
+verify found no changes in insn with uid = 290.
+
+;; Function switch_core_media_process_udptl (switch_core_media_process_udptl)
+
+verify found no changes in insn with uid = 16.
+verify found no changes in insn with uid = 33.
+verify found no changes in insn with uid = 54.
+verify found no changes in insn with uid = 70.
+verify found no changes in insn with uid = 98.
+verify found no changes in insn with uid = 129.
+verify found no changes in insn with uid = 155.
+verify found no changes in insn with uid = 172.
+verify found no changes in insn with uid = 185.
+verify found no changes in insn with uid = 196.
+verify found no changes in insn with uid = 209.
+verify found no changes in insn with uid = 220.
+verify found no changes in insn with uid = 235.
+verify found no changes in insn with uid = 249.
+verify found no changes in insn with uid = 264.
+verify found no changes in insn with uid = 278.
+verify found no changes in insn with uid = 293.
+verify found no changes in insn with uid = 307.
+verify found no changes in insn with uid = 327.
+verify found no changes in insn with uid = 338.
+verify found no changes in insn with uid = 351.
+verify found no changes in insn with uid = 362.
+verify found no changes in insn with uid = 375.
+verify found no changes in insn with uid = 386.
+verify found no changes in insn with uid = 406.
+verify found no changes in insn with uid = 417.
+verify found no changes in insn with uid = 437.
+verify found no changes in insn with uid = 459.
+verify found no changes in insn with uid = 466.
+verify found no changes in insn with uid = 473.
+verify found no changes in insn with uid = 479.
+verify found no changes in insn with uid = 485.
+
+;; Function get_media_profile_name (get_media_profile_name)
+
+verify found no changes in insn with uid = 30.
+verify found no changes in insn with uid = 37.
+verify found no changes in insn with uid = 45.
+
+;; Function add_audio_codec.constprop.7 (add_audio_codec.constprop.7)
+
+verify found no changes in insn with uid = 85.
+verify found no changes in insn with uid = 122.
+verify found no changes in insn with uid = 144.
+verify found no changes in insn with uid = 153.
+verify found no changes in insn with uid = 195.
+verify found no changes in insn with uid = 208.
+verify found no changes in insn with uid = 221.
+verify found no changes in insn with uid = 225.
+verify found no changes in insn with uid = 243.
+verify found no changes in insn with uid = 254.
+
+;; Function get_channels (get_channels)
+
+verify found no changes in insn with uid = 12.
+verify found no changes in insn with uid = 22.
+verify found no changes in insn with uid = 31.
+verify found no changes in insn with uid = 40.
+verify found no changes in insn with uid = 49.
+verify found no changes in insn with uid = 58.
+verify found no changes in insn with uid = 67.
+verify found no changes in insn with uid = 76.
+verify found no changes in insn with uid = 82.
+verify found no changes in insn with uid = 91.
+verify found no changes in insn with uid = 111.
+
+;; Function switch_core_media_build_crypto.constprop.8 (switch_core_media_build_crypto.constprop.8)
+
+verify found no changes in insn with uid = 58.
+verify found no changes in insn with uid = 75.
+verify found no changes in insn with uid = 81.
+verify found no changes in insn with uid = 125.
+verify found no changes in insn with uid = 131.
+verify found no changes in insn with uid = 135.
+verify found no changes in insn with uid = 190.
+verify found no changes in insn with uid = 214.
+verify found no changes in insn with uid = 220.
+verify found no changes in insn with uid = 249.
+verify found no changes in insn with uid = 263.
+verify found no changes in insn with uid = 274.
+verify found no changes in insn with uid = 283.
+verify found no changes in insn with uid = 292.
+verify found no changes in insn with uid = 301.
+verify found no changes in insn with uid = 310.
+verify found no changes in insn with uid = 319.
+verify found no changes in insn with uid = 328.
+verify found no changes in insn with uid = 334.
+verify found no changes in insn with uid = 343.
+verify found no changes in insn with uid = 391.
+verify found no changes in insn with uid = 397.
+
+;; Function switch_core_session_parse_crypto_prefs (switch_core_session_parse_crypto_prefs)
+
+verify found no changes in insn with uid = 59.
+verify found no changes in insn with uid = 66.
+verify found no changes in insn with uid = 79.
+verify found no changes in insn with uid = 93.
+verify found no changes in insn with uid = 132.
+verify found no changes in insn with uid = 149.
+verify found no changes in insn with uid = 157.
+verify found no changes in insn with uid = 169.
+verify found no changes in insn with uid = 186.
+verify found no changes in insn with uid = 195.
+verify found no changes in insn with uid = 204.
+verify found no changes in insn with uid = 213.
+verify found no changes in insn with uid = 222.
+verify found no changes in insn with uid = 231.
+verify found no changes in insn with uid = 240.
+verify found no changes in insn with uid = 246.
+verify found no changes in insn with uid = 255.
+verify found no changes in insn with uid = 276.
+verify found no changes in insn with uid = 285.
+verify found no changes in insn with uid = 294.
+verify found no changes in insn with uid = 303.
+verify found no changes in insn with uid = 312.
+verify found no changes in insn with uid = 321.
+verify found no changes in insn with uid = 330.
+verify found no changes in insn with uid = 336.
+verify found no changes in insn with uid = 345.
+verify found no changes in insn with uid = 371.
+verify found no changes in insn with uid = 395.
+verify found no changes in insn with uid = 467.
+verify found no changes in insn with uid = 482.
+verify found no changes in insn with uid = 497.
+verify found no changes in insn with uid = 512.
+verify found no changes in insn with uid = 546.
+
+;; Function switch_core_media_crypto_str2type (switch_core_media_crypto_str2type)
+
+verify found no changes in insn with uid = 16.
+verify found no changes in insn with uid = 22.
+
+;; Function switch_core_session_get_recovery_crypto_key (switch_core_session_get_recovery_crypto_key)
+
+verify found no changes in insn with uid = 39.
+verify found no changes in insn with uid = 54.
+verify found no changes in insn with uid = 66.
+verify found no changes in insn with uid = 82.
+verify found no changes in insn with uid = 98.
+verify found no changes in insn with uid = 108.
+verify found no changes in insn with uid = 138.
+
+;; Function switch_core_media_crypto_type2str (switch_core_media_crypto_type2str)
+
+verify found no changes in insn with uid = 20.
+
+;; Function switch_core_media_crypto_keylen (switch_core_media_crypto_keylen)
+
+verify found no changes in insn with uid = 20.
+
+;; Function switch_core_media_pass_zrtp_hash2 (switch_core_media_pass_zrtp_hash2)
+
+verify found no changes in insn with uid = 10.
+verify found no changes in insn with uid = 14.
+
+;; Function switch_core_media_pass_zrtp_hash (switch_core_media_pass_zrtp_hash)
+
+verify found no changes in insn with uid = 7.
+verify found no changes in insn with uid = 11.
+verify found no changes in insn with uid = 29.
+verify found no changes in insn with uid = 32.
+verify found no changes in insn with uid = 38.
+verify found no changes in insn with uid = 56.
+verify found no changes in insn with uid = 73.
+verify found no changes in insn with uid = 79.
+verify found no changes in insn with uid = 97.
+verify found no changes in insn with uid = 103.
+verify found no changes in insn with uid = 121.
+verify found no changes in insn with uid = 125.
+verify found no changes in insn with uid = 128.
+
+;; Function switch_core_media_get_zrtp_hash (switch_core_media_get_zrtp_hash)
+
+
+;; Function switch_core_media_extract_t38_options (switch_core_media_extract_t38_options)
+
+verify found no changes in insn with uid = 14.
+verify found no changes in insn with uid = 21.
+verify found no changes in insn with uid = 28.
+verify found no changes in insn with uid = 35.
+verify found no changes in insn with uid = 63.
+verify found no changes in insn with uid = 80.
+
+;; Function switch_core_session_get_payload_code (switch_core_session_get_payload_code)
+
+verify found no changes in insn with uid = 36.
+verify found no changes in insn with uid = 54.
+verify found no changes in insn with uid = 69.
+verify found no changes in insn with uid = 88.
+verify found no changes in insn with uid = 144.
+
+;; Function switch_core_media_add_payload_map (switch_core_media_add_payload_map)
+
+verify found no changes in insn with uid = 41.
+verify found no changes in insn with uid = 59.
+verify found no changes in insn with uid = 75.
+verify found no changes in insn with uid = 150.
+verify found no changes in insn with uid = 168.
+verify found no changes in insn with uid = 175.
+verify found no changes in insn with uid = 221.
+verify found no changes in insn with uid = 287.
+verify found no changes in insn with uid = 307.
+verify found no changes in insn with uid = 339.
+
+;; Function switch_core_media_set_r_sdp_codec_string (switch_core_media_set_r_sdp_codec_string)
+
+verify found no changes in insn with uid = 27.
+verify found no changes in insn with uid = 37.
+verify found no changes in insn with uid = 45.
+verify found no changes in insn with uid = 48.
+verify found no changes in insn with uid = 67.
+verify found no changes in insn with uid = 83.
+verify found no changes in insn with uid = 94.
+verify found no changes in insn with uid = 103.
+verify found no changes in insn with uid = 112.
+verify found no changes in insn with uid = 121.
+verify found no changes in insn with uid = 130.
+verify found no changes in insn with uid = 139.
+verify found no changes in insn with uid = 148.
+verify found no changes in insn with uid = 154.
+verify found no changes in insn with uid = 163.
+verify found no changes in insn with uid = 185.
+verify found no changes in insn with uid = 200.
+verify found no changes in insn with uid = 210.
+verify found no changes in insn with uid = 214.
+verify found no changes in insn with uid = 256.
+verify found no changes in insn with uid = 274.
+verify found no changes in insn with uid = 276.
+verify found no changes in insn with uid = 329.
+verify found no changes in insn with uid = 364.
+verify found no changes in insn with uid = 399.
+verify found no changes in insn with uid = 410.
+verify found no changes in insn with uid = 449.
+verify found no changes in insn with uid = 476.
+verify found no changes in insn with uid = 494.
+verify found no changes in insn with uid = 500.
+verify found no changes in insn with uid = 572.
+verify found no changes in insn with uid = 589.
+verify found no changes in insn with uid = 681.
+verify found no changes in insn with uid = 698.
+verify found no changes in insn with uid = 748.
+verify found no changes in insn with uid = 766.
+verify found no changes in insn with uid = 796.
+verify found no changes in insn with uid = 804.
+verify found no changes in insn with uid = 857.
+verify found no changes in insn with uid = 875.
+verify found no changes in insn with uid = 891.
+verify found no changes in insn with uid = 898.
+verify found no changes in insn with uid = 913.
+verify found no changes in insn with uid = 963.
+verify found no changes in insn with uid = 975.
+verify found no changes in insn with uid = 991.
+verify found no changes in insn with uid = 1005.
+verify found no changes in insn with uid = 1019.
+
+;; Function switch_core_media_get_codec_string (switch_core_media_get_codec_string)
+
+verify found no changes in insn with uid = 31.
+verify found no changes in insn with uid = 48.
+verify found no changes in insn with uid = 61.
+verify found no changes in insn with uid = 70.
+
+;; Function switch_core_session_clear_crypto (switch_core_session_clear_crypto)
+
+verify found no changes in insn with uid = 30.
+verify found no changes in insn with uid = 60.
+verify found no changes in insn with uid = 76.
+
+;; Function switch_core_session_local_crypto_key (switch_core_session_local_crypto_key)
+
+
+;; Function switch_core_media_parse_rtp_bugs (switch_core_media_parse_rtp_bugs)
+
+verify found no changes in insn with uid = 11.
+verify found no changes in insn with uid = 24.
+verify found no changes in insn with uid = 38.
+verify found no changes in insn with uid = 52.
+verify found no changes in insn with uid = 66.
+verify found no changes in insn with uid = 80.
+verify found no changes in insn with uid = 94.
+verify found no changes in insn with uid = 108.
+verify found no changes in insn with uid = 122.
+verify found no changes in insn with uid = 136.
+verify found no changes in insn with uid = 150.
+verify found no changes in insn with uid = 164.
+verify found no changes in insn with uid = 178.
+verify found no changes in insn with uid = 192.
+verify found no changes in insn with uid = 206.
+verify found no changes in insn with uid = 220.
+verify found no changes in insn with uid = 234.
+verify found no changes in insn with uid = 248.
+verify found no changes in insn with uid = 262.
+verify found no changes in insn with uid = 276.
+verify found no changes in insn with uid = 290.
+verify found no changes in insn with uid = 304.
+verify found no changes in insn with uid = 318.
+verify found no changes in insn with uid = 332.
+verify found no changes in insn with uid = 346.
+
+;; Function switch_core_media_add_crypto (switch_core_media_add_crypto)
+
+verify found no changes in insn with uid = 13.
+verify found no changes in insn with uid = 30.
+verify found no changes in insn with uid = 54.
+verify found no changes in insn with uid = 61.
+verify found no changes in insn with uid = 82.
+verify found no changes in insn with uid = 105.
+verify found no changes in insn with uid = 116.
+verify found no changes in insn with uid = 138.
+verify found no changes in insn with uid = 162.
+verify found no changes in insn with uid = 184.
+
+;; Function switch_core_session_apply_crypto (switch_core_session_apply_crypto)
+
+verify found no changes in insn with uid = 27.
+verify found no changes in insn with uid = 52.
+verify found no changes in insn with uid = 76.
+verify found no changes in insn with uid = 112.
+verify found no changes in insn with uid = 156.
+verify found no changes in insn with uid = 164.
+verify found no changes in insn with uid = 182.
+
+;; Function switch_core_media_set_rtp_session (switch_core_media_set_rtp_session)
+
+
+;; Function switch_core_session_check_incoming_crypto (switch_core_session_check_incoming_crypto)
+
+verify found no changes in insn with uid = 97.
+verify found no changes in insn with uid = 100.
+verify found no changes in insn with uid = 134.
+verify found no changes in insn with uid = 142.
+verify found no changes in insn with uid = 173.
+verify found no changes in insn with uid = 202.
+verify found no changes in insn with uid = 224.
+verify found no changes in insn with uid = 246.
+verify found no changes in insn with uid = 253.
+verify found no changes in insn with uid = 279.
+verify found no changes in insn with uid = 289.
+verify found no changes in insn with uid = 298.
+verify found no changes in insn with uid = 304.
+verify found no changes in insn with uid = 340.
+verify found no changes in insn with uid = 358.
+verify found no changes in insn with uid = 382.
+verify found no changes in insn with uid = 395.
+verify found no changes in insn with uid = 417.
+verify found no changes in insn with uid = 427.
+verify found no changes in insn with uid = 430.
+verify found no changes in insn with uid = 440.
+verify found no changes in insn with uid = 455.
+verify found no changes in insn with uid = 465.
+verify found no changes in insn with uid = 468.
+verify found no changes in insn with uid = 478.
+verify found no changes in insn with uid = 491.
+verify found no changes in insn with uid = 500.
+verify found no changes in insn with uid = 524.
+verify found no changes in insn with uid = 568.
+verify found no changes in insn with uid = 589.
+verify found no changes in insn with uid = 596.
+verify found no changes in insn with uid = 622.
+verify found no changes in insn with uid = 640.
+verify found no changes in insn with uid = 678.
+verify found no changes in insn with uid = 690.
+verify found no changes in insn with uid = 693.
+verify found no changes in insn with uid = 703.
+verify found no changes in insn with uid = 718.
+verify found no changes in insn with uid = 721.
+verify found no changes in insn with uid = 731.
+verify found no changes in insn with uid = 748.
+verify found no changes in insn with uid = 754.
+verify found no changes in insn with uid = 782.
+
+;; Function switch_media_handle_create (switch_media_handle_create)
+
+verify found no changes in insn with uid = 51.
+verify found no changes in insn with uid = 127.
+verify found no changes in insn with uid = 134.
+verify found no changes in insn with uid = 140.
+verify found no changes in insn with uid = 145.
+verify found no changes in insn with uid = 149.
+verify found no changes in insn with uid = 157.
+verify found no changes in insn with uid = 179.
+verify found no changes in insn with uid = 203.
+verify found no changes in insn with uid = 220.
+
+;; Function switch_media_handle_set_media_flag (switch_media_handle_set_media_flag)
+
+verify found no changes in insn with uid = 22.
+
+;; Function switch_media_handle_set_media_flags (switch_media_handle_set_media_flags)
+
+verify found no changes in insn with uid = 23.
+
+;; Function switch_media_handle_clear_media_flag (switch_media_handle_clear_media_flag)
+
+verify found no changes in insn with uid = 22.
+
+;; Function switch_media_handle_test_media_flag (switch_media_handle_test_media_flag)
+
+verify found no changes in insn with uid = 22.
+
+;; Function generate_m.isra.4 (generate_m.isra.4)
+
+verify found no changes in insn with uid = 47.
+verify found no changes in insn with uid = 66.
+verify found no changes in insn with uid = 79.
+verify found no changes in insn with uid = 90.
+verify found no changes in insn with uid = 104.
+verify found no changes in insn with uid = 113.
+verify found no changes in insn with uid = 136.
+verify found no changes in insn with uid = 145.
+verify found no changes in insn with uid = 208.
+verify found no changes in insn with uid = 219.
+verify found no changes in insn with uid = 244.
+verify found no changes in insn with uid = 255.
+verify found no changes in insn with uid = 260.
+verify found no changes in insn with uid = 278.
+verify found no changes in insn with uid = 289.
+verify found no changes in insn with uid = 293.
+verify found no changes in insn with uid = 303.
+verify found no changes in insn with uid = 310.
+verify found no changes in insn with uid = 343.
+verify found no changes in insn with uid = 352.
+verify found no changes in insn with uid = 415.
+verify found no changes in insn with uid = 428.
+verify found no changes in insn with uid = 433.
+verify found no changes in insn with uid = 448.
+verify found no changes in insn with uid = 476.
+verify found no changes in insn with uid = 487.
+verify found no changes in insn with uid = 494.
+verify found no changes in insn with uid = 510.
+verify found no changes in insn with uid = 516.
+verify found no changes in insn with uid = 531.
+verify found no changes in insn with uid = 538.
+verify found no changes in insn with uid = 551.
+verify found no changes in insn with uid = 574.
+verify found no changes in insn with uid = 582.
+verify found no changes in insn with uid = 597.
+verify found no changes in insn with uid = 603.
+verify found no changes in insn with uid = 617.
+verify found no changes in insn with uid = 623.
+verify found no changes in insn with uid = 638.
+verify found no changes in insn with uid = 655.
+verify found no changes in insn with uid = 670.
+verify found no changes in insn with uid = 685.
+verify found no changes in insn with uid = 695.
+verify found no changes in insn with uid = 697.
+verify found no changes in insn with uid = 710.
+verify found no changes in insn with uid = 716.
+verify found no changes in insn with uid = 730.
+verify found no changes in insn with uid = 780.
+verify found no changes in insn with uid = 787.
+verify found no changes in insn with uid = 792.
+verify found no changes in insn with uid = 796.
+verify found no changes in insn with uid = 811.
+verify found no changes in insn with uid = 813.
+verify found no changes in insn with uid = 828.
+verify found no changes in insn with uid = 830.
+verify found no changes in insn with uid = 845.
+verify found no changes in insn with uid = 847.
+verify found no changes in insn with uid = 862.
+verify found no changes in insn with uid = 864.
+verify found no changes in insn with uid = 880.
+verify found no changes in insn with uid = 882.
+verify found no changes in insn with uid = 898.
+verify found no changes in insn with uid = 900.
+verify found no changes in insn with uid = 932.
+verify found no changes in insn with uid = 963.
+verify found no changes in insn with uid = 987.
+verify found no changes in insn with uid = 998.
+verify found no changes in insn with uid = 1008.
+verify found no changes in insn with uid = 1044.
+verify found no changes in insn with uid = 1075.
+verify found no changes in insn with uid = 1116.
+verify found no changes in insn with uid = 1125.
+verify found no changes in insn with uid = 1191.
+verify found no changes in insn with uid = 1197.
+verify found no changes in insn with uid = 1207.
+verify found no changes in insn with uid = 1214.
+verify found no changes in insn with uid = 1224.
+verify found no changes in insn with uid = 1243.
+verify found no changes in insn with uid = 1256.
+verify found no changes in insn with uid = 1267.
+verify found no changes in insn with uid = 1273.
+verify found no changes in insn with uid = 1296.
+verify found no changes in insn with uid = 1298.
+verify found no changes in insn with uid = 1309.
+verify found no changes in insn with uid = 1349.
+verify found no changes in insn with uid = 1376.
+verify found no changes in insn with uid = 1388.
+verify found no changes in insn with uid = 1399.
+verify found no changes in insn with uid = 1405.
+verify found no changes in insn with uid = 1416.
+
+;; Function switch_core_session_media_handle_ready (switch_core_session_media_handle_ready)
+
+
+;; Function switch_core_session_check_outgoing_crypto (switch_core_session_check_outgoing_crypto)
+
+verify found no changes in insn with uid = 7.
+verify found no changes in insn with uid = 11.
+verify found no changes in insn with uid = 30.
+verify found no changes in insn with uid = 49.
+verify found no changes in insn with uid = 61.
+
+;; Function switch_core_session_get_media_handle (switch_core_session_get_media_handle)
+
+verify found no changes in insn with uid = 8.
+
+;; Function switch_core_session_clear_media_handle (switch_core_session_clear_media_handle)
+
+
+;; Function switch_core_media_get_mparams (switch_core_media_get_mparams)
+
+verify found no changes in insn with uid = 21.
+
+;; Function switch_core_media_prepare_codecs (switch_core_media_prepare_codecs)
+
+verify found no changes in insn with uid = 28.
+verify found no changes in insn with uid = 44.
+verify found no changes in insn with uid = 52.
+verify found no changes in insn with uid = 92.
+verify found no changes in insn with uid = 103.
+verify found no changes in insn with uid = 116.
+verify found no changes in insn with uid = 124.
+verify found no changes in insn with uid = 149.
+verify found no changes in insn with uid = 169.
+verify found no changes in insn with uid = 196.
+verify found no changes in insn with uid = 206.
+verify found no changes in insn with uid = 213.
+verify found no changes in insn with uid = 226.
+verify found no changes in insn with uid = 239.
+
+;; Function switch_core_media_write_frame (switch_core_media_write_frame)
+
+verify found no changes in insn with uid = 39.
+verify found no changes in insn with uid = 65.
+verify found no changes in insn with uid = 72.
+verify found no changes in insn with uid = 82.
+verify found no changes in insn with uid = 121.
+verify found no changes in insn with uid = 140.
+
+;; Function switch_core_media_copy_t38_options (switch_core_media_copy_t38_options)
+
+verify found no changes in insn with uid = 8.
+verify found no changes in insn with uid = 15.
+verify found no changes in insn with uid = 34.
+verify found no changes in insn with uid = 53.
+verify found no changes in insn with uid = 80.
+verify found no changes in insn with uid = 100.
+verify found no changes in insn with uid = 116.
+verify found no changes in insn with uid = 132.
+verify found no changes in insn with uid = 142.
+
+;; Function switch_core_media_process_t38_passthru (switch_core_media_process_t38_passthru)
+
+verify found no changes in insn with uid = 49.
+verify found no changes in insn with uid = 63.
+verify found no changes in insn with uid = 68.
+verify found no changes in insn with uid = 86.
+verify found no changes in insn with uid = 107.
+verify found no changes in insn with uid = 118.
+verify found no changes in insn with uid = 138.
+verify found no changes in insn with uid = 147.
+verify found no changes in insn with uid = 174.
+verify found no changes in insn with uid = 184.
+verify found no changes in insn with uid = 194.
+verify found no changes in insn with uid = 203.
+verify found no changes in insn with uid = 216.
+verify found no changes in insn with uid = 240.
+verify found no changes in insn with uid = 255.
+verify found no changes in insn with uid = 260.
+
+;; Function switch_core_media_get_offered_pt (switch_core_media_get_offered_pt)
+
+verify found no changes in insn with uid = 30.
+verify found no changes in insn with uid = 60.
+
+;; Function switch_core_media_set_video_codec (switch_core_media_set_video_codec)
+
+verify found no changes in insn with uid = 30.
+verify found no changes in insn with uid = 94.
+verify found no changes in insn with uid = 123.
+verify found no changes in insn with uid = 129.
+verify found no changes in insn with uid = 135.
+verify found no changes in insn with uid = 158.
+verify found no changes in insn with uid = 176.
+verify found no changes in insn with uid = 193.
+verify found no changes in insn with uid = 215.
+verify found no changes in insn with uid = 233.
+verify found no changes in insn with uid = 250.
+verify found no changes in insn with uid = 271.
+verify found no changes in insn with uid = 289.
+verify found no changes in insn with uid = 320.
+verify found no changes in insn with uid = 343.
+verify found no changes in insn with uid = 371.
+verify found no changes in insn with uid = 374.
+verify found no changes in insn with uid = 392.
+verify found no changes in insn with uid = 399.
+verify found no changes in insn with uid = 410.
+verify found no changes in insn with uid = 430.
+verify found no changes in insn with uid = 444.
+verify found no changes in insn with uid = 460.
+verify found no changes in insn with uid = 474.
+verify found no changes in insn with uid = 490.
+verify found no changes in insn with uid = 500.
+
+;; Function switch_core_media_set_codec (switch_core_media_set_codec)
+
+verify found no changes in insn with uid = 41.
+verify found no changes in insn with uid = 75.
+verify found no changes in insn with uid = 108.
+verify found no changes in insn with uid = 133.
+verify found no changes in insn with uid = 136.
+verify found no changes in insn with uid = 154.
+verify found no changes in insn with uid = 157.
+verify found no changes in insn with uid = 166.
+verify found no changes in insn with uid = 169.
+verify found no changes in insn with uid = 187.
+verify found no changes in insn with uid = 190.
+verify found no changes in insn with uid = 196.
+verify found no changes in insn with uid = 209.
+verify found no changes in insn with uid = 245.
+verify found no changes in insn with uid = 249.
+verify found no changes in insn with uid = 251.
+verify found no changes in insn with uid = 253.
+verify found no changes in insn with uid = 258.
+verify found no changes in insn with uid = 260.
+verify found no changes in insn with uid = 265.
+verify found no changes in insn with uid = 278.
+verify found no changes in insn with uid = 303.
+verify found no changes in insn with uid = 317.
+verify found no changes in insn with uid = 330.
+verify found no changes in insn with uid = 352.
+verify found no changes in insn with uid = 367.
+verify found no changes in insn with uid = 385.
+verify found no changes in insn with uid = 398.
+verify found no changes in insn with uid = 420.
+verify found no changes in insn with uid = 435.
+verify found no changes in insn with uid = 451.
+verify found no changes in insn with uid = 461.
+verify found no changes in insn with uid = 473.
+verify found no changes in insn with uid = 485.
+verify found no changes in insn with uid = 501.
+verify found no changes in insn with uid = 519.
+verify found no changes in insn with uid = 540.
+verify found no changes in insn with uid = 551.
+verify found no changes in insn with uid = 560.
+verify found no changes in insn with uid = 564.
+verify found no changes in insn with uid = 568.
+verify found no changes in insn with uid = 571.
+verify found no changes in insn with uid = 594.
+verify found no changes in insn with uid = 604.
+verify found no changes in insn with uid = 623.
+verify found no changes in insn with uid = 652.
+verify found no changes in insn with uid = 683.
+verify found no changes in insn with uid = 697.
+verify found no changes in insn with uid = 700.
+verify found no changes in insn with uid = 717.
+verify found no changes in insn with uid = 722.
+verify found no changes in insn with uid = 733.
+verify found no changes in insn with uid = 742.
+verify found no changes in insn with uid = 744.
+verify found no changes in insn with uid = 769.
+
+;; Function switch_core_media_read_frame (switch_core_media_read_frame)
+
+verify found no changes in insn with uid = 62.
+verify found no changes in insn with uid = 119.
+verify found no changes in insn with uid = 125.
+verify found no changes in insn with uid = 132.
+verify found no changes in insn with uid = 141.
+verify found no changes in insn with uid = 157.
+verify found no changes in insn with uid = 165.
+verify found no changes in insn with uid = 191.
+verify found no changes in insn with uid = 203.
+verify found no changes in insn with uid = 227.
+verify found no changes in insn with uid = 244.
+verify found no changes in insn with uid = 250.
+verify found no changes in insn with uid = 269.
+verify found no changes in insn with uid = 287.
+verify found no changes in insn with uid = 298.
+verify found no changes in insn with uid = 306.
+verify found no changes in insn with uid = 325.
+verify found no changes in insn with uid = 335.
+verify found no changes in insn with uid = 351.
+verify found no changes in insn with uid = 361.
+verify found no changes in insn with uid = 377.
+verify found no changes in insn with uid = 384.
+verify found no changes in insn with uid = 407.
+verify found no changes in insn with uid = 430.
+verify found no changes in insn with uid = 442.
+verify found no changes in insn with uid = 463.
+verify found no changes in insn with uid = 469.
+verify found no changes in insn with uid = 477.
+verify found no changes in insn with uid = 485.
+verify found no changes in insn with uid = 496.
+verify found no changes in insn with uid = 505.
+verify found no changes in insn with uid = 514.
+verify found no changes in insn with uid = 523.
+verify found no changes in insn with uid = 532.
+verify found no changes in insn with uid = 541.
+verify found no changes in insn with uid = 550.
+verify found no changes in insn with uid = 559.
+verify found no changes in insn with uid = 568.
+verify found no changes in insn with uid = 577.
+verify found no changes in insn with uid = 586.
+verify found no changes in insn with uid = 595.
+verify found no changes in insn with uid = 604.
+verify found no changes in insn with uid = 613.
+verify found no changes in insn with uid = 622.
+verify found no changes in insn with uid = 631.
+verify found no changes in insn with uid = 632.
+verify found no changes in insn with uid = 641.
+verify found no changes in insn with uid = 650.
+verify found no changes in insn with uid = 667.
+verify found no changes in insn with uid = 677.
+verify found no changes in insn with uid = 685.
+verify found no changes in insn with uid = 693.
+verify found no changes in insn with uid = 702.
+verify found no changes in insn with uid = 710.
+verify found no changes in insn with uid = 718.
+verify found no changes in insn with uid = 727.
+verify found no changes in insn with uid = 735.
+verify found no changes in insn with uid = 743.
+verify found no changes in insn with uid = 752.
+verify found no changes in insn with uid = 760.
+verify found no changes in insn with uid = 768.
+verify found no changes in insn with uid = 777.
+verify found no changes in insn with uid = 785.
+verify found no changes in insn with uid = 793.
+verify found no changes in insn with uid = 802.
+verify found no changes in insn with uid = 810.
+verify found no changes in insn with uid = 818.
+verify found no changes in insn with uid = 827.
+verify found no changes in insn with uid = 835.
+verify found no changes in insn with uid = 861.
+verify found no changes in insn with uid = 879.
+verify found no changes in insn with uid = 895.
+verify found no changes in insn with uid = 917.
+verify found no changes in insn with uid = 922.
+verify found no changes in insn with uid = 1013.
+verify found no changes in insn with uid = 1017.
+verify found no changes in insn with uid = 1023.
+verify found no changes in insn with uid = 1085.
+verify found no changes in insn with uid = 1116.
+verify found no changes in insn with uid = 1127.
+verify found no changes in insn with uid = 1273.
+verify found no changes in insn with uid = 1276.
+verify found no changes in insn with uid = 1318.
+verify found no changes in insn with uid = 1337.
+verify found no changes in insn with uid = 1368.
+verify found no changes in insn with uid = 1380.
+verify found no changes in insn with uid = 1425.
+
+;; Function switch_core_media_add_ice_acl (switch_core_media_add_ice_acl)
+
+verify found no changes in insn with uid = 27.
+verify found no changes in insn with uid = 58.
+
+;; Function switch_core_media_check_video_codecs (switch_core_media_check_video_codecs)
+
+verify found no changes in insn with uid = 22.
+verify found no changes in insn with uid = 41.
+verify found no changes in insn with uid = 68.
+verify found no changes in insn with uid = 76.
+verify found no changes in insn with uid = 108.
+
+;; Function switch_ice_direction (switch_ice_direction)
+
+verify found no changes in insn with uid = 9.
+verify found no changes in insn with uid = 15.
+verify found no changes in insn with uid = 30.
+verify found no changes in insn with uid = 38.
+verify found no changes in insn with uid = 47.
+
+;; Function check_dtls_reinvite (check_dtls_reinvite)
+
+verify found no changes in insn with uid = 18.
+verify found no changes in insn with uid = 38.
+verify found no changes in insn with uid = 46.
+verify found no changes in insn with uid = 78.
+verify found no changes in insn with uid = 98.
+verify found no changes in insn with uid = 111.
+verify found no changes in insn with uid = 119.
+
+;; Function check_ice (check_ice)
+
+verify found no changes in insn with uid = 159.
+verify found no changes in insn with uid = 220.
+verify found no changes in insn with uid = 231.
+verify found no changes in insn with uid = 249.
+verify found no changes in insn with uid = 261.
+verify found no changes in insn with uid = 279.
+verify found no changes in insn with uid = 287.
+verify found no changes in insn with uid = 294.
+verify found no changes in insn with uid = 309.
+verify found no changes in insn with uid = 336.
+verify found no changes in insn with uid = 340.
+verify found no changes in insn with uid = 346.
+verify found no changes in insn with uid = 362.
+verify found no changes in insn with uid = 375.
+verify found no changes in insn with uid = 388.
+verify found no changes in insn with uid = 397.
+verify found no changes in insn with uid = 421.
+verify found no changes in insn with uid = 431.
+verify found no changes in insn with uid = 458.
+verify found no changes in insn with uid = 466.
+verify found no changes in insn with uid = 484.
+verify found no changes in insn with uid = 492.
+verify found no changes in insn with uid = 522.
+verify found no changes in insn with uid = 532.
+verify found no changes in insn with uid = 561.
+verify found no changes in insn with uid = 595.
+verify found no changes in insn with uid = 622.
+verify found no changes in insn with uid = 668.
+verify found no changes in insn with uid = 705.
+verify found no changes in insn with uid = 723.
+verify found no changes in insn with uid = 741.
+verify found no changes in insn with uid = 767.
+verify found no changes in insn with uid = 785.
+verify found no changes in insn with uid = 811.
+verify found no changes in insn with uid = 829.
+verify found no changes in insn with uid = 856.
+verify found no changes in insn with uid = 875.
+verify found no changes in insn with uid = 894.
+verify found no changes in insn with uid = 913.
+verify found no changes in insn with uid = 932.
+verify found no changes in insn with uid = 943.
+verify found no changes in insn with uid = 962.
+verify found no changes in insn with uid = 981.
+verify found no changes in insn with uid = 1091.
+verify found no changes in insn with uid = 1126.
+verify found no changes in insn with uid = 1149.
+verify found no changes in insn with uid = 1184.
+verify found no changes in insn with uid = 1279.
+verify found no changes in insn with uid = 1326.
+verify found no changes in insn with uid = 1401.
+verify found no changes in insn with uid = 1457.
+verify found no changes in insn with uid = 1516.
+verify found no changes in insn with uid = 1559.
+verify found no changes in insn with uid = 1679.
+verify found no changes in insn with uid = 1694.
+verify found no changes in insn with uid = 1736.
+verify found no changes in insn with uid = 1781.
+verify found no changes in insn with uid = 1806.
+verify found no changes in insn with uid = 1835.
+verify found no changes in insn with uid = 1846.
+verify found no changes in insn with uid = 1856.
+verify found no changes in insn with uid = 1901.
+verify found no changes in insn with uid = 1931.
+verify found no changes in insn with uid = 1967.
+verify found no changes in insn with uid = 1974.
+verify found no changes in insn with uid = 2014.
+verify found no changes in insn with uid = 2026.
+verify found no changes in insn with uid = 2044.
+verify found no changes in insn with uid = 2062.
+verify found no changes in insn with uid = 2100.
+verify found no changes in insn with uid = 2122.
+verify found no changes in insn with uid = 2133.
+verify found no changes in insn with uid = 2162.
+verify found no changes in insn with uid = 2172.
+verify found no changes in insn with uid = 2181.
+verify found no changes in insn with uid = 2207.
+verify found no changes in insn with uid = 2236.
+verify found no changes in insn with uid = 2246.
+verify found no changes in insn with uid = 2281.
+verify found no changes in insn with uid = 2325.
+verify found no changes in insn with uid = 2353.
+verify found no changes in insn with uid = 2365.
+verify found no changes in insn with uid = 2383.
+verify found no changes in insn with uid = 2394.
+verify found no changes in insn with uid = 2417.
+verify found no changes in insn with uid = 2423.
+
+;; Function switch_core_session_set_ice (switch_core_session_set_ice)
+
+verify found no changes in insn with uid = 22.
+verify found no changes in insn with uid = 36.
+verify found no changes in insn with uid = 41.
+verify found no changes in insn with uid = 46.
+
+;; Function switch_core_media_toggle_hold (switch_core_media_toggle_hold)
+
+verify found no changes in insn with uid = 47.
+verify found no changes in insn with uid = 74.
+verify found no changes in insn with uid = 81.
+verify found no changes in insn with uid = 93.
+verify found no changes in insn with uid = 101.
+verify found no changes in insn with uid = 110.
+verify found no changes in insn with uid = 118.
+verify found no changes in insn with uid = 129.
+verify found no changes in insn with uid = 138.
+verify found no changes in insn with uid = 143.
+verify found no changes in insn with uid = 156.
+verify found no changes in insn with uid = 166.
+verify found no changes in insn with uid = 180.
+verify found no changes in insn with uid = 193.
+verify found no changes in insn with uid = 200.
+verify found no changes in insn with uid = 204.
+verify found no changes in insn with uid = 222.
+verify found no changes in insn with uid = 234.
+verify found no changes in insn with uid = 239.
+verify found no changes in insn with uid = 252.
+verify found no changes in insn with uid = 262.
+verify found no changes in insn with uid = 272.
+verify found no changes in insn with uid = 281.
+verify found no changes in insn with uid = 286.
+verify found no changes in insn with uid = 289.
+verify found no changes in insn with uid = 294.
+verify found no changes in insn with uid = 301.
+verify found no changes in insn with uid = 307.
+verify found no changes in insn with uid = 310.
+verify found no changes in insn with uid = 318.
+verify found no changes in insn with uid = 327.
+verify found no changes in insn with uid = 331.
+verify found no changes in insn with uid = 338.
+verify found no changes in insn with uid = 351.
+verify found no changes in insn with uid = 358.
+verify found no changes in insn with uid = 362.
+verify found no changes in insn with uid = 369.
+verify found no changes in insn with uid = 376.
+verify found no changes in insn with uid = 383.
+verify found no changes in insn with uid = 390.
+verify found no changes in insn with uid = 394.
+verify found no changes in insn with uid = 406.
+verify found no changes in insn with uid = 411.
+verify found no changes in insn with uid = 420.
+verify found no changes in insn with uid = 427.
+verify found no changes in insn with uid = 431.
+verify found no changes in insn with uid = 435.
+verify found no changes in insn with uid = 442.
+verify found no changes in insn with uid = 450.
+verify found no changes in insn with uid = 454.
+verify found no changes in insn with uid = 464.
+verify found no changes in insn with uid = 469.
+verify found no changes in insn with uid = 481.
+verify found no changes in insn with uid = 492.
+verify found no changes in insn with uid = 501.
+verify found no changes in insn with uid = 510.
+verify found no changes in insn with uid = 519.
+verify found no changes in insn with uid = 528.
+verify found no changes in insn with uid = 537.
+verify found no changes in insn with uid = 546.
+verify found no changes in insn with uid = 552.
+verify found no changes in insn with uid = 561.
+verify found no changes in insn with uid = 574.
+verify found no changes in insn with uid = 585.
+verify found no changes in insn with uid = 598.
+verify found no changes in insn with uid = 604.
+verify found no changes in insn with uid = 608.
+verify found no changes in insn with uid = 628.
+verify found no changes in insn with uid = 632.
+verify found no changes in insn with uid = 643.
+verify found no changes in insn with uid = 652.
+
+;; Function switch_core_media_negotiate_sdp (switch_core_media_negotiate_sdp)
+
+verify found no changes in insn with uid = 161.
+verify found no changes in insn with uid = 187.
+verify found no changes in insn with uid = 194.
+verify found no changes in insn with uid = 217.
+verify found no changes in insn with uid = 239.
+verify found no changes in insn with uid = 246.
+verify found no changes in insn with uid = 253.
+verify found no changes in insn with uid = 260.
+verify found no changes in insn with uid = 266.
+verify found no changes in insn with uid = 279.
+verify found no changes in insn with uid = 290.
+verify found no changes in insn with uid = 299.
+verify found no changes in insn with uid = 308.
+verify found no changes in insn with uid = 317.
+verify found no changes in insn with uid = 326.
+verify found no changes in insn with uid = 335.
+verify found no changes in insn with uid = 344.
+verify found no changes in insn with uid = 350.
+verify found no changes in insn with uid = 359.
+verify found no changes in insn with uid = 369.
+verify found no changes in insn with uid = 374.
+verify found no changes in insn with uid = 378.
+verify found no changes in insn with uid = 453.
+verify found no changes in insn with uid = 461.
+verify found no changes in insn with uid = 473.
+verify found no changes in insn with uid = 483.
+verify found no changes in insn with uid = 492.
+verify found no changes in insn with uid = 501.
+verify found no changes in insn with uid = 524.
+verify found no changes in insn with uid = 543.
+verify found no changes in insn with uid = 561.
+verify found no changes in insn with uid = 586.
+verify found no changes in insn with uid = 602.
+verify found no changes in insn with uid = 627.
+verify found no changes in insn with uid = 637.
+verify found no changes in insn with uid = 648.
+verify found no changes in insn with uid = 657.
+verify found no changes in insn with uid = 666.
+verify found no changes in insn with uid = 675.
+verify found no changes in insn with uid = 684.
+verify found no changes in insn with uid = 693.
+verify found no changes in insn with uid = 702.
+verify found no changes in insn with uid = 708.
+verify found no changes in insn with uid = 717.
+verify found no changes in insn with uid = 727.
+verify found no changes in insn with uid = 764.
+verify found no changes in insn with uid = 805.
+verify found no changes in insn with uid = 813.
+verify found no changes in insn with uid = 828.
+verify found no changes in insn with uid = 837.
+verify found no changes in insn with uid = 851.
+verify found no changes in insn with uid = 855.
+verify found no changes in insn with uid = 864.
+verify found no changes in insn with uid = 882.
+verify found no changes in insn with uid = 892.
+verify found no changes in insn with uid = 904.
+verify found no changes in insn with uid = 914.
+verify found no changes in insn with uid = 924.
+verify found no changes in insn with uid = 935.
+verify found no changes in insn with uid = 945.
+verify found no changes in insn with uid = 987.
+verify found no changes in insn with uid = 992.
+verify found no changes in insn with uid = 1004.
+verify found no changes in insn with uid = 1015.
+verify found no changes in insn with uid = 1024.
+verify found no changes in insn with uid = 1033.
+verify found no changes in insn with uid = 1042.
+verify found no changes in insn with uid = 1051.
+verify found no changes in insn with uid = 1060.
+verify found no changes in insn with uid = 1069.
+verify found no changes in insn with uid = 1075.
+verify found no changes in insn with uid = 1084.
+verify found no changes in insn with uid = 1104.
+verify found no changes in insn with uid = 1111.
+verify found no changes in insn with uid = 1121.
+verify found no changes in insn with uid = 1128.
+verify found no changes in insn with uid = 1139.
+verify found no changes in insn with uid = 1149.
+verify found no changes in insn with uid = 1160.
+verify found no changes in insn with uid = 1169.
+verify found no changes in insn with uid = 1178.
+verify found no changes in insn with uid = 1187.
+verify found no changes in insn with uid = 1196.
+verify found no changes in insn with uid = 1205.
+verify found no changes in insn with uid = 1214.
+verify found no changes in insn with uid = 1220.
+verify found no changes in insn with uid = 1229.
+verify found no changes in insn with uid = 1261.
+verify found no changes in insn with uid = 1292.
+verify found no changes in insn with uid = 1306.
+verify found no changes in insn with uid = 1315.
+verify found no changes in insn with uid = 1324.
+verify found no changes in insn with uid = 1339.
+verify found no changes in insn with uid = 1344.
+verify found no changes in insn with uid = 1346.
+verify found no changes in insn with uid = 1351.
+verify found no changes in insn with uid = 1356.
+verify found no changes in insn with uid = 1388.
+verify found no changes in insn with uid = 1400.
+verify found no changes in insn with uid = 1409.
+verify found no changes in insn with uid = 1490.
+verify found no changes in insn with uid = 1499.
+verify found no changes in insn with uid = 1510.
+verify found no changes in insn with uid = 1513.
+verify found no changes in insn with uid = 1524.
+verify found no changes in insn with uid = 1536.
+verify found no changes in insn with uid = 1543.
+verify found no changes in insn with uid = 1552.
+verify found no changes in insn with uid = 1569.
+verify found no changes in insn with uid = 1579.
+verify found no changes in insn with uid = 1600.
+verify found no changes in insn with uid = 1609.
+verify found no changes in insn with uid = 1617.
+verify found no changes in insn with uid = 1625.
+verify found no changes in insn with uid = 1632.
+verify found no changes in insn with uid = 1655.
+verify found no changes in insn with uid = 1662.
+verify found no changes in insn with uid = 1667.
+verify found no changes in insn with uid = 1672.
+verify found no changes in insn with uid = 1702.
+verify found no changes in insn with uid = 1709.
+verify found no changes in insn with uid = 1712.
+verify found no changes in insn with uid = 1733.
+verify found no changes in insn with uid = 1736.
+verify found no changes in insn with uid = 1750.
+verify found no changes in insn with uid = 1753.
+verify found no changes in insn with uid = 1765.
+verify found no changes in insn with uid = 1768.
+verify found no changes in insn with uid = 1781.
+verify found no changes in insn with uid = 1798.
+verify found no changes in insn with uid = 1819.
+verify found no changes in insn with uid = 1830.
+verify found no changes in insn with uid = 1850.
+verify found no changes in insn with uid = 1859.
+verify found no changes in insn with uid = 1886.
+verify found no changes in insn with uid = 1896.
+verify found no changes in insn with uid = 1906.
+verify found no changes in insn with uid = 1915.
+verify found no changes in insn with uid = 1928.
+verify found no changes in insn with uid = 1952.
+verify found no changes in insn with uid = 1966.
+verify found no changes in insn with uid = 1972.
+verify found no changes in insn with uid = 1978.
+verify found no changes in insn with uid = 1984.
+verify found no changes in insn with uid = 1998.
+verify found no changes in insn with uid = 2019.
+verify found no changes in insn with uid = 2040.
+verify found no changes in insn with uid = 2044.
+verify found no changes in insn with uid = 2047.
+verify found no changes in insn with uid = 2068.
+verify found no changes in insn with uid = 2074.
+verify found no changes in insn with uid = 2092.
+verify found no changes in insn with uid = 2139.
+verify found no changes in insn with uid = 2155.
+verify found no changes in insn with uid = 2161.
+verify found no changes in insn with uid = 2182.
+verify found no changes in insn with uid = 2195.
+verify found no changes in insn with uid = 2206.
+verify found no changes in insn with uid = 2219.
+verify found no changes in insn with uid = 2233.
+verify found no changes in insn with uid = 2257.
+verify found no changes in insn with uid = 2267.
+verify found no changes in insn with uid = 2276.
+verify found no changes in insn with uid = 2285.
+verify found no changes in insn with uid = 2294.
+verify found no changes in insn with uid = 2303.
+verify found no changes in insn with uid = 2312.
+verify found no changes in insn with uid = 2321.
+verify found no changes in insn with uid = 2327.
+verify found no changes in insn with uid = 2336.
+verify found no changes in insn with uid = 2363.
+verify found no changes in insn with uid = 2374.
+verify found no changes in insn with uid = 2385.
+verify found no changes in insn with uid = 2437.
+verify found no changes in insn with uid = 2470.
+verify found no changes in insn with uid = 2517.
+verify found no changes in insn with uid = 2554.
+verify found no changes in insn with uid = 2561.
+verify found no changes in insn with uid = 2573.
+verify found no changes in insn with uid = 2604.
+verify found no changes in insn with uid = 2611.
+verify found no changes in insn with uid = 2649.
+verify found no changes in insn with uid = 2681.
+verify found no changes in insn with uid = 2721.
+verify found no changes in insn with uid = 2730.
+verify found no changes in insn with uid = 2841.
+verify found no changes in insn with uid = 2877.
+verify found no changes in insn with uid = 2933.
+verify found no changes in insn with uid = 2942.
+verify found no changes in insn with uid = 2974.
+verify found no changes in insn with uid = 2983.
+verify found no changes in insn with uid = 3006.
+verify found no changes in insn with uid = 3049.
+verify found no changes in insn with uid = 3107.
+verify found no changes in insn with uid = 3186.
+verify found no changes in insn with uid = 3282.
+verify found no changes in insn with uid = 3339.
+verify found no changes in insn with uid = 3348.
+verify found no changes in insn with uid = 3403.
+verify found no changes in insn with uid = 3448.
+verify found no changes in insn with uid = 3489.
+verify found no changes in insn with uid = 3511.
+verify found no changes in insn with uid = 3527.
+verify found no changes in insn with uid = 3543.
+verify found no changes in insn with uid = 3558.
+verify found no changes in insn with uid = 3584.
+verify found no changes in insn with uid = 3594.
+verify found no changes in insn with uid = 3619.
+verify found no changes in insn with uid = 3670.
+verify found no changes in insn with uid = 3688.
+verify found no changes in insn with uid = 3737.
+verify found no changes in insn with uid = 3747.
+verify found no changes in insn with uid = 3756.
+verify found no changes in insn with uid = 3766.
+verify found no changes in insn with uid = 3775.
+verify found no changes in insn with uid = 3807.
+verify found no changes in insn with uid = 3817.
+verify found no changes in insn with uid = 3827.
+verify found no changes in insn with uid = 3835.
+verify found no changes in insn with uid = 3862.
+verify found no changes in insn with uid = 3873.
+verify found no changes in insn with uid = 3903.
+verify found no changes in insn with uid = 3913.
+verify found no changes in insn with uid = 3924.
+verify found no changes in insn with uid = 3934.
+verify found no changes in insn with uid = 3965.
+verify found no changes in insn with uid = 3975.
+verify found no changes in insn with uid = 3986.
+verify found no changes in insn with uid = 3996.
+verify found no changes in insn with uid = 4000.
+verify found no changes in insn with uid = 4010.
+verify found no changes in insn with uid = 4021.
+verify found no changes in insn with uid = 4031.
+verify found no changes in insn with uid = 4040.
+verify found no changes in insn with uid = 4049.
+verify found no changes in insn with uid = 4058.
+verify found no changes in insn with uid = 4067.
+verify found no changes in insn with uid = 4076.
+verify found no changes in insn with uid = 4085.
+verify found no changes in insn with uid = 4091.
+verify found no changes in insn with uid = 4100.
+verify found no changes in insn with uid = 4115.
+verify found no changes in insn with uid = 4149.
+verify found no changes in insn with uid = 4157.
+verify found no changes in insn with uid = 4168.
+verify found no changes in insn with uid = 4196.
+verify found no changes in insn with uid = 4210.
+verify found no changes in insn with uid = 4216.
+verify found no changes in insn with uid = 4234.
+verify found no changes in insn with uid = 4279.
+verify found no changes in insn with uid = 4293.
+verify found no changes in insn with uid = 4337.
+verify found no changes in insn with uid = 4368.
+verify found no changes in insn with uid = 4374.
+verify found no changes in insn with uid = 4401.
+verify found no changes in insn with uid = 4425.
+verify found no changes in insn with uid = 4435.
+verify found no changes in insn with uid = 4444.
+verify found no changes in insn with uid = 4453.
+verify found no changes in insn with uid = 4462.
+verify found no changes in insn with uid = 4471.
+verify found no changes in insn with uid = 4480.
+verify found no changes in insn with uid = 4489.
+verify found no changes in insn with uid = 4495.
+verify found no changes in insn with uid = 4504.
+verify found no changes in insn with uid = 4531.
+verify found no changes in insn with uid = 4542.
+verify found no changes in insn with uid = 4553.
+verify found no changes in insn with uid = 4593.
+verify found no changes in insn with uid = 4601.
+verify found no changes in insn with uid = 4633.
+verify found no changes in insn with uid = 4662.
+verify found no changes in insn with uid = 4710.
+verify found no changes in insn with uid = 4766.
+verify found no changes in insn with uid = 4788.
+verify found no changes in insn with uid = 4829.
+verify found no changes in insn with uid = 4854.
+verify found no changes in insn with uid = 4875.
+verify found no changes in insn with uid = 4904.
+verify found no changes in insn with uid = 4922.
+verify found no changes in insn with uid = 4950.
+verify found no changes in insn with uid = 4964.
+verify found no changes in insn with uid = 4973.
+verify found no changes in insn with uid = 4987.
+verify found no changes in insn with uid = 5001.
+verify found no changes in insn with uid = 5010.
+verify found no changes in insn with uid = 5012.
+verify found no changes in insn with uid = 5026.
+verify found no changes in insn with uid = 5035.
+verify found no changes in insn with uid = 5085.
+verify found no changes in insn with uid = 5094.
+verify found no changes in insn with uid = 5131.
+verify found no changes in insn with uid = 5155.
+verify found no changes in insn with uid = 5225.
+verify found no changes in insn with uid = 5250.
+verify found no changes in insn with uid = 5277.
+verify found no changes in insn with uid = 5287.
+verify found no changes in insn with uid = 5308.
+
+;; Function switch_core_media_proxy_remote_addr (switch_core_media_proxy_remote_addr)
+
+verify found no changes in insn with uid = 37.
+verify found no changes in insn with uid = 46.
+verify found no changes in insn with uid = 55.
+verify found no changes in insn with uid = 77.
+verify found no changes in insn with uid = 120.
+verify found no changes in insn with uid = 140.
+verify found no changes in insn with uid = 155.
+verify found no changes in insn with uid = 170.
+verify found no changes in insn with uid = 182.
+verify found no changes in insn with uid = 204.
+verify found no changes in insn with uid = 397.
+verify found no changes in insn with uid = 417.
+verify found no changes in insn with uid = 427.
+verify found no changes in insn with uid = 453.
+verify found no changes in insn with uid = 466.
+verify found no changes in insn with uid = 472.
+verify found no changes in insn with uid = 476.
+verify found no changes in insn with uid = 496.
+verify found no changes in insn with uid = 507.
+verify found no changes in insn with uid = 538.
+verify found no changes in insn with uid = 546.
+verify found no changes in insn with uid = 550.
+verify found no changes in insn with uid = 556.
+verify found no changes in insn with uid = 578.
+verify found no changes in insn with uid = 588.
+verify found no changes in insn with uid = 613.
+verify found no changes in insn with uid = 637.
+verify found no changes in insn with uid = 668.
+verify found no changes in insn with uid = 671.
+verify found no changes in insn with uid = 678.
+verify found no changes in insn with uid = 689.
+verify found no changes in insn with uid = 696.
+verify found no changes in insn with uid = 704.
+verify found no changes in insn with uid = 715.
+verify found no changes in insn with uid = 717.
+verify found no changes in insn with uid = 722.
+verify found no changes in insn with uid = 736.
+verify found no changes in insn with uid = 743.
+verify found no changes in insn with uid = 747.
+verify found no changes in insn with uid = 770.
+verify found no changes in insn with uid = 799.
+verify found no changes in insn with uid = 814.
+verify found no changes in insn with uid = 826.
+verify found no changes in insn with uid = 854.
+verify found no changes in insn with uid = 866.
+verify found no changes in insn with uid = 876.
+verify found no changes in insn with uid = 893.
+verify found no changes in insn with uid = 917.
+verify found no changes in insn with uid = 945.
+verify found no changes in insn with uid = 948.
+verify found no changes in insn with uid = 959.
+verify found no changes in insn with uid = 966.
+verify found no changes in insn with uid = 974.
+verify found no changes in insn with uid = 981.
+verify found no changes in insn with uid = 986.
+verify found no changes in insn with uid = 1004.
+
+;; Function switch_core_media_check_nat (switch_core_media_check_nat)
+
+verify found no changes in insn with uid = 24.
+verify found no changes in insn with uid = 39.
+verify found no changes in insn with uid = 50.
+
+;; Function switch_core_media_ext_address_lookup (switch_core_media_ext_address_lookup)
+
+verify found no changes in insn with uid = 26.
+verify found no changes in insn with uid = 45.
+verify found no changes in insn with uid = 63.
+verify found no changes in insn with uid = 71.
+verify found no changes in insn with uid = 87.
+verify found no changes in insn with uid = 94.
+verify found no changes in insn with uid = 100.
+verify found no changes in insn with uid = 115.
+verify found no changes in insn with uid = 155.
+verify found no changes in insn with uid = 167.
+verify found no changes in insn with uid = 175.
+verify found no changes in insn with uid = 206.
+verify found no changes in insn with uid = 233.
+verify found no changes in insn with uid = 259.
+verify found no changes in insn with uid = 271.
+verify found no changes in insn with uid = 297.
+verify found no changes in insn with uid = 318.
+verify found no changes in insn with uid = 343.
+
+;; Function switch_core_media_reset_autofix (switch_core_media_reset_autofix)
+
+verify found no changes in insn with uid = 23.
+
+;; Function switch_core_media_choose_port (switch_core_media_choose_port)
+
+verify found no changes in insn with uid = 46.
+verify found no changes in insn with uid = 64.
+verify found no changes in insn with uid = 89.
+verify found no changes in insn with uid = 97.
+verify found no changes in insn with uid = 119.
+verify found no changes in insn with uid = 126.
+verify found no changes in insn with uid = 152.
+verify found no changes in insn with uid = 181.
+verify found no changes in insn with uid = 189.
+verify found no changes in insn with uid = 196.
+verify found no changes in insn with uid = 221.
+verify found no changes in insn with uid = 256.
+verify found no changes in insn with uid = 272.
+verify found no changes in insn with uid = 283.
+verify found no changes in insn with uid = 292.
+verify found no changes in insn with uid = 304.
+verify found no changes in insn with uid = 315.
+verify found no changes in insn with uid = 325.
+
+;; Function switch_core_media_choose_ports (switch_core_media_choose_ports)
+
+verify found no changes in insn with uid = 16.
+verify found no changes in insn with uid = 26.
+verify found no changes in insn with uid = 30.
+verify found no changes in insn with uid = 38.
+
+;; Function switch_core_media_deactivate_rtp (switch_core_media_deactivate_rtp)
+
+verify found no changes in insn with uid = 22.
+verify found no changes in insn with uid = 47.
+verify found no changes in insn with uid = 62.
+verify found no changes in insn with uid = 84.
+verify found no changes in insn with uid = 102.
+verify found no changes in insn with uid = 134.
+verify found no changes in insn with uid = 145.
+verify found no changes in insn with uid = 156.
+verify found no changes in insn with uid = 171.
+verify found no changes in insn with uid = 197.
+verify found no changes in insn with uid = 205.
+verify found no changes in insn with uid = 214.
+verify found no changes in insn with uid = 226.
+
+;; Function switch_media_handle_destroy (switch_media_handle_destroy)
+
+verify found no changes in insn with uid = 21.
+verify found no changes in insn with uid = 58.
+verify found no changes in insn with uid = 84.
+verify found no changes in insn with uid = 124.
+verify found no changes in insn with uid = 164.
+verify found no changes in insn with uid = 168.
+verify found no changes in insn with uid = 170.
+verify found no changes in insn with uid = 172.
+
+;; Function switch_core_session_wake_video_thread (switch_core_session_wake_video_thread)
+
+verify found no changes in insn with uid = 28.
+verify found no changes in insn with uid = 39.
+verify found no changes in insn with uid = 46.
+
+;; Function switch_core_media_activate_rtp (switch_core_media_activate_rtp)
+
+verify found no changes in insn with uid = 78.
+verify found no changes in insn with uid = 98.
+verify found no changes in insn with uid = 115.
+verify found no changes in insn with uid = 122.
+verify found no changes in insn with uid = 129.
+verify found no changes in insn with uid = 137.
+verify found no changes in insn with uid = 148.
+verify found no changes in insn with uid = 154.
+verify found no changes in insn with uid = 162.
+verify found no changes in insn with uid = 169.
+verify found no changes in insn with uid = 178.
+verify found no changes in insn with uid = 189.
+verify found no changes in insn with uid = 205.
+verify found no changes in insn with uid = 213.
+verify found no changes in insn with uid = 220.
+verify found no changes in insn with uid = 226.
+verify found no changes in insn with uid = 234.
+verify found no changes in insn with uid = 245.
+verify found no changes in insn with uid = 252.
+verify found no changes in insn with uid = 265.
+verify found no changes in insn with uid = 277.
+verify found no changes in insn with uid = 288.
+verify found no changes in insn with uid = 297.
+verify found no changes in insn with uid = 306.
+verify found no changes in insn with uid = 315.
+verify found no changes in insn with uid = 324.
+verify found no changes in insn with uid = 333.
+verify found no changes in insn with uid = 342.
+verify found no changes in insn with uid = 348.
+verify found no changes in insn with uid = 357.
+verify found no changes in insn with uid = 369.
+verify found no changes in insn with uid = 374.
+verify found no changes in insn with uid = 386.
+verify found no changes in insn with uid = 393.
+verify found no changes in insn with uid = 406.
+verify found no changes in insn with uid = 418.
+verify found no changes in insn with uid = 425.
+verify found no changes in insn with uid = 438.
+verify found no changes in insn with uid = 468.
+verify found no changes in insn with uid = 493.
+verify found no changes in insn with uid = 500.
+verify found no changes in insn with uid = 516.
+verify found no changes in insn with uid = 523.
+verify found no changes in insn with uid = 528.
+verify found no changes in insn with uid = 548.
+verify found no changes in insn with uid = 559.
+verify found no changes in insn with uid = 579.
+verify found no changes in insn with uid = 586.
+verify found no changes in insn with uid = 613.
+verify found no changes in insn with uid = 623.
+verify found no changes in insn with uid = 633.
+verify found no changes in insn with uid = 642.
+verify found no changes in insn with uid = 648.
+verify found no changes in insn with uid = 655.
+verify found no changes in insn with uid = 694.
+verify found no changes in insn with uid = 706.
+verify found no changes in insn with uid = 715.
+verify found no changes in insn with uid = 724.
+verify found no changes in insn with uid = 733.
+verify found no changes in insn with uid = 741.
+verify found no changes in insn with uid = 760.
+verify found no changes in insn with uid = 770.
+verify found no changes in insn with uid = 789.
+verify found no changes in insn with uid = 813.
+verify found no changes in insn with uid = 840.
+verify found no changes in insn with uid = 844.
+verify found no changes in insn with uid = 855.
+verify found no changes in insn with uid = 863.
+verify found no changes in insn with uid = 868.
+verify found no changes in insn with uid = 879.
+verify found no changes in insn with uid = 886.
+verify found no changes in insn with uid = 894.
+verify found no changes in insn with uid = 901.
+verify found no changes in insn with uid = 907.
+verify found no changes in insn with uid = 915.
+verify found no changes in insn with uid = 922.
+verify found no changes in insn with uid = 929.
+verify found no changes in insn with uid = 937.
+verify found no changes in insn with uid = 944.
+verify found no changes in insn with uid = 955.
+verify found no changes in insn with uid = 962.
+verify found no changes in insn with uid = 976.
+verify found no changes in insn with uid = 1012.
+verify found no changes in insn with uid = 1015.
+verify found no changes in insn with uid = 1025.
+verify found no changes in insn with uid = 1041.
+verify found no changes in insn with uid = 1053.
+verify found no changes in insn with uid = 1060.
+verify found no changes in insn with uid = 1078.
+verify found no changes in insn with uid = 1093.
+verify found no changes in insn with uid = 1097.
+verify found no changes in insn with uid = 1109.
+verify found no changes in insn with uid = 1114.
+verify found no changes in insn with uid = 1132.
+verify found no changes in insn with uid = 1140.
+verify found no changes in insn with uid = 1148.
+verify found no changes in insn with uid = 1156.
+verify found no changes in insn with uid = 1165.
+verify found no changes in insn with uid = 1171.
+verify found no changes in insn with uid = 1179.
+verify found no changes in insn with uid = 1188.
+verify found no changes in insn with uid = 1195.
+verify found no changes in insn with uid = 1207.
+verify found no changes in insn with uid = 1215.
+verify found no changes in insn with uid = 1222.
+verify found no changes in insn with uid = 1237.
+verify found no changes in insn with uid = 1244.
+verify found no changes in insn with uid = 1259.
+verify found no changes in insn with uid = 1266.
+verify found no changes in insn with uid = 1281.
+verify found no changes in insn with uid = 1288.
+verify found no changes in insn with uid = 1298.
+verify found no changes in insn with uid = 1310.
+verify found no changes in insn with uid = 1330.
+verify found no changes in insn with uid = 1341.
+verify found no changes in insn with uid = 1352.
+verify found no changes in insn with uid = 1378.
+verify found no changes in insn with uid = 1380.
+verify found no changes in insn with uid = 1383.
+verify found no changes in insn with uid = 1412.
+verify found no changes in insn with uid = 1430.
+verify found no changes in insn with uid = 1448.
+verify found no changes in insn with uid = 1459.
+verify found no changes in insn with uid = 1478.
+verify found no changes in insn with uid = 1488.
+verify found no changes in insn with uid = 1510.
+verify found no changes in insn with uid = 1532.
+verify found no changes in insn with uid = 1543.
+verify found no changes in insn with uid = 1566.
+verify found no changes in insn with uid = 1575.
+verify found no changes in insn with uid = 1584.
+verify found no changes in insn with uid = 1610.
+verify found no changes in insn with uid = 1633.
+verify found no changes in insn with uid = 1642.
+verify found no changes in insn with uid = 1675.
+verify found no changes in insn with uid = 1713.
+verify found no changes in insn with uid = 1735.
+verify found no changes in insn with uid = 1746.
+verify found no changes in insn with uid = 1765.
+verify found no changes in insn with uid = 1779.
+verify found no changes in insn with uid = 1786.
+verify found no changes in insn with uid = 1797.
+verify found no changes in insn with uid = 1834.
+verify found no changes in insn with uid = 1852.
+verify found no changes in insn with uid = 1862.
+verify found no changes in insn with uid = 1881.
+verify found no changes in insn with uid = 1888.
+verify found no changes in insn with uid = 1900.
+verify found no changes in insn with uid = 1905.
+verify found no changes in insn with uid = 1917.
+verify found no changes in insn with uid = 1934.
+verify found no changes in insn with uid = 1964.
+verify found no changes in insn with uid = 1978.
+verify found no changes in insn with uid = 1993.
+verify found no changes in insn with uid = 2020.
+verify found no changes in insn with uid = 2044.
+verify found no changes in insn with uid = 2048.
+verify found no changes in insn with uid = 2055.
+verify found no changes in insn with uid = 2058.
+verify found no changes in insn with uid = 2066.
+verify found no changes in insn with uid = 2090.
+verify found no changes in insn with uid = 2100.
+verify found no changes in insn with uid = 2110.
+verify found no changes in insn with uid = 2128.
+verify found no changes in insn with uid = 2138.
+verify found no changes in insn with uid = 2159.
+verify found no changes in insn with uid = 2165.
+verify found no changes in insn with uid = 2187.
+verify found no changes in insn with uid = 2214.
+verify found no changes in insn with uid = 2220.
+verify found no changes in insn with uid = 2232.
+verify found no changes in insn with uid = 2259.
+verify found no changes in insn with uid = 2265.
+verify found no changes in insn with uid = 2277.
+verify found no changes in insn with uid = 2282.
+verify found no changes in insn with uid = 2293.
+verify found no changes in insn with uid = 2300.
+verify found no changes in insn with uid = 2312.
+verify found no changes in insn with uid = 2319.
+verify found no changes in insn with uid = 2339.
+verify found no changes in insn with uid = 2356.
+verify found no changes in insn with uid = 2371.
+verify found no changes in insn with uid = 2373.
+verify found no changes in insn with uid = 2397.
+verify found no changes in insn with uid = 2408.
+verify found no changes in insn with uid = 2434.
+verify found no changes in insn with uid = 2440.
+verify found no changes in insn with uid = 2445.
+verify found no changes in insn with uid = 2455.
+verify found no changes in insn with uid = 2465.
+verify found no changes in insn with uid = 2474.
+verify found no changes in insn with uid = 2478.
+verify found no changes in insn with uid = 2500.
+verify found no changes in insn with uid = 2518.
+verify found no changes in insn with uid = 2521.
+verify found no changes in insn with uid = 2539.
+verify found no changes in insn with uid = 2541.
+verify found no changes in insn with uid = 2547.
+verify found no changes in insn with uid = 2553.
+verify found no changes in insn with uid = 2559.
+verify found no changes in insn with uid = 2588.
+verify found no changes in insn with uid = 2598.
+verify found no changes in insn with uid = 2606.
+verify found no changes in insn with uid = 2629.
+verify found no changes in insn with uid = 2640.
+verify found no changes in insn with uid = 2660.
+verify found no changes in insn with uid = 2666.
+verify found no changes in insn with uid = 2697.
+verify found no changes in insn with uid = 2703.
+verify found no changes in insn with uid = 2713.
+verify found no changes in insn with uid = 2720.
+verify found no changes in insn with uid = 2759.
+verify found no changes in insn with uid = 2766.
+verify found no changes in insn with uid = 2768.
+verify found no changes in insn with uid = 2781.
+verify found no changes in insn with uid = 2796.
+verify found no changes in insn with uid = 2805.
+verify found no changes in insn with uid = 2814.
+verify found no changes in insn with uid = 2826.
+verify found no changes in insn with uid = 2847.
+verify found no changes in insn with uid = 2857.
+verify found no changes in insn with uid = 2882.
+verify found no changes in insn with uid = 2906.
+verify found no changes in insn with uid = 2937.
+verify found no changes in insn with uid = 2940.
+verify found no changes in insn with uid = 2947.
+verify found no changes in insn with uid = 2958.
+verify found no changes in insn with uid = 2965.
+verify found no changes in insn with uid = 2977.
+verify found no changes in insn with uid = 2979.
+verify found no changes in insn with uid = 2986.
+verify found no changes in insn with uid = 2993.
+verify found no changes in insn with uid = 3000.
+verify found no changes in insn with uid = 3008.
+verify found no changes in insn with uid = 3015.
+verify found no changes in insn with uid = 3026.
+verify found no changes in insn with uid = 3033.
+verify found no changes in insn with uid = 3046.
+verify found no changes in insn with uid = 3089.
+verify found no changes in insn with uid = 3096.
+verify found no changes in insn with uid = 3102.
+verify found no changes in insn with uid = 3120.
+verify found no changes in insn with uid = 3134.
+verify found no changes in insn with uid = 3157.
+verify found no changes in insn with uid = 3166.
+verify found no changes in insn with uid = 3174.
+verify found no changes in insn with uid = 3181.
+verify found no changes in insn with uid = 3192.
+verify found no changes in insn with uid = 3199.
+verify found no changes in insn with uid = 3207.
+verify found no changes in insn with uid = 3219.
+verify found no changes in insn with uid = 3231.
+verify found no changes in insn with uid = 3254.
+verify found no changes in insn with uid = 3272.
+verify found no changes in insn with uid = 3281.
+verify found no changes in insn with uid = 3289.
+verify found no changes in insn with uid = 3311.
+verify found no changes in insn with uid = 3347.
+verify found no changes in insn with uid = 3353.
+verify found no changes in insn with uid = 3373.
+verify found no changes in insn with uid = 3390.
+verify found no changes in insn with uid = 3403.
+verify found no changes in insn with uid = 3405.
+verify found no changes in insn with uid = 3409.
+verify found no changes in insn with uid = 3416.
+verify found no changes in insn with uid = 3425.
+verify found no changes in insn with uid = 3434.
+verify found no changes in insn with uid = 3454.
+verify found no changes in insn with uid = 3471.
+verify found no changes in insn with uid = 3494.
+verify found no changes in insn with uid = 3512.
+verify found no changes in insn with uid = 3539.
+verify found no changes in insn with uid = 3559.
+verify found no changes in insn with uid = 3568.
+verify found no changes in insn with uid = 3589.
+verify found no changes in insn with uid = 3605.
+verify found no changes in insn with uid = 3616.
+verify found no changes in insn with uid = 3639.
+verify found no changes in insn with uid = 3655.
+verify found no changes in insn with uid = 3664.
+verify found no changes in insn with uid = 3690.
+verify found no changes in insn with uid = 3718.
+verify found no changes in insn with uid = 3735.
+verify found no changes in insn with uid = 3783.
+verify found no changes in insn with uid = 3825.
+verify found no changes in insn with uid = 3847.
+verify found no changes in insn with uid = 3874.
+verify found no changes in insn with uid = 3894.
+verify found no changes in insn with uid = 3908.
+verify found no changes in insn with uid = 3915.
+verify found no changes in insn with uid = 3958.
+verify found no changes in insn with uid = 3983.
+verify found no changes in insn with uid = 3992.
+verify found no changes in insn with uid = 4004.
+verify found no changes in insn with uid = 4022.
+verify found no changes in insn with uid = 4037.
+verify found no changes in insn with uid = 4043.
+verify found no changes in insn with uid = 4058.
+verify found no changes in insn with uid = 4061.
+verify found no changes in insn with uid = 4064.
+verify found no changes in insn with uid = 4086.
+verify found no changes in insn with uid = 4092.
+verify found no changes in insn with uid = 4121.
+verify found no changes in insn with uid = 4135.
+verify found no changes in insn with uid = 4164.
+verify found no changes in insn with uid = 4179.
+verify found no changes in insn with uid = 4189.
+verify found no changes in insn with uid = 4196.
+verify found no changes in insn with uid = 4198.
+verify found no changes in insn with uid = 4217.
+verify found no changes in insn with uid = 4219.
+verify found no changes in insn with uid = 4222.
+verify found no changes in insn with uid = 4233.
+verify found no changes in insn with uid = 4243.
+
+;; Function switch_core_media_check_dtmf_type (switch_core_media_check_dtmf_type)
+
+verify found no changes in insn with uid = 22.
+verify found no changes in insn with uid = 39.
+verify found no changes in insn with uid = 49.
+verify found no changes in insn with uid = 66.
+verify found no changes in insn with uid = 83.
+
+;; Function switch_core_media_sdp_map (switch_core_media_sdp_map)
+
+verify found no changes in insn with uid = 13.
+verify found no changes in insn with uid = 20.
+verify found no changes in insn with uid = 27.
+verify found no changes in insn with uid = 34.
+verify found no changes in insn with uid = 53.
+verify found no changes in insn with uid = 68.
+verify found no changes in insn with uid = 120.
+verify found no changes in insn with uid = 131.
+verify found no changes in insn with uid = 150.
+verify found no changes in insn with uid = 163.
+verify found no changes in insn with uid = 176.
+verify found no changes in insn with uid = 186.
+verify found no changes in insn with uid = 197.
+verify found no changes in insn with uid = 217.
+verify found no changes in insn with uid = 236.
+
+;; Function switch_core_media_set_local_sdp (switch_core_media_set_local_sdp)
+
+verify found no changes in insn with uid = 24.
+verify found no changes in insn with uid = 40.
+verify found no changes in insn with uid = 60.
+verify found no changes in insn with uid = 75.
+verify found no changes in insn with uid = 82.
+
+;; Function switch_core_media_gen_local_sdp (switch_core_media_gen_local_sdp)
+
+verify found no changes in insn with uid = 102.
+verify found no changes in insn with uid = 112.
+verify found no changes in insn with uid = 122.
+verify found no changes in insn with uid = 132.
+verify found no changes in insn with uid = 142.
+verify found no changes in insn with uid = 151.
+verify found no changes in insn with uid = 161.
+verify found no changes in insn with uid = 167.
+verify found no changes in insn with uid = 174.
+verify found no changes in insn with uid = 194.
+verify found no changes in insn with uid = 204.
+verify found no changes in insn with uid = 213.
+verify found no changes in insn with uid = 222.
+verify found no changes in insn with uid = 231.
+verify found no changes in insn with uid = 240.
+verify found no changes in insn with uid = 249.
+verify found no changes in insn with uid = 258.
+verify found no changes in insn with uid = 264.
+verify found no changes in insn with uid = 273.
+verify found no changes in insn with uid = 304.
+verify found no changes in insn with uid = 322.
+verify found no changes in insn with uid = 328.
+verify found no changes in insn with uid = 341.
+verify found no changes in insn with uid = 352.
+verify found no changes in insn with uid = 361.
+verify found no changes in insn with uid = 370.
+verify found no changes in insn with uid = 379.
+verify found no changes in insn with uid = 388.
+verify found no changes in insn with uid = 397.
+verify found no changes in insn with uid = 406.
+verify found no changes in insn with uid = 412.
+verify found no changes in insn with uid = 421.
+verify found no changes in insn with uid = 431.
+verify found no changes in insn with uid = 436.
+verify found no changes in insn with uid = 448.
+verify found no changes in insn with uid = 456.
+verify found no changes in insn with uid = 465.
+verify found no changes in insn with uid = 477.
+verify found no changes in insn with uid = 487.
+verify found no changes in insn with uid = 496.
+verify found no changes in insn with uid = 505.
+verify found no changes in insn with uid = 514.
+verify found no changes in insn with uid = 523.
+verify found no changes in insn with uid = 532.
+verify found no changes in insn with uid = 541.
+verify found no changes in insn with uid = 547.
+verify found no changes in insn with uid = 556.
+verify found no changes in insn with uid = 566.
+verify found no changes in insn with uid = 571.
+verify found no changes in insn with uid = 582.
+verify found no changes in insn with uid = 588.
+verify found no changes in insn with uid = 596.
+verify found no changes in insn with uid = 609.
+verify found no changes in insn with uid = 619.
+verify found no changes in insn with uid = 628.
+verify found no changes in insn with uid = 637.
+verify found no changes in insn with uid = 646.
+verify found no changes in insn with uid = 655.
+verify found no changes in insn with uid = 664.
+verify found no changes in insn with uid = 673.
+verify found no changes in insn with uid = 679.
+verify found no changes in insn with uid = 688.
+verify found no changes in insn with uid = 701.
+verify found no changes in insn with uid = 707.
+verify found no changes in insn with uid = 710.
+verify found no changes in insn with uid = 714.
+verify found no changes in insn with uid = 716.
+verify found no changes in insn with uid = 728.
+verify found no changes in insn with uid = 748.
+verify found no changes in insn with uid = 753.
+verify found no changes in insn with uid = 756.
+verify found no changes in insn with uid = 768.
+verify found no changes in insn with uid = 779.
+verify found no changes in insn with uid = 788.
+verify found no changes in insn with uid = 797.
+verify found no changes in insn with uid = 806.
+verify found no changes in insn with uid = 815.
+verify found no changes in insn with uid = 824.
+verify found no changes in insn with uid = 833.
+verify found no changes in insn with uid = 839.
+verify found no changes in insn with uid = 848.
+verify found no changes in insn with uid = 865.
+verify found no changes in insn with uid = 876.
+verify found no changes in insn with uid = 885.
+verify found no changes in insn with uid = 894.
+verify found no changes in insn with uid = 903.
+verify found no changes in insn with uid = 912.
+verify found no changes in insn with uid = 921.
+verify found no changes in insn with uid = 930.
+verify found no changes in insn with uid = 936.
+verify found no changes in insn with uid = 945.
+verify found no changes in insn with uid = 970.
+verify found no changes in insn with uid = 1024.
+verify found no changes in insn with uid = 1073.
+verify found no changes in insn with uid = 1119.
+verify found no changes in insn with uid = 1144.
+verify found no changes in insn with uid = 1184.
+verify found no changes in insn with uid = 1201.
+verify found no changes in insn with uid = 1217.
+verify found no changes in insn with uid = 1228.
+verify found no changes in insn with uid = 1237.
+verify found no changes in insn with uid = 1246.
+verify found no changes in insn with uid = 1255.
+verify found no changes in insn with uid = 1264.
+verify found no changes in insn with uid = 1273.
+verify found no changes in insn with uid = 1282.
+verify found no changes in insn with uid = 1288.
+verify found no changes in insn with uid = 1297.
+verify found no changes in insn with uid = 1309.
+verify found no changes in insn with uid = 1336.
+verify found no changes in insn with uid = 1344.
+verify found no changes in insn with uid = 1351.
+verify found no changes in insn with uid = 1371.
+verify found no changes in insn with uid = 1392.
+verify found no changes in insn with uid = 1394.
+verify found no changes in insn with uid = 1416.
+verify found no changes in insn with uid = 1437.
+verify found no changes in insn with uid = 1439.
+verify found no changes in insn with uid = 1459.
+verify found no changes in insn with uid = 1474.
+verify found no changes in insn with uid = 1499.
+verify found no changes in insn with uid = 1509.
+verify found no changes in insn with uid = 1518.
+verify found no changes in insn with uid = 1527.
+verify found no changes in insn with uid = 1536.
+verify found no changes in insn with uid = 1545.
+verify found no changes in insn with uid = 1554.
+verify found no changes in insn with uid = 1563.
+verify found no changes in insn with uid = 1569.
+verify found no changes in insn with uid = 1578.
+verify found no changes in insn with uid = 1588.
+verify found no changes in insn with uid = 1609.
+verify found no changes in insn with uid = 1620.
+verify found no changes in insn with uid = 1629.
+verify found no changes in insn with uid = 1638.
+verify found no changes in insn with uid = 1647.
+verify found no changes in insn with uid = 1656.
+verify found no changes in insn with uid = 1665.
+verify found no changes in insn with uid = 1674.
+verify found no changes in insn with uid = 1680.
+verify found no changes in insn with uid = 1689.
+verify found no changes in insn with uid = 1706.
+verify found no changes in insn with uid = 1733.
+verify found no changes in insn with uid = 1738.
+verify found no changes in insn with uid = 1747.
+verify found no changes in insn with uid = 1749.
+verify found no changes in insn with uid = 1762.
+verify found no changes in insn with uid = 1771.
+verify found no changes in insn with uid = 1785.
+verify found no changes in insn with uid = 1798.
+verify found no changes in insn with uid = 1807.
+verify found no changes in insn with uid = 1809.
+verify found no changes in insn with uid = 1822.
+verify found no changes in insn with uid = 1825.
+verify found no changes in insn with uid = 1833.
+verify found no changes in insn with uid = 1851.
+verify found no changes in insn with uid = 1862.
+verify found no changes in insn with uid = 1884.
+verify found no changes in insn with uid = 1895.
+verify found no changes in insn with uid = 1909.
+verify found no changes in insn with uid = 1923.
+verify found no changes in insn with uid = 1934.
+verify found no changes in insn with uid = 1939.
+verify found no changes in insn with uid = 1958.
+verify found no changes in insn with uid = 1969.
+verify found no changes in insn with uid = 1973.
+verify found no changes in insn with uid = 1983.
+verify found no changes in insn with uid = 1994.
+verify found no changes in insn with uid = 2005.
+verify found no changes in insn with uid = 2021.
+verify found no changes in insn with uid = 2027.
+verify found no changes in insn with uid = 2042.
+verify found no changes in insn with uid = 2049.
+verify found no changes in insn with uid = 2063.
+verify found no changes in insn with uid = 2068.
+verify found no changes in insn with uid = 2076.
+verify found no changes in insn with uid = 2094.
+verify found no changes in insn with uid = 2109.
+verify found no changes in insn with uid = 2131.
+verify found no changes in insn with uid = 2156.
+verify found no changes in insn with uid = 2170.
+verify found no changes in insn with uid = 2186.
+verify found no changes in insn with uid = 2192.
+verify found no changes in insn with uid = 2206.
+verify found no changes in insn with uid = 2212.
+verify found no changes in insn with uid = 2227.
+verify found no changes in insn with uid = 2232.
+verify found no changes in insn with uid = 2238.
+verify found no changes in insn with uid = 2248.
+verify found no changes in insn with uid = 2267.
+verify found no changes in insn with uid = 2278.
+verify found no changes in insn with uid = 2295.
+verify found no changes in insn with uid = 2305.
+verify found no changes in insn with uid = 2324.
+verify found no changes in insn with uid = 2331.
+verify found no changes in insn with uid = 2342.
+verify found no changes in insn with uid = 2366.
+verify found no changes in insn with uid = 2368.
+verify found no changes in insn with uid = 2379.
+verify found no changes in insn with uid = 2414.
+verify found no changes in insn with uid = 2424.
+verify found no changes in insn with uid = 2426.
+verify found no changes in insn with uid = 2439.
+verify found no changes in insn with uid = 2445.
+verify found no changes in insn with uid = 2459.
+verify found no changes in insn with uid = 2511.
+verify found no changes in insn with uid = 2518.
+verify found no changes in insn with uid = 2522.
+verify found no changes in insn with uid = 2537.
+verify found no changes in insn with uid = 2539.
+verify found no changes in insn with uid = 2554.
+verify found no changes in insn with uid = 2556.
+verify found no changes in insn with uid = 2571.
+verify found no changes in insn with uid = 2573.
+verify found no changes in insn with uid = 2588.
+verify found no changes in insn with uid = 2590.
+verify found no changes in insn with uid = 2606.
+verify found no changes in insn with uid = 2608.
+verify found no changes in insn with uid = 2624.
+verify found no changes in insn with uid = 2626.
+verify found no changes in insn with uid = 2658.
+verify found no changes in insn with uid = 2689.
+verify found no changes in insn with uid = 2713.
+verify found no changes in insn with uid = 2732.
+verify found no changes in insn with uid = 2742.
+verify found no changes in insn with uid = 2778.
+verify found no changes in insn with uid = 2809.
+verify found no changes in insn with uid = 2840.
+verify found no changes in insn with uid = 2850.
+verify found no changes in insn with uid = 2877.
+verify found no changes in insn with uid = 2898.
+verify found no changes in insn with uid = 2914.
+verify found no changes in insn with uid = 2952.
+verify found no changes in insn with uid = 2958.
+verify found no changes in insn with uid = 2983.
+verify found no changes in insn with uid = 2992.
+verify found no changes in insn with uid = 3001.
+verify found no changes in insn with uid = 3010.
+verify found no changes in insn with uid = 3019.
+verify found no changes in insn with uid = 3028.
+verify found no changes in insn with uid = 3037.
+verify found no changes in insn with uid = 3043.
+verify found no changes in insn with uid = 3052.
+verify found no changes in insn with uid = 3064.
+verify found no changes in insn with uid = 3072.
+verify found no changes in insn with uid = 3088.
+verify found no changes in insn with uid = 3097.
+verify found no changes in insn with uid = 3119.
+verify found no changes in insn with uid = 3121.
+verify found no changes in insn with uid = 3139.
+verify found no changes in insn with uid = 3159.
+verify found no changes in insn with uid = 3181.
+verify found no changes in insn with uid = 3190.
+verify found no changes in insn with uid = 3217.
+verify found no changes in insn with uid = 3226.
+verify found no changes in insn with uid = 3233.
+verify found no changes in insn with uid = 3252.
+verify found no changes in insn with uid = 3254.
+verify found no changes in insn with uid = 3271.
+verify found no changes in insn with uid = 3279.
+verify found no changes in insn with uid = 3289.
+verify found no changes in insn with uid = 3308.
+verify found no changes in insn with uid = 3329.
+verify found no changes in insn with uid = 3336.
+verify found no changes in insn with uid = 3345.
+verify found no changes in insn with uid = 3370.
+verify found no changes in insn with uid = 3376.
+verify found no changes in insn with uid = 3383.
+verify found no changes in insn with uid = 3400.
+verify found no changes in insn with uid = 3409.
+verify found no changes in insn with uid = 3413.
+verify found no changes in insn with uid = 3424.
+verify found no changes in insn with uid = 3431.
+verify found no changes in insn with uid = 3444.
+verify found no changes in insn with uid = 3453.
+verify found no changes in insn with uid = 3462.
+verify found no changes in insn with uid = 3473.
+verify found no changes in insn with uid = 3475.
+verify found no changes in insn with uid = 3492.
+verify found no changes in insn with uid = 3495.
+verify found no changes in insn with uid = 3503.
+verify found no changes in insn with uid = 3525.
+verify found no changes in insn with uid = 3536.
+verify found no changes in insn with uid = 3562.
+verify found no changes in insn with uid = 3578.
+verify found no changes in insn with uid = 3598.
+verify found no changes in insn with uid = 3606.
+verify found no changes in insn with uid = 3643.
+verify found no changes in insn with uid = 3654.
+verify found no changes in insn with uid = 3672.
+verify found no changes in insn with uid = 3682.
+verify found no changes in insn with uid = 3701.
+verify found no changes in insn with uid = 3720.
+verify found no changes in insn with uid = 3733.
+verify found no changes in insn with uid = 3747.
+verify found no changes in insn with uid = 3751.
+verify found no changes in insn with uid = 3770.
+verify found no changes in insn with uid = 3780.
+verify found no changes in insn with uid = 3794.
+verify found no changes in insn with uid = 3805.
+verify found no changes in insn with uid = 3823.
+verify found no changes in insn with uid = 3828.
+verify found no changes in insn with uid = 3836.
+verify found no changes in insn with uid = 3862.
+verify found no changes in insn with uid = 3877.
+verify found no changes in insn with uid = 3903.
+verify found no changes in insn with uid = 3910.
+verify found no changes in insn with uid = 3920.
+verify found no changes in insn with uid = 3939.
+verify found no changes in insn with uid = 3955.
+verify found no changes in insn with uid = 3984.
+verify found no changes in insn with uid = 3992.
+verify found no changes in insn with uid = 4023.
+verify found no changes in insn with uid = 4031.
+verify found no changes in insn with uid = 4045.
+verify found no changes in insn with uid = 4059.
+verify found no changes in insn with uid = 4074.
+verify found no changes in insn with uid = 4080.
+verify found no changes in insn with uid = 4094.
+verify found no changes in insn with uid = 4114.
+verify found no changes in insn with uid = 4160.
+verify found no changes in insn with uid = 4172.
+verify found no changes in insn with uid = 4202.
+verify found no changes in insn with uid = 4212.
+verify found no changes in insn with uid = 4219.
+verify found no changes in insn with uid = 4251.
+verify found no changes in insn with uid = 4261.
+verify found no changes in insn with uid = 4263.
+verify found no changes in insn with uid = 4276.
+verify found no changes in insn with uid = 4282.
+verify found no changes in insn with uid = 4296.
+verify found no changes in insn with uid = 4308.
+verify found no changes in insn with uid = 4340.
+verify found no changes in insn with uid = 4396.
+verify found no changes in insn with uid = 4403.
+verify found no changes in insn with uid = 4414.
+verify found no changes in insn with uid = 4424.
+verify found no changes in insn with uid = 4434.
+verify found no changes in insn with uid = 4445.
+verify found no changes in insn with uid = 4454.
+verify found no changes in insn with uid = 4460.
+verify found no changes in insn with uid = 4471.
+verify found no changes in insn with uid = 4478.
+verify found no changes in insn with uid = 4489.
+verify found no changes in insn with uid = 4493.
+verify found no changes in insn with uid = 4512.
+verify found no changes in insn with uid = 4514.
+verify found no changes in insn with uid = 4533.
+verify found no changes in insn with uid = 4535.
+verify found no changes in insn with uid = 4554.
+verify found no changes in insn with uid = 4556.
+verify found no changes in insn with uid = 4575.
+verify found no changes in insn with uid = 4577.
+verify found no changes in insn with uid = 4593.
+verify found no changes in insn with uid = 4595.
+verify found no changes in insn with uid = 4611.
+verify found no changes in insn with uid = 4613.
+verify found no changes in insn with uid = 4645.
+verify found no changes in insn with uid = 4683.
+verify found no changes in insn with uid = 4707.
+verify found no changes in insn with uid = 4729.
+verify found no changes in insn with uid = 4742.
+verify found no changes in insn with uid = 4778.
+verify found no changes in insn with uid = 4816.
+verify found no changes in insn with uid = 4860.
+verify found no changes in insn with uid = 4869.
+verify found no changes in insn with uid = 4877.
+verify found no changes in insn with uid = 4959.
+verify found no changes in insn with uid = 4961.
+verify found no changes in insn with uid = 4972.
+verify found no changes in insn with uid = 4978.
+verify found no changes in insn with uid = 4986.
+verify found no changes in insn with uid = 5018.
+verify found no changes in insn with uid = 5027.
+verify found no changes in insn with uid = 5033.
+verify found no changes in insn with uid = 5035.
+verify found no changes in insn with uid = 5094.
+verify found no changes in insn with uid = 5100.
+verify found no changes in insn with uid = 5111.
+verify found no changes in insn with uid = 5117.
+verify found no changes in insn with uid = 5132.
+verify found no changes in insn with uid = 5153.
+verify found no changes in insn with uid = 5180.
+verify found no changes in insn with uid = 5194.
+verify found no changes in insn with uid = 5218.
+verify found no changes in insn with uid = 5229.
+verify found no changes in insn with uid = 5245.
+verify found no changes in insn with uid = 5266.
+verify found no changes in insn with uid = 5293.
+verify found no changes in insn with uid = 5305.
+verify found no changes in insn with uid = 5327.
+
+;; Function switch_core_media_absorb_sdp (switch_core_media_absorb_sdp)
+
+verify found no changes in insn with uid = 23.
+verify found no changes in insn with uid = 42.
+verify found no changes in insn with uid = 49.
+verify found no changes in insn with uid = 56.
+verify found no changes in insn with uid = 63.
+verify found no changes in insn with uid = 112.
+verify found no changes in insn with uid = 137.
+verify found no changes in insn with uid = 143.
+
+;; Function switch_core_media_set_udptl_image_sdp (switch_core_media_set_udptl_image_sdp)
+
+verify found no changes in insn with uid = 58.
+verify found no changes in insn with uid = 67.
+verify found no changes in insn with uid = 76.
+verify found no changes in insn with uid = 101.
+verify found no changes in insn with uid = 129.
+verify found no changes in insn with uid = 148.
+verify found no changes in insn with uid = 159.
+verify found no changes in insn with uid = 168.
+verify found no changes in insn with uid = 177.
+verify found no changes in insn with uid = 186.
+verify found no changes in insn with uid = 195.
+verify found no changes in insn with uid = 204.
+verify found no changes in insn with uid = 213.
+verify found no changes in insn with uid = 219.
+verify found no changes in insn with uid = 228.
+verify found no changes in insn with uid = 252.
+verify found no changes in insn with uid = 273.
+verify found no changes in insn with uid = 297.
+verify found no changes in insn with uid = 318.
+verify found no changes in insn with uid = 329.
+verify found no changes in insn with uid = 350.
+verify found no changes in insn with uid = 374.
+verify found no changes in insn with uid = 386.
+verify found no changes in insn with uid = 400.
+verify found no changes in insn with uid = 416.
+verify found no changes in insn with uid = 461.
+verify found no changes in insn with uid = 467.
+verify found no changes in insn with uid = 478.
+verify found no changes in insn with uid = 485.
+verify found no changes in insn with uid = 488.
+verify found no changes in insn with uid = 512.
+
+;; Function switch_core_media_patch_sdp (switch_core_media_patch_sdp)
+
+verify found no changes in insn with uid = 94.
+verify found no changes in insn with uid = 125.
+verify found no changes in insn with uid = 137.
+verify found no changes in insn with uid = 149.
+verify found no changes in insn with uid = 172.
+verify found no changes in insn with uid = 190.
+verify found no changes in insn with uid = 197.
+verify found no changes in insn with uid = 217.
+verify found no changes in insn with uid = 237.
+verify found no changes in insn with uid = 261.
+verify found no changes in insn with uid = 273.
+verify found no changes in insn with uid = 280.
+verify found no changes in insn with uid = 327.
+verify found no changes in insn with uid = 336.
+verify found no changes in insn with uid = 343.
+verify found no changes in insn with uid = 356.
+verify found no changes in insn with uid = 364.
+verify found no changes in insn with uid = 370.
+verify found no changes in insn with uid = 373.
+verify found no changes in insn with uid = 445.
+verify found no changes in insn with uid = 453.
+verify found no changes in insn with uid = 468.
+verify found no changes in insn with uid = 482.
+verify found no changes in insn with uid = 496.
+verify found no changes in insn with uid = 536.
+verify found no changes in insn with uid = 540.
+verify found no changes in insn with uid = 548.
+verify found no changes in insn with uid = 552.
+verify found no changes in insn with uid = 567.
+verify found no changes in insn with uid = 575.
+verify found no changes in insn with uid = 589.
+verify found no changes in insn with uid = 609.
+verify found no changes in insn with uid = 613.
+verify found no changes in insn with uid = 621.
+verify found no changes in insn with uid = 625.
+verify found no changes in insn with uid = 666.
+verify found no changes in insn with uid = 677.
+verify found no changes in insn with uid = 691.
+verify found no changes in insn with uid = 704.
+verify found no changes in insn with uid = 711.
+verify found no changes in insn with uid = 714.
+verify found no changes in insn with uid = 773.
+verify found no changes in insn with uid = 789.
+verify found no changes in insn with uid = 816.
+verify found no changes in insn with uid = 821.
+verify found no changes in insn with uid = 832.
+verify found no changes in insn with uid = 842.
+verify found no changes in insn with uid = 847.
+verify found no changes in insn with uid = 849.
+verify found no changes in insn with uid = 855.
+verify found no changes in insn with uid = 868.
+verify found no changes in insn with uid = 875.
+verify found no changes in insn with uid = 878.
+verify found no changes in insn with uid = 994.
+verify found no changes in insn with uid = 1001.
+verify found no changes in insn with uid = 1021.
+verify found no changes in insn with uid = 1032.
+verify found no changes in insn with uid = 1056.
+verify found no changes in insn with uid = 1063.
+verify found no changes in insn with uid = 1088.
+verify found no changes in insn with uid = 1092.
+verify found no changes in insn with uid = 1100.
+verify found no changes in insn with uid = 1130.
+
+;; Function switch_core_media_start_udptl (switch_core_media_start_udptl)
+
+verify found no changes in insn with uid = 23.
+verify found no changes in insn with uid = 36.
+verify found no changes in insn with uid = 43.
+verify found no changes in insn with uid = 52.
+verify found no changes in insn with uid = 60.
+verify found no changes in insn with uid = 65.
+verify found no changes in insn with uid = 72.
+verify found no changes in insn with uid = 75.
+verify found no changes in insn with uid = 101.
+verify found no changes in insn with uid = 124.
+verify found no changes in insn with uid = 149.
+verify found no changes in insn with uid = 166.
+verify found no changes in insn with uid = 190.
+verify found no changes in insn with uid = 216.
+verify found no changes in insn with uid = 219.
+verify found no changes in insn with uid = 227.
+verify found no changes in insn with uid = 239.
+verify found no changes in insn with uid = 250.
+verify found no changes in insn with uid = 259.
+verify found no changes in insn with uid = 268.
+verify found no changes in insn with uid = 277.
+verify found no changes in insn with uid = 286.
+verify found no changes in insn with uid = 295.
+verify found no changes in insn with uid = 304.
+verify found no changes in insn with uid = 310.
+verify found no changes in insn with uid = 319.
+verify found no changes in insn with uid = 331.
+
+;; Function switch_core_media_receive_message (switch_core_media_receive_message)
+
+verify found no changes in insn with uid = 98.
+verify found no changes in insn with uid = 111.
+verify found no changes in insn with uid = 118.
+verify found no changes in insn with uid = 138.
+verify found no changes in insn with uid = 147.
+verify found no changes in insn with uid = 161.
+verify found no changes in insn with uid = 168.
+verify found no changes in insn with uid = 181.
+verify found no changes in insn with uid = 189.
+verify found no changes in insn with uid = 196.
+verify found no changes in insn with uid = 215.
+verify found no changes in insn with uid = 223.
+verify found no changes in insn with uid = 232.
+verify found no changes in insn with uid = 240.
+verify found no changes in insn with uid = 250.
+verify found no changes in insn with uid = 293.
+verify found no changes in insn with uid = 304.
+verify found no changes in insn with uid = 313.
+verify found no changes in insn with uid = 317.
+verify found no changes in insn with uid = 333.
+verify found no changes in insn with uid = 338.
+verify found no changes in insn with uid = 350.
+verify found no changes in insn with uid = 364.
+verify found no changes in insn with uid = 368.
+verify found no changes in insn with uid = 395.
+verify found no changes in insn with uid = 421.
+verify found no changes in insn with uid = 425.
+verify found no changes in insn with uid = 432.
+verify found no changes in insn with uid = 435.
+verify found no changes in insn with uid = 443.
+verify found no changes in insn with uid = 467.
+verify found no changes in insn with uid = 473.
+verify found no changes in insn with uid = 502.
+verify found no changes in insn with uid = 530.
+verify found no changes in insn with uid = 550.
+verify found no changes in insn with uid = 570.
+verify found no changes in insn with uid = 578.
+verify found no changes in insn with uid = 586.
+verify found no changes in insn with uid = 608.
+verify found no changes in insn with uid = 619.
+verify found no changes in insn with uid = 641.
+verify found no changes in insn with uid = 648.
+verify found no changes in insn with uid = 662.
+verify found no changes in insn with uid = 673.
+verify found no changes in insn with uid = 682.
+verify found no changes in insn with uid = 691.
+verify found no changes in insn with uid = 700.
+verify found no changes in insn with uid = 709.
+verify found no changes in insn with uid = 718.
+verify found no changes in insn with uid = 727.
+verify found no changes in insn with uid = 733.
+verify found no changes in insn with uid = 742.
+verify found no changes in insn with uid = 753.
+verify found no changes in insn with uid = 760.
+verify found no changes in insn with uid = 766.
+verify found no changes in insn with uid = 786.
+verify found no changes in insn with uid = 789.
+verify found no changes in insn with uid = 798.
+verify found no changes in insn with uid = 806.
+verify found no changes in insn with uid = 813.
+verify found no changes in insn with uid = 815.
+verify found no changes in insn with uid = 835.
+verify found no changes in insn with uid = 845.
+verify found no changes in insn with uid = 856.
+verify found no changes in insn with uid = 865.
+verify found no changes in insn with uid = 874.
+verify found no changes in insn with uid = 883.
+verify found no changes in insn with uid = 892.
+verify found no changes in insn with uid = 901.
+verify found no changes in insn with uid = 910.
+verify found no changes in insn with uid = 916.
+verify found no changes in insn with uid = 925.
+verify found no changes in insn with uid = 939.
+verify found no changes in insn with uid = 952.
+verify found no changes in insn with uid = 967.
+verify found no changes in insn with uid = 978.
+verify found no changes in insn with uid = 987.
+verify found no changes in insn with uid = 996.
+verify found no changes in insn with uid = 1005.
+verify found no changes in insn with uid = 1014.
+verify found no changes in insn with uid = 1023.
+verify found no changes in insn with uid = 1032.
+verify found no changes in insn with uid = 1038.
+verify found no changes in insn with uid = 1047.
+verify found no changes in insn with uid = 1070.
+verify found no changes in insn with uid = 1075.
+verify found no changes in insn with uid = 1083.
+verify found no changes in insn with uid = 1090.
+verify found no changes in insn with uid = 1106.
+verify found no changes in insn with uid = 1112.
+verify found no changes in insn with uid = 1132.
+verify found no changes in insn with uid = 1135.
+verify found no changes in insn with uid = 1141.
+verify found no changes in insn with uid = 1148.
+verify found no changes in insn with uid = 1168.
+verify found no changes in insn with uid = 1172.
+verify found no changes in insn with uid = 1178.
+verify found no changes in insn with uid = 1186.
+verify found no changes in insn with uid = 1193.
+verify found no changes in insn with uid = 1200.
+verify found no changes in insn with uid = 1206.
+verify found no changes in insn with uid = 1212.
+verify found no changes in insn with uid = 1220.
+verify found no changes in insn with uid = 1224.
+verify found no changes in insn with uid = 1232.
+verify found no changes in insn with uid = 1239.
+verify found no changes in insn with uid = 1248.
+verify found no changes in insn with uid = 1260.
+verify found no changes in insn with uid = 1271.
+verify found no changes in insn with uid = 1286.
+verify found no changes in insn with uid = 1294.
+verify found no changes in insn with uid = 1304.
+verify found no changes in insn with uid = 1313.
+verify found no changes in insn with uid = 1322.
+verify found no changes in insn with uid = 1331.
+verify found no changes in insn with uid = 1340.
+verify found no changes in insn with uid = 1349.
+verify found no changes in insn with uid = 1358.
+verify found no changes in insn with uid = 1364.
+verify found no changes in insn with uid = 1373.
+verify found no changes in insn with uid = 1386.
+verify found no changes in insn with uid = 1394.
+verify found no changes in insn with uid = 1398.
+verify found no changes in insn with uid = 1415.
+verify found no changes in insn with uid = 1422.
+verify found no changes in insn with uid = 1431.
+verify found no changes in insn with uid = 1440.
+verify found no changes in insn with uid = 1444.
+verify found no changes in insn with uid = 1459.
+verify found no changes in insn with uid = 1528.
+verify found no changes in insn with uid = 1539.
+verify found no changes in insn with uid = 1549.
+verify found no changes in insn with uid = 1559.
+verify found no changes in insn with uid = 1568.
+verify found no changes in insn with uid = 1574.
+verify found no changes in insn with uid = 1581.
+verify found no changes in insn with uid = 1608.
+verify found no changes in insn with uid = 1620.
+verify found no changes in insn with uid = 1650.
+verify found no changes in insn with uid = 1667.
+verify found no changes in insn with uid = 1670.
+verify found no changes in insn with uid = 1672.
+verify found no changes in insn with uid = 1681.
+verify found no changes in insn with uid = 1686.
+verify found no changes in insn with uid = 1704.
+verify found no changes in insn with uid = 1723.
+verify found no changes in insn with uid = 1725.
+verify found no changes in insn with uid = 1732.
+verify found no changes in insn with uid = 1744.
+verify found no changes in insn with uid = 1751.
+verify found no changes in insn with uid = 1759.
+verify found no changes in insn with uid = 1773.
+verify found no changes in insn with uid = 1780.
+verify found no changes in insn with uid = 1790.
+verify found no changes in insn with uid = 1798.
+verify found no changes in insn with uid = 1808.
+verify found no changes in insn with uid = 1815.
+verify found no changes in insn with uid = 1822.
+verify found no changes in insn with uid = 1837.
+verify found no changes in insn with uid = 1874.
+verify found no changes in insn with uid = 1880.
+verify found no changes in insn with uid = 1900.
+verify found no changes in insn with uid = 1904.
+verify found no changes in insn with uid = 1907.
+
+;; Function switch_core_media_break (switch_core_media_break)
+
+verify found no changes in insn with uid = 23.
+verify found no changes in insn with uid = 40.
+verify found no changes in insn with uid = 53.
+
+;; Function switch_core_media_kill_socket (switch_core_media_kill_socket)
+
+verify found no changes in insn with uid = 23.
+verify found no changes in insn with uid = 40.
+verify found no changes in insn with uid = 53.
+
+;; Function switch_core_media_queue_rfc2833 (switch_core_media_queue_rfc2833)
+
+verify found no changes in insn with uid = 26.
+verify found no changes in insn with uid = 43.
+verify found no changes in insn with uid = 57.
+
+;; Function switch_core_media_queue_rfc2833_in (switch_core_media_queue_rfc2833_in)
+
+verify found no changes in insn with uid = 26.
+verify found no changes in insn with uid = 43.
+verify found no changes in insn with uid = 57.
+
+;; Function switch_core_media_ready (switch_core_media_ready)
+
+verify found no changes in insn with uid = 24.
+verify found no changes in insn with uid = 41.
+
+;; Function switch_core_media_set_rtp_flag (switch_core_media_set_rtp_flag)
+
+verify found no changes in insn with uid = 23.
+verify found no changes in insn with uid = 40.
+verify found no changes in insn with uid = 54.
+
+;; Function switch_core_media_clear_rtp_flag (switch_core_media_clear_rtp_flag)
+
+verify found no changes in insn with uid = 22.
+verify found no changes in insn with uid = 39.
+verify found no changes in insn with uid = 53.
+
+;; Function switch_core_media_set_telephony_event (switch_core_media_set_telephony_event)
+
+verify found no changes in insn with uid = 24.
+verify found no changes in insn with uid = 41.
+verify found no changes in insn with uid = 55.
+
+;; Function switch_core_media_set_telephony_recv_event (switch_core_media_set_telephony_recv_event)
+
+verify found no changes in insn with uid = 24.
+verify found no changes in insn with uid = 41.
+verify found no changes in insn with uid = 55.
+
+;; Function switch_core_media_get_stats (switch_core_media_get_stats)
+
+verify found no changes in insn with uid = 26.
+verify found no changes in insn with uid = 47.
+
+;; Function set_stats (set_stats)
+
+verify found no changes in insn with uid = 13.
+verify found no changes in insn with uid = 17.
+verify found no changes in insn with uid = 27.
+verify found no changes in insn with uid = 70.
+verify found no changes in insn with uid = 88.
+verify found no changes in insn with uid = 97.
+verify found no changes in insn with uid = 104.
+verify found no changes in insn with uid = 115.
+verify found no changes in insn with uid = 124.
+verify found no changes in insn with uid = 131.
+verify found no changes in insn with uid = 142.
+verify found no changes in insn with uid = 151.
+verify found no changes in insn with uid = 158.
+verify found no changes in insn with uid = 169.
+verify found no changes in insn with uid = 178.
+verify found no changes in insn with uid = 185.
+verify found no changes in insn with uid = 196.
+verify found no changes in insn with uid = 205.
+verify found no changes in insn with uid = 212.
+verify found no changes in insn with uid = 223.
+verify found no changes in insn with uid = 232.
+verify found no changes in insn with uid = 239.
+verify found no changes in insn with uid = 250.
+verify found no changes in insn with uid = 259.
+verify found no changes in insn with uid = 266.
+verify found no changes in insn with uid = 277.
+verify found no changes in insn with uid = 286.
+verify found no changes in insn with uid = 293.
+verify found no changes in insn with uid = 304.
+verify found no changes in insn with uid = 313.
+verify found no changes in insn with uid = 320.
+verify found no changes in insn with uid = 331.
+verify found no changes in insn with uid = 340.
+verify found no changes in insn with uid = 347.
+verify found no changes in insn with uid = 358.
+verify found no changes in insn with uid = 367.
+verify found no changes in insn with uid = 374.
+verify found no changes in insn with uid = 385.
+verify found no changes in insn with uid = 394.
+verify found no changes in insn with uid = 401.
+verify found no changes in insn with uid = 412.
+verify found no changes in insn with uid = 421.
+verify found no changes in insn with uid = 428.
+verify found no changes in insn with uid = 439.
+verify found no changes in insn with uid = 448.
+verify found no changes in insn with uid = 455.
+verify found no changes in insn with uid = 466.
+verify found no changes in insn with uid = 475.
+verify found no changes in insn with uid = 482.
+verify found no changes in insn with uid = 493.
+verify found no changes in insn with uid = 503.
+verify found no changes in insn with uid = 510.
+verify found no changes in insn with uid = 521.
+verify found no changes in insn with uid = 532.
+verify found no changes in insn with uid = 539.
+verify found no changes in insn with uid = 550.
+verify found no changes in insn with uid = 561.
+verify found no changes in insn with uid = 568.
+verify found no changes in insn with uid = 579.
+verify found no changes in insn with uid = 589.
+verify found no changes in insn with uid = 596.
+verify found no changes in insn with uid = 607.
+verify found no changes in insn with uid = 617.
+verify found no changes in insn with uid = 624.
+verify found no changes in insn with uid = 635.
+verify found no changes in insn with uid = 645.
+verify found no changes in insn with uid = 652.
+verify found no changes in insn with uid = 663.
+verify found no changes in insn with uid = 673.
+verify found no changes in insn with uid = 680.
+verify found no changes in insn with uid = 691.
+verify found no changes in insn with uid = 701.
+verify found no changes in insn with uid = 708.
+verify found no changes in insn with uid = 719.
+verify found no changes in insn with uid = 729.
+verify found no changes in insn with uid = 736.
+verify found no changes in insn with uid = 747.
+verify found no changes in insn with uid = 757.
+verify found no changes in insn with uid = 764.
+verify found no changes in insn with uid = 775.
+verify found no changes in insn with uid = 785.
+verify found no changes in insn with uid = 792.
+verify found no changes in insn with uid = 804.
+verify found no changes in insn with uid = 814.
+verify found no changes in insn with uid = 821.
+verify found no changes in insn with uid = 840.
+verify found no changes in insn with uid = 849.
+verify found no changes in insn with uid = 856.
+verify found no changes in insn with uid = 869.
+verify found no changes in insn with uid = 878.
+verify found no changes in insn with uid = 885.
+verify found no changes in insn with uid = 898.
+verify found no changes in insn with uid = 907.
+verify found no changes in insn with uid = 914.
+verify found no changes in insn with uid = 927.
+verify found no changes in insn with uid = 936.
+verify found no changes in insn with uid = 943.
+verify found no changes in insn with uid = 956.
+verify found no changes in insn with uid = 965.
+verify found no changes in insn with uid = 972.
+verify found no changes in insn with uid = 985.
+verify found no changes in insn with uid = 994.
+verify found no changes in insn with uid = 1001.
+verify found no changes in insn with uid = 1014.
+verify found no changes in insn with uid = 1023.
+verify found no changes in insn with uid = 1030.
+verify found no changes in insn with uid = 1043.
+verify found no changes in insn with uid = 1052.
+verify found no changes in insn with uid = 1059.
+verify found no changes in insn with uid = 1072.
+verify found no changes in insn with uid = 1081.
+verify found no changes in insn with uid = 1088.
+verify found no changes in insn with uid = 1101.
+verify found no changes in insn with uid = 1110.
+verify found no changes in insn with uid = 1117.
+verify found no changes in insn with uid = 1130.
+verify found no changes in insn with uid = 1139.
+verify found no changes in insn with uid = 1146.
+verify found no changes in insn with uid = 1159.
+verify found no changes in insn with uid = 1168.
+verify found no changes in insn with uid = 1175.
+verify found no changes in insn with uid = 1188.
+verify found no changes in insn with uid = 1197.
+verify found no changes in insn with uid = 1204.
+verify found no changes in insn with uid = 1217.
+verify found no changes in insn with uid = 1226.
+verify found no changes in insn with uid = 1233.
+verify found no changes in insn with uid = 1246.
+verify found no changes in insn with uid = 1255.
+verify found no changes in insn with uid = 1262.
+verify found no changes in insn with uid = 1275.
+verify found no changes in insn with uid = 1285.
+verify found no changes in insn with uid = 1292.
+verify found no changes in insn with uid = 1305.
+verify found no changes in insn with uid = 1316.
+verify found no changes in insn with uid = 1323.
+verify found no changes in insn with uid = 1336.
+verify found no changes in insn with uid = 1347.
+verify found no changes in insn with uid = 1354.
+verify found no changes in insn with uid = 1367.
+verify found no changes in insn with uid = 1377.
+verify found no changes in insn with uid = 1384.
+verify found no changes in insn with uid = 1397.
+verify found no changes in insn with uid = 1407.
+verify found no changes in insn with uid = 1414.
+verify found no changes in insn with uid = 1427.
+verify found no changes in insn with uid = 1437.
+verify found no changes in insn with uid = 1444.
+verify found no changes in insn with uid = 1457.
+verify found no changes in insn with uid = 1467.
+verify found no changes in insn with uid = 1474.
+verify found no changes in insn with uid = 1487.
+verify found no changes in insn with uid = 1497.
+verify found no changes in insn with uid = 1504.
+verify found no changes in insn with uid = 1517.
+verify found no changes in insn with uid = 1527.
+verify found no changes in insn with uid = 1534.
+verify found no changes in insn with uid = 1547.
+verify found no changes in insn with uid = 1557.
+verify found no changes in insn with uid = 1564.
+verify found no changes in insn with uid = 1577.
+verify found no changes in insn with uid = 1587.
+verify found no changes in insn with uid = 1594.
+
+;; Function switch_core_media_set_stats (switch_core_media_set_stats)
+
+verify found no changes in insn with uid = 16.
+verify found no changes in insn with uid = 22.
+
+;; Function switch_core_media_udptl_mode (switch_core_media_udptl_mode)
+
+verify found no changes in insn with uid = 25.
+verify found no changes in insn with uid = 42.
+verify found no changes in insn with uid = 55.
+
+;; Function switch_core_media_get_jb (switch_core_media_get_jb)
+
+verify found no changes in insn with uid = 25.
+verify found no changes in insn with uid = 42.
+verify found no changes in insn with uid = 55.
+
+;; Function switch_core_media_set_sdp_codec_string (switch_core_media_set_sdp_codec_string)
+
+verify found no changes in insn with uid = 23.
+verify found no changes in insn with uid = 34.
+verify found no changes in insn with uid = 41.
+verify found no changes in insn with uid = 48.
+verify found no changes in insn with uid = 55.
+verify found no changes in insn with uid = 61.
+verify found no changes in insn with uid = 65.
+
+;; Function switch_core_media_codec_chosen (switch_core_media_codec_chosen)
+
+verify found no changes in insn with uid = 24.
+
+;; Function switch_core_media_check_outgoing_proxy (switch_core_media_check_outgoing_proxy)
+
+verify found no changes in insn with uid = 24.
+verify found no changes in insn with uid = 31.
+verify found no changes in insn with uid = 49.
+verify found no changes in insn with uid = 60.
+verify found no changes in insn with uid = 75.
+verify found no changes in insn with uid = 89.
+verify found no changes in insn with uid = 97.
+verify found no changes in insn with uid = 116.
+verify found no changes in insn with uid = 121.
+
+;; Function switch_core_media_proxy_codec (switch_core_media_proxy_codec)
+
+verify found no changes in insn with uid = 30.
+verify found no changes in insn with uid = 43.
+verify found no changes in insn with uid = 50.
+verify found no changes in insn with uid = 57.
+verify found no changes in insn with uid = 64.
+verify found no changes in insn with uid = 92.
+verify found no changes in insn with uid = 140.
+verify found no changes in insn with uid = 153.
+verify found no changes in insn with uid = 187.
+verify found no changes in insn with uid = 201.
+verify found no changes in insn with uid = 217.
+verify found no changes in insn with uid = 229.
+
+;; Function switch_core_media_recover_session (switch_core_media_recover_session)
+
+verify found no changes in insn with uid = 28.
+verify found no changes in insn with uid = 45.
+verify found no changes in insn with uid = 55.
+verify found no changes in insn with uid = 61.
+verify found no changes in insn with uid = 85.
+verify found no changes in insn with uid = 95.
+verify found no changes in insn with uid = 105.
+verify found no changes in insn with uid = 120.
+verify found no changes in insn with uid = 132.
+verify found no changes in insn with uid = 142.
+verify found no changes in insn with uid = 162.
+verify found no changes in insn with uid = 174.
+verify found no changes in insn with uid = 187.
+verify found no changes in insn with uid = 206.
+verify found no changes in insn with uid = 216.
+verify found no changes in insn with uid = 235.
+verify found no changes in insn with uid = 244.
+verify found no changes in insn with uid = 257.
+verify found no changes in insn with uid = 269.
+verify found no changes in insn with uid = 281.
+verify found no changes in insn with uid = 294.
+verify found no changes in insn with uid = 306.
+verify found no changes in insn with uid = 319.
+verify found no changes in insn with uid = 330.
+verify found no changes in insn with uid = 345.
+verify found no changes in insn with uid = 356.
+verify found no changes in insn with uid = 368.
+verify found no changes in insn with uid = 379.
+verify found no changes in insn with uid = 395.
+verify found no changes in insn with uid = 406.
+verify found no changes in insn with uid = 418.
+verify found no changes in insn with uid = 427.
+verify found no changes in insn with uid = 466.
+verify found no changes in insn with uid = 474.
+verify found no changes in insn with uid = 486.
+verify found no changes in insn with uid = 501.
+verify found no changes in insn with uid = 517.
+verify found no changes in insn with uid = 532.
+verify found no changes in insn with uid = 550.
+verify found no changes in insn with uid = 565.
+verify found no changes in insn with uid = 575.
+verify found no changes in insn with uid = 584.
+verify found no changes in insn with uid = 594.
+verify found no changes in insn with uid = 604.
+verify found no changes in insn with uid = 611.
+verify found no changes in insn with uid = 619.
+verify found no changes in insn with uid = 634.
+verify found no changes in insn with uid = 653.
+verify found no changes in insn with uid = 668.
+verify found no changes in insn with uid = 677.
+verify found no changes in insn with uid = 712.
+verify found no changes in insn with uid = 725.
+verify found no changes in insn with uid = 728.
+verify found no changes in insn with uid = 730.
+verify found no changes in insn with uid = 737.
+verify found no changes in insn with uid = 740.
+verify found no changes in insn with uid = 748.
+verify found no changes in insn with uid = 771.
+verify found no changes in insn with uid = 787.
+verify found no changes in insn with uid = 818.
+verify found no changes in insn with uid = 839.
+verify found no changes in insn with uid = 845.
+verify found no changes in insn with uid = 873.
+verify found no changes in insn with uid = 911.
+verify found no changes in insn with uid = 916.
+verify found no changes in insn with uid = 928.
+verify found no changes in insn with uid = 935.
+verify found no changes in insn with uid = 955.
+verify found no changes in insn with uid = 978.
+
+;; Function switch_core_media_init (switch_core_media_init)
+
+verify found no changes in insn with uid = 8.
+
+;; Function switch_core_media_deinit (switch_core_media_deinit)
+

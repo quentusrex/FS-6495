@@ -1,0 +1,408 @@
+
+;; Function greedy_sort (greedy_sort)
+
+deleting insn with uid = 327.
+
+;; Function dtls_ok (dtls_ok)
+
+deleting insn with uid = 26.
+
+;; Function switch_core_media_find_zrtp_hash (switch_core_media_find_zrtp_hash)
+
+deleting insn with uid = 530.
+
+;; Function _switch_core_media_pass_zrtp_hash2 (_switch_core_media_pass_zrtp_hash2)
+
+deleting insn with uid = 299.
+
+;; Function switch_true (switch_true)
+
+deleting insn with uid = 227.
+
+;; Function switch_false (switch_false)
+
+deleting insn with uid = 227.
+
+;; Function gen_ice (gen_ice)
+
+deleting insn with uid = 538.
+
+;; Function generate_local_fingerprint (generate_local_fingerprint)
+
+deleting insn with uid = 99.
+
+;; Function start_video_thread (start_video_thread) (unlikely executed)
+
+deleting insn with uid = 223.
+
+;; Function video_helper_thread (video_helper_thread)
+
+deleting insn with uid = 508.
+
+;; Function switch_core_media_process_udptl (switch_core_media_process_udptl)
+
+deleting insn with uid = 886.
+
+;; Function get_media_profile_name (get_media_profile_name)
+
+deleting insn with uid = 136.
+
+;; Function add_audio_codec.constprop.7 (add_audio_codec.constprop.7)
+
+deleting insn with uid = 458.
+
+;; Function get_channels (get_channels)
+
+deleting insn with uid = 196.
+
+;; Function switch_core_media_build_crypto.constprop.8 (switch_core_media_build_crypto.constprop.8)
+
+deleting insn with uid = 618.
+
+;; Function switch_core_session_parse_crypto_prefs (switch_core_session_parse_crypto_prefs)
+
+deleting insn with uid = 1082.
+
+;; Function switch_core_media_crypto_str2type (switch_core_media_crypto_str2type)
+
+deleting insn with uid = 89.
+
+;; Function switch_core_session_get_recovery_crypto_key (switch_core_session_get_recovery_crypto_key)
+
+deleting insn with uid = 283.
+
+;; Function switch_core_media_crypto_type2str (switch_core_media_crypto_type2str)
+
+deleting insn with uid = 78.
+
+;; Function switch_core_media_crypto_keylen (switch_core_media_crypto_keylen)
+
+deleting insn with uid = 78.
+
+;; Function switch_core_media_pass_zrtp_hash2 (switch_core_media_pass_zrtp_hash2)
+
+deleting insn with uid = 28.
+
+;; Function switch_core_media_pass_zrtp_hash (switch_core_media_pass_zrtp_hash)
+
+deleting insn with uid = 212.
+
+;; Function switch_core_media_get_zrtp_hash (switch_core_media_get_zrtp_hash)
+
+deleting insn with uid = 75.
+
+;; Function switch_core_media_extract_t38_options (switch_core_media_extract_t38_options)
+
+deleting insn with uid = 178.
+
+;; Function switch_core_session_get_payload_code (switch_core_session_get_payload_code)
+
+deleting insn with uid = 332.
+
+;; Function switch_core_media_add_payload_map (switch_core_media_add_payload_map)
+
+deleting insn with uid = 776.
+
+;; Function switch_core_media_set_r_sdp_codec_string (switch_core_media_set_r_sdp_codec_string)
+
+deleting insn with uid = 2249.
+
+;; Function switch_core_media_get_codec_string (switch_core_media_get_codec_string)
+
+deleting insn with uid = 265.
+
+;; Function switch_core_session_clear_crypto (switch_core_session_clear_crypto)
+
+deleting insn with uid = 132.
+
+;; Function switch_core_session_local_crypto_key (switch_core_session_local_crypto_key)
+
+deleting insn with uid = 72.
+
+;; Function switch_core_media_parse_rtp_bugs (switch_core_media_parse_rtp_bugs)
+
+deleting insn with uid = 448.
+
+;; Function switch_core_media_add_crypto (switch_core_media_add_crypto)
+
+deleting insn with uid = 319.
+
+;; Function switch_core_session_apply_crypto (switch_core_session_apply_crypto)
+
+deleting insn with uid = 250.
+
+;; Function switch_core_media_set_rtp_session (switch_core_media_set_rtp_session)
+
+deleting insn with uid = 47.
+
+;; Function switch_core_session_check_incoming_crypto (switch_core_session_check_incoming_crypto)
+
+deleting insn with uid = 1344.
+
+;; Function switch_media_handle_create (switch_media_handle_create)
+
+deleting insn with uid = 383.
+
+;; Function switch_media_handle_set_media_flag (switch_media_handle_set_media_flag)
+
+deleting insn with uid = 65.
+
+;; Function switch_media_handle_set_media_flags (switch_media_handle_set_media_flags)
+
+deleting insn with uid = 86.
+
+;; Function switch_media_handle_clear_media_flag (switch_media_handle_clear_media_flag)
+
+deleting insn with uid = 63.
+
+;; Function switch_media_handle_test_media_flag (switch_media_handle_test_media_flag)
+
+deleting insn with uid = 77.
+
+;; Function generate_m.isra.4 (generate_m.isra.4)
+
+deleting insn with uid = 2447.
+
+;; Function switch_core_session_media_handle_ready (switch_core_session_media_handle_ready)
+
+deleting insn with uid = 55.
+
+;; Function switch_core_session_check_outgoing_crypto (switch_core_session_check_outgoing_crypto)
+
+deleting insn with uid = 131.
+
+;; Function switch_core_session_get_media_handle (switch_core_session_get_media_handle)
+
+deleting insn with uid = 50.
+
+;; Function switch_core_session_clear_media_handle (switch_core_session_clear_media_handle)
+
+deleting insn with uid = 46.
+
+;; Function switch_core_media_get_mparams (switch_core_media_get_mparams)
+
+deleting insn with uid = 74.
+
+;; Function switch_core_media_prepare_codecs (switch_core_media_prepare_codecs)
+
+deleting insn with uid = 483.
+
+;; Function switch_core_media_write_frame (switch_core_media_write_frame)
+
+deleting insn with uid = 341.
+
+;; Function switch_core_media_copy_t38_options (switch_core_media_copy_t38_options)
+
+deleting insn with uid = 244.
+
+;; Function switch_core_media_process_t38_passthru (switch_core_media_process_t38_passthru)
+
+deleting insn with uid = 442.
+
+;; Function switch_core_media_get_offered_pt (switch_core_media_get_offered_pt)
+
+deleting insn with uid = 207.
+
+;; Function switch_core_media_set_video_codec (switch_core_media_set_video_codec)
+
+deleting insn with uid = 813.
+
+;; Function switch_core_media_set_codec (switch_core_media_set_codec)
+
+deleting insn with uid = 1345.
+
+;; Function switch_core_media_read_frame (switch_core_media_read_frame)
+
+deleting insn with uid = 2550.
+
+;; Function switch_core_media_add_ice_acl (switch_core_media_add_ice_acl)
+
+deleting insn with uid = 180.
+
+;; Function switch_core_media_check_video_codecs (switch_core_media_check_video_codecs)
+
+deleting insn with uid = 205.
+
+;; Function switch_ice_direction (switch_ice_direction)
+
+deleting insn with uid = 95.
+
+;; Function check_dtls_reinvite (check_dtls_reinvite)
+
+deleting insn with uid = 242.
+
+;; Function check_ice (check_ice)
+
+deleting insn with uid = 4697.
+
+;; Function switch_core_session_set_ice (switch_core_session_set_ice)
+
+deleting insn with uid = 105.
+
+;; Function switch_core_media_toggle_hold (switch_core_media_toggle_hold)
+
+deleting insn with uid = 1214.
+
+;; Function switch_core_media_negotiate_sdp (switch_core_media_negotiate_sdp)
+
+deleting insn with uid = 11050.
+
+;; Function switch_core_media_proxy_remote_addr (switch_core_media_proxy_remote_addr)
+
+deleting insn with uid = 1824.
+
+;; Function switch_core_media_check_nat (switch_core_media_check_nat)
+
+deleting insn with uid = 124.
+
+;; Function switch_core_media_ext_address_lookup (switch_core_media_ext_address_lookup)
+
+deleting insn with uid = 779.
+
+;; Function switch_core_media_reset_autofix (switch_core_media_reset_autofix)
+
+deleting insn with uid = 95.
+
+;; Function switch_core_media_choose_port (switch_core_media_choose_port)
+
+deleting insn with uid = 703.
+
+;; Function switch_core_media_choose_ports (switch_core_media_choose_ports)
+
+deleting insn with uid = 88.
+
+;; Function switch_core_media_deactivate_rtp (switch_core_media_deactivate_rtp)
+
+deleting insn with uid = 382.
+
+;; Function switch_media_handle_destroy (switch_media_handle_destroy)
+
+deleting insn with uid = 272.
+
+;; Function switch_core_session_wake_video_thread (switch_core_session_wake_video_thread)
+
+deleting insn with uid = 89.
+
+;; Function switch_core_media_activate_rtp (switch_core_media_activate_rtp)
+
+deleting insn with uid = 7111.
+
+;; Function switch_core_media_check_dtmf_type (switch_core_media_check_dtmf_type)
+
+deleting insn with uid = 169.
+
+;; Function switch_core_media_sdp_map (switch_core_media_sdp_map)
+
+deleting insn with uid = 439.
+
+;; Function switch_core_media_set_local_sdp (switch_core_media_set_local_sdp)
+
+deleting insn with uid = 186.
+
+;; Function switch_core_media_gen_local_sdp (switch_core_media_gen_local_sdp)
+
+deleting insn with uid = 9050.
+
+;; Function switch_core_media_absorb_sdp (switch_core_media_absorb_sdp)
+
+deleting insn with uid = 278.
+
+;; Function switch_core_media_set_udptl_image_sdp (switch_core_media_set_udptl_image_sdp)
+
+deleting insn with uid = 1114.
+
+;; Function switch_core_media_patch_sdp (switch_core_media_patch_sdp)
+
+deleting insn with uid = 2173.
+
+;; Function switch_core_media_start_udptl (switch_core_media_start_udptl)
+
+deleting insn with uid = 570.
+
+;; Function switch_core_media_receive_message (switch_core_media_receive_message)
+
+deleting insn with uid = 3514.
+
+;; Function switch_core_media_break (switch_core_media_break)
+
+deleting insn with uid = 110.
+
+;; Function switch_core_media_kill_socket (switch_core_media_kill_socket)
+
+deleting insn with uid = 110.
+
+;; Function switch_core_media_queue_rfc2833 (switch_core_media_queue_rfc2833)
+
+deleting insn with uid = 137.
+
+;; Function switch_core_media_queue_rfc2833_in (switch_core_media_queue_rfc2833_in)
+
+deleting insn with uid = 137.
+
+;; Function switch_core_media_ready (switch_core_media_ready)
+
+deleting insn with uid = 107.
+
+;; Function switch_core_media_set_rtp_flag (switch_core_media_set_rtp_flag)
+
+deleting insn with uid = 113.
+
+;; Function switch_core_media_clear_rtp_flag (switch_core_media_clear_rtp_flag)
+
+deleting insn with uid = 108.
+
+;; Function switch_core_media_set_telephony_event (switch_core_media_set_telephony_event)
+
+deleting insn with uid = 116.
+
+;; Function switch_core_media_set_telephony_recv_event (switch_core_media_set_telephony_recv_event)
+
+deleting insn with uid = 116.
+
+;; Function switch_core_media_get_stats (switch_core_media_get_stats)
+
+deleting insn with uid = 124.
+
+;; Function set_stats (set_stats)
+
+deleting insn with uid = 2013.
+
+;; Function switch_core_media_set_stats (switch_core_media_set_stats)
+
+deleting insn with uid = 60.
+
+;; Function switch_core_media_udptl_mode (switch_core_media_udptl_mode)
+
+deleting insn with uid = 130.
+
+;; Function switch_core_media_get_jb (switch_core_media_get_jb)
+
+deleting insn with uid = 128.
+
+;; Function switch_core_media_set_sdp_codec_string (switch_core_media_set_sdp_codec_string)
+
+deleting insn with uid = 134.
+
+;; Function switch_core_media_codec_chosen (switch_core_media_codec_chosen)
+
+deleting insn with uid = 120.
+
+;; Function switch_core_media_check_outgoing_proxy (switch_core_media_check_outgoing_proxy)
+
+deleting insn with uid = 226.
+
+;; Function switch_core_media_proxy_codec (switch_core_media_proxy_codec)
+
+deleting insn with uid = 477.
+
+;; Function switch_core_media_recover_session (switch_core_media_recover_session)
+
+deleting insn with uid = 1543.
+
+;; Function switch_core_media_init (switch_core_media_init)
+
+deleting insn with uid = 25.
+
+;; Function switch_core_media_deinit (switch_core_media_deinit)
+
+deleting insn with uid = 13.

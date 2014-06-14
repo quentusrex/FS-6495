@@ -1,0 +1,711 @@
+
+;; Function start_video_thread (start_video_thread) (unlikely executed)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Code Hosting Expressions hash table (35 buckets, 20 entries)
+Index 0 (hash value 15; max distance 4)
+  (const_int 0 [0])
+Index 1 (hash value 10; max distance 0)
+  (const_int 22220 [0x56cc])
+Index 2 (hash value 1; max distance 0)
+  (const_int 11396 [0x2c84])
+Index 3 (hash value 17; max distance 0)
+  (plus:SI (reg/v/f:SI 136 [ smh ])
+    (const_int 11496 [0x2ce8]))
+Index 4 (hash value 11; max distance 4)
+  (plus:SI (reg/f:SI 163)
+    (const_int 88 [0x58]))
+Index 5 (hash value 20; max distance 4)
+  (const_int 5 [0x5])
+Index 6 (hash value 31; max distance 4)
+  (mem/s/f:SI (plus:SI (reg:SI 157)
+        (const_int 1856 [0x740])) [2 MEM[(struct switch_rtp_engine_t *)smh_5 + 11496B].cur_payload_map+0 S4 A32])
+Index 7 (hash value 17; max distance 4)
+  (zero_extend:SI (mem/s:QI (plus:SI (reg/f:SI 174 [ MEM[(struct switch_rtp_engine_t *)smh_5 + 11496B].cur_payload_map ])
+            (const_int 56 [0x38])) [0 D.43804_13->agreed_pt+0 S1 A32]))
+Index 8 (hash value 20; max distance 0)
+  (const_int 11380 [0x2c74])
+Index 9 (hash value 26; max distance 0)
+  (plus:SI (reg/f:SI 25 sfp)
+    (const_int -4 [0xfffffffffffffffc]))
+Index 10 (hash value 12; max distance 4)
+  (plus:SI (reg/v/f:SI 136 [ smh ])
+    (const_int 11456 [0x2cc0]))
+Index 11 (hash value 2; max distance 4)
+  (plus:SI (reg/f:SI 184)
+    (const_int 11328 [0x2c40]))
+Index 12 (hash value 29; max distance 0)
+  (plus:SI (reg/f:SI 185)
+    (const_int 11424 [0x2ca0]))
+Index 13 (hash value 33; max distance 0)
+  (plus:SI (reg/f:SI 185)
+    (const_int 11428 [0x2ca4]))
+Index 14 (hash value 31; max distance 4)
+  (plus:SI (reg/f:SI 184)
+    (const_int 11392 [0x2c80]))
+Index 15 (hash value 14; max distance 0)
+  (plus:SI (reg/f:SI 185)
+    (const_int 11444 [0x2cb4]))
+Index 16 (hash value 34; max distance 4)
+  (mem/f/c/i:SI (plus:SI (reg/f:SI 25 sfp)
+        (const_int -4 [0xfffffffffffffffc])) [2 thd_attr+0 S4 A32])
+Index 17 (hash value 6; max distance 0)
+  (plus:SI (reg/f:SI 185)
+    (const_int 11436 [0x2cac]))
+Index 18 (hash value 25; max distance 0)
+  (plus:SI (reg/f:SI 185)
+    (const_int 11420 [0x2c9c]))
+Index 19 (hash value 16; max distance 4)
+  (const_int 1 [0x1])
+
+hoisting vbeinout computation: 2 passes
+vbein (2): n_bits = 20, set = {0 1 }
+vbeout(2): n_bits = 20, set = {0 1 }
+vbein (3): n_bits = 20, set = {2 3 }
+vbeout(3): n_bits = 20, set = {2 3 }
+vbein (4): n_bits = 20, set = {3 5 8 9 10 }
+vbeout(4): n_bits = 20, set = {3 4 5 8 9 10 11 12 13 14 15 17 18 }
+vbein (5): n_bits = 20, set = {19 }
+vbeout(5): n_bits = 20, set = {19 }
+vbein (6): n_bits = 20, set = {19 }
+vbeout(6): n_bits = 20, set = {19 }
+vbein (7): n_bits = 20, set = {}
+vbeout(7): n_bits = 20, set = {}
+
+scanning new insn with uid = 144.
+deleting insn with uid = 82.
+scanning new insn with uid = 145.
+PRE/HOIST: end of bb 3, insn 145, copying expression 3 to reg 207
+HOIST of start_video_thread, 8 basic blocks, 4528 bytes needed, 1 substs, 1 insns created
+
+
+try_optimize_cfg iteration 1
+
+(note 7 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+
+(insn 2 7 3 2 (set (reg/v/f:SI 152 [ session ])
+        (reg:SI 0 r0 [ session ])) src/switch_core_media.c:4104 625 {*arm_movsi_vfp}
+     (nil))
+
+(note 3 2 9 2 NOTE_INSN_FUNCTION_BEG)
+
+(insn 9 3 10 2 (set (reg:SI 153)
+        (const_int 0 [0])) src/switch_core_media.c:4105 625 {*arm_movsi_vfp}
+     (nil))
+
+(insn 10 9 12 2 (set (mem/f/c/i:SI (plus:SI (reg/f:SI 25 sfp)
+                (const_int -4 [0xfffffffffffffffc])) [2 thd_attr+0 S4 A32])
+        (reg:SI 153)) src/switch_core_media.c:4105 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 153)
+        (nil)))
+
+(call_insn 12 10 13 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("switch_core_session_get_pool") [flags 0x41]  <function_decl 0x406f3780 switch_core_session_get_pool>) [0 S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) src/switch_core_media.c:4106 236 {*call_value_symbol}
+     (nil)
+    (expr_list:REG_DEP_TRUE (use (reg:SI 0 r0))
+        (nil)))
+
+(insn 13 12 14 2 (set (reg/v/f:SI 135 [ pool ])
+        (reg:SI 0 r0)) src/switch_core_media.c:4106 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+
+(debug_insn 14 13 15 2 (var_location:SI pool (reg/v/f:SI 135 [ pool ])) src/switch_core_media.c:4106 -1
+     (nil))
+
+(debug_insn 15 14 16 2 (var_location:SI v_engine (const_int 0 [0])) src/switch_core_media.c:4107 -1
+     (nil))
+
+(insn 16 15 17 2 (set (reg:SI 154)
+        (const_int 22220 [0x56cc])) src/switch_core_media.c:4110 625 {*arm_movsi_vfp}
+     (nil))
+
+(insn 17 16 18 2 (set (reg/v/f:SI 136 [ smh ])
+        (mem/s/f:SI (plus:SI (reg/v/f:SI 152 [ session ])
+                (reg:SI 154)) [2 session_2(D)->media_handle+0 S4 A32])) src/switch_core_media.c:4110 625 {*arm_movsi_vfp}
+     (expr_list:REG_EQUAL (mem/s/f:SI (plus:SI (reg/v/f:SI 152 [ session ])
+                (const_int 22220 [0x56cc])) [2 session_2(D)->media_handle+0 S4 A32])
+        (expr_list:REG_DEAD (reg:SI 154)
+            (nil))))
+
+(debug_insn 18 17 19 2 (var_location:SI smh (reg/v/f:SI 136 [ smh ])) src/switch_core_media.c:4110 -1
+     (nil))
+
+(insn 19 18 20 2 (set (reg:CC 24 cc)
+        (compare:CC (reg/v/f:SI 136 [ smh ])
+            (const_int 0 [0]))) src/switch_core_media.c:4110 199 {*arm_cmpsi_insn}
+     (nil))
+
+(jump_insn 20 19 21 2 (set (pc)
+        (if_then_else (eq (reg:CC 24 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 138)
+            (pc))) src/switch_core_media.c:4110 211 {*arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 24 cc)
+        (expr_list:REG_BR_PROB (const_int 1014 [0x3f6])
+            (nil)))
+ -> 138)
+
+(note 21 20 22 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+
+(debug_insn 22 21 23 3 (var_location:SI D#3 (plus:SI (reg/v/f:SI 136 [ smh ])
+        (const_int 11496 [0x2ce8]))) src/switch_core_media.c:4114 -1
+     (nil))
+
+(debug_insn 23 22 25 3 (var_location:SI v_engine (debug_expr:SI D#3)) src/switch_core_media.c:4114 -1
+     (nil))
+
+(insn 25 23 26 3 (set (reg:SI 156)
+        (const_int 11396 [0x2c84])) src/switch_core_media.c:4116 625 {*arm_movsi_vfp}
+     (nil))
+
+(insn 26 25 28 3 (set (reg:SI 157)
+        (plus:SI (reg/v/f:SI 136 [ smh ])
+            (const_int 11496 [0x2ce8]))) src/switch_core_media.c:4116 4 {*arm_addsi3}
+     (expr_list:REG_EQUAL (plus:SI (reg/v/f:SI 136 [ smh ])
+            (const_int 11496 [0x2ce8]))
+        (nil)))
+
+(insn 28 26 29 3 (set (reg/f:SI 159 [ MEM[(struct switch_rtp_engine_t *)smh_5 + 11496B].media_thread ])
+        (mem/s/f:SI (plus:SI (reg:SI 157)
+                (reg:SI 156)) [2 MEM[(struct switch_rtp_engine_t *)smh_5 + 11496B].media_thread+0 S4 A32])) src/switch_core_media.c:4116 625 {*arm_movsi_vfp}
+     (expr_list:REG_EQUAL (mem/s/f:SI (plus:SI (reg:SI 157)
+                (const_int 11396 [0x2c84])) [2 MEM[(struct switch_rtp_engine_t *)smh_5 + 11496B].media_thread+0 S4 A32])
+        (expr_list:REG_DEAD (reg/f:SI 158)
+            (nil))))
+
+(insn 29 28 145 3 (set (reg:CC 24 cc)
+        (compare:CC (reg/f:SI 159 [ MEM[(struct switch_rtp_engine_t *)smh_5 + 11496B].media_thread ])
+            (const_int 0 [0]))) src/switch_core_media.c:4116 199 {*arm_cmpsi_insn}
+     (nil))
+
+(insn 145 29 30 3 (set (reg/f:SI 207)
+        (plus:SI (reg/v/f:SI 136 [ smh ])
+            (const_int 11496 [0x2ce8]))) 4 {*arm_addsi3}
+     (nil))
+
+(jump_insn 30 145 31 3 (set (pc)
+        (if_then_else (ne (reg:CC 24 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 142)
+            (pc))) src/switch_core_media.c:4116 211 {*arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 24 cc)
+        (expr_list:REG_BR_PROB (const_int 8987 [0x231b])
+            (nil)))
+ -> 142)
+
+(note 31 30 32 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+
+(insn 32 31 33 4 (set (reg:SI 0 r0)
+        (reg/v/f:SI 152 [ session ])) src/switch_core_media.c:4120 625 {*arm_movsi_vfp}
+     (nil))
+
+(call_insn 33 32 36 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("switch_core_session_get_channel") [flags 0x41]  <function_decl 0x406f3f80 switch_core_session_get_channel>) [0 S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) src/switch_core_media.c:4120 236 {*call_value_symbol}
+     (nil)
+    (expr_list:REG_DEP_TRUE (use (reg:SI 0 r0))
+        (nil)))
+
+(call_insn 36 33 37 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("switch_channel_get_name") [flags 0x41]  <function_decl 0x4084f780 switch_channel_get_name>) [0 S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) src/switch_core_media.c:4120 236 {*call_value_symbol}
+     (nil)
+    (expr_list:REG_DEP_TRUE (use (reg:SI 0 r0))
+        (nil)))
+
+(insn 37 36 38 4 (set (reg/f:SI 139 [ D.43802 ])
+        (reg:SI 0 r0)) src/switch_core_media.c:4120 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+
+(insn 38 37 40 4 (set (reg/f:SI 161)
+        (unspec:SI [
+                (const:SI (unspec:SI [
+                            (symbol_ref/v/f:SI ("*.LC11") [flags 0x82]  <var_decl 0x41d4acc0 *.LC11>)
+                            (const:SI (plus:SI (unspec:SI [
+                                            (const_int 84 [0x54])
+                                        ] 21)
+                                    (const_int 8 [0x8])))
+                        ] 27))
+                (const_int 84 [0x54])
+            ] 29)) src/switch_core_media.c:4120 170 {pic_load_addr_unified}
+     (expr_list:REG_EQUAL (symbol_ref/v/f:SI ("*.LC11") [flags 0x82]  <var_decl 0x41d4acc0 *.LC11>)
+        (nil)))
+
+(insn 40 38 42 4 (set (reg/f:SI 163)
+        (unspec:SI [
+                (const:SI (unspec:SI [
+                            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                            (const:SI (plus:SI (unspec:SI [
+                                            (const_int 85 [0x55])
+                                        ] 21)
+                                    (const_int 8 [0x8])))
+                        ] 27))
+                (const_int 85 [0x55])
+            ] 29)) src/switch_core_media.c:4120 170 {pic_load_addr_unified}
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+
+(insn 42 40 44 4 (set (reg/f:SI 164)
+        (plus:SI (reg/f:SI 163)
+            (const_int 88 [0x58]))) src/switch_core_media.c:4120 4 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg/f:SI 163)
+        (expr_list:REG_EQUAL (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                    (const_int 88 [0x58])))
+            (nil))))
+
+(insn 44 42 45 4 (set (mem:SI (reg/f:SI 13 sp) [0 S4 A32])
+        (reg/v/f:SI 152 [ session ])) src/switch_core_media.c:4120 625 {*arm_movsi_vfp}
+     (nil))
+
+(insn 45 44 46 4 (set (reg:SI 166)
+        (const_int 5 [0x5])) src/switch_core_media.c:4120 625 {*arm_movsi_vfp}
+     (nil))
+
+(insn 46 45 47 4 (set (mem:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [0 S4 A32])
+        (reg:SI 166)) src/switch_core_media.c:4120 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 166)
+        (nil)))
+
+(insn 47 46 49 4 (set (reg/f:SI 168)
+        (unspec:SI [
+                (const:SI (unspec:SI [
+                            (symbol_ref/v/f:SI ("*.LC43") [flags 0x82]  <var_decl 0x41de8c00 *.LC43>)
+                            (const:SI (plus:SI (unspec:SI [
+                                            (const_int 86 [0x56])
+                                        ] 21)
+                                    (const_int 8 [0x8])))
+                        ] 27))
+                (const_int 86 [0x56])
+            ] 29)) src/switch_core_media.c:4120 170 {pic_load_addr_unified}
+     (expr_list:REG_EQUAL (symbol_ref/v/f:SI ("*.LC43") [flags 0x82]  <var_decl 0x41de8c00 *.LC43>)
+        (nil)))
+
+(insn 49 47 50 4 (set (mem:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])) [0 S4 A32])
+        (reg/f:SI 168)) src/switch_core_media.c:4120 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 168)
+        (nil)))
+
+(insn 50 49 51 4 (set (mem:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 12 [0xc])) [0 S4 A32])
+        (reg/f:SI 139 [ D.43802 ])) src/switch_core_media.c:4120 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 139 [ D.43802 ])
+        (nil)))
+
+(insn 51 50 52 4 (set (reg:SI 0 r0)
+        (const_int 3 [0x3])) src/switch_core_media.c:4120 625 {*arm_movsi_vfp}
+     (nil))
+
+(insn 52 51 53 4 (set (reg:SI 1 r1)
+        (reg/f:SI 161)) src/switch_core_media.c:4120 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 161)
+        (expr_list:REG_EQUAL (symbol_ref/v/f:SI ("*.LC11") [flags 0x82]  <var_decl 0x41d4acc0 *.LC11>)
+            (nil))))
+
+(insn 53 52 54 4 (set (reg:SI 2 r2)
+        (reg/f:SI 164)) src/switch_core_media.c:4120 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 164)
+        (expr_list:REG_EQUAL (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                    (const_int 88 [0x58])))
+            (nil))))
+
+(insn 54 53 55 4 (set (reg:SI 3 r3)
+        (const_int 4120 [0x1018])) src/switch_core_media.c:4120 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 165)
+        (expr_list:REG_EQUAL (const_int 4120 [0x1018])
+            (nil))))
+
+(call_insn 55 54 64 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("switch_log_printf") [flags 0x41]  <function_decl 0x4075a380 switch_log_printf>) [0 S4 A32])
+                (const_int 16 [0x10]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) src/switch_core_media.c:4120 235 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_DEAD (reg:SI 2 r2)
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_DEAD (reg:SI 0 r0)
+                    (nil)))))
+    (expr_list:REG_DEP_TRUE (use (reg:SI 3 r3))
+        (expr_list:REG_DEP_TRUE (use (reg:SI 2 r2))
+            (expr_list:REG_DEP_TRUE (use (reg:SI 1 r1))
+                (expr_list:REG_DEP_TRUE (use (reg:SI 0 r0))
+                    (nil))))))
+
+(insn 64 55 65 4 (set (reg/f:SI 174 [ MEM[(struct switch_rtp_engine_t *)smh_5 + 11496B].cur_payload_map ])
+        (mem/s/f:SI (plus:SI (reg:SI 157)
+                (const_int 1856 [0x740])) [2 MEM[(struct switch_rtp_engine_t *)smh_5 + 11496B].cur_payload_map+0 S4 A32])) src/switch_core_media.c:4122 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 177)
+        (nil)))
+
+(insn 65 64 66 4 (set (reg:SI 178 [ D.43804_13->agreed_pt ])
+        (zero_extend:SI (mem/s:QI (plus:SI (reg/f:SI 174 [ MEM[(struct switch_rtp_engine_t *)smh_5 + 11496B].cur_payload_map ])
+                    (const_int 56 [0x38])) [0 D.43804_13->agreed_pt+0 S1 A32]))) src/switch_core_media.c:4122 153 {*arm_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg/f:SI 174 [ MEM[(struct switch_rtp_engine_t *)smh_5 + 11496B].cur_payload_map ])
+        (nil)))
+
+(insn 66 65 67 4 (set (reg:SI 0 r0)
+        (mem/s/f:SI (plus:SI (reg:SI 157)
+                (const_int 1448 [0x5a8])) [2 MEM[(struct switch_rtp_engine_t *)smh_5 + 11496B].rtp_session+0 S4 A32])) src/switch_core_media.c:4122 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 172)
+        (nil)))
+
+(insn 67 66 68 4 (set (reg:SI 1 r1)
+        (reg:SI 178 [ D.43804_13->agreed_pt ])) src/switch_core_media.c:4122 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 178 [ D.43804_13->agreed_pt ])
+        (nil)))
+
+(call_insn 68 67 70 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("switch_rtp_set_default_payload") [flags 0x41]  <function_decl 0x408ce200 switch_rtp_set_default_payload>) [0 S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) src/switch_core_media.c:4122 235 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_DEAD (reg:SI 0 r0)
+            (nil)))
+    (expr_list:REG_DEP_TRUE (use (reg:SI 1 r1))
+        (expr_list:REG_DEP_TRUE (use (reg:SI 0 r0))
+            (nil))))
+
+(insn 70 68 73 4 (set (reg:SI 180)
+        (const_int 11380 [0x2c74])) src/switch_core_media.c:4123 625 {*arm_movsi_vfp}
+     (nil))
+
+(insn 73 70 74 4 (set (mem/s/f:SI (plus:SI (reg:SI 157)
+                (reg:SI 180)) [2 MEM[(struct switch_rtp_engine_t *)smh_5 + 11496B].mh.session+0 S4 A32])
+        (reg/v/f:SI 152 [ session ])) src/switch_core_media.c:4123 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 182)
+        (nil)))
+
+(insn 74 73 75 4 (set (reg/f:SI 183)
+        (plus:SI (reg/f:SI 25 sfp)
+            (const_int -4 [0xfffffffffffffffc]))) src/switch_core_media.c:4124 4 {*arm_addsi3}
+     (nil))
+
+(insn 75 74 76 4 (set (reg:SI 0 r0)
+        (reg/f:SI 183)) src/switch_core_media.c:4124 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 183)
+        (expr_list:REG_EQUAL (plus:SI (reg/f:SI 25 sfp)
+                (const_int -4 [0xfffffffffffffffc]))
+            (nil))))
+
+(insn 76 75 77 4 (set (reg:SI 1 r1)
+        (reg/v/f:SI 135 [ pool ])) src/switch_core_media.c:4124 625 {*arm_movsi_vfp}
+     (nil))
+
+(call_insn 77 76 78 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("switch_threadattr_create") [flags 0x41]  <function_decl 0x4069d780 switch_threadattr_create>) [0 S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) src/switch_core_media.c:4124 236 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (nil)))
+    (expr_list:REG_DEP_TRUE (use (reg:SI 1 r1))
+        (expr_list:REG_DEP_TRUE (use (reg:SI 0 r0))
+            (nil))))
+
+(insn 78 77 79 4 (set (reg:SI 0 r0)
+        (mem/f/c/i:SI (plus:SI (reg/f:SI 25 sfp)
+                (const_int -4 [0xfffffffffffffffc])) [2 thd_attr+0 S4 A32])) src/switch_core_media.c:4125 625 {*arm_movsi_vfp}
+     (nil))
+
+(insn 79 78 80 4 (set (reg:SI 1 r1)
+        (const_int 245760 [0x3c000])) src/switch_core_media.c:4125 625 {*arm_movsi_vfp}
+     (nil))
+
+(call_insn 80 79 81 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("switch_threadattr_stacksize_set") [flags 0x41]  <function_decl 0x4069d680 switch_threadattr_stacksize_set>) [0 S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) src/switch_core_media.c:4125 236 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (nil)))
+    (expr_list:REG_DEP_TRUE (use (reg:SI 1 r1))
+        (expr_list:REG_DEP_TRUE (use (reg:SI 0 r0))
+            (nil))))
+
+(insn 81 80 144 4 (set (reg/f:SI 185)
+        (plus:SI (reg/v/f:SI 136 [ smh ])
+            (const_int 11456 [0x2cc0]))) src/switch_core_media.c:4127 4 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg/v/f:SI 136 [ smh ])
+        (nil)))
+
+(insn 144 81 83 4 (set (reg/f:SI 184)
+        (reg/f:SI 207)) src/switch_core_media.c:4127 -1
+     (expr_list:REG_EQUAL (plus:SI (reg/v/f:SI 136 [ smh ])
+            (const_int 11496 [0x2ce8]))
+        (nil)))
+
+(insn 83 144 84 4 (set (reg/f:SI 187)
+        (plus:SI (reg/f:SI 184)
+            (const_int 11328 [0x2c40]))) src/switch_core_media.c:4127 4 {*arm_addsi3}
+     (nil))
+
+(insn 84 83 85 4 (set (reg/f:SI 186)
+        (plus:SI (reg/f:SI 187)
+            (const_int 56 [0x38]))) src/switch_core_media.c:4127 4 {*arm_addsi3}
+     (expr_list:REG_EQUAL (plus:SI (reg/f:SI 185)
+            (const_int 11424 [0x2ca0]))
+        (nil)))
+
+(insn 85 84 86 4 (set (reg:SI 0 r0)
+        (reg/f:SI 186)) src/switch_core_media.c:4127 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 186)
+        (nil)))
+
+(insn 86 85 87 4 (set (reg:SI 1 r1)
+        (reg/v/f:SI 135 [ pool ])) src/switch_core_media.c:4127 625 {*arm_movsi_vfp}
+     (nil))
+
+(call_insn 87 86 91 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("switch_thread_cond_create") [flags 0x41]  <function_decl 0x40693300 switch_thread_cond_create>) [0 S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) src/switch_core_media.c:4127 236 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (nil)))
+    (expr_list:REG_DEP_TRUE (use (reg:SI 1 r1))
+        (expr_list:REG_DEP_TRUE (use (reg:SI 0 r0))
+            (nil))))
+
+(insn 91 87 92 4 (set (reg/f:SI 190)
+        (plus:SI (reg/f:SI 187)
+            (const_int 60 [0x3c]))) src/switch_core_media.c:4128 4 {*arm_addsi3}
+     (expr_list:REG_EQUAL (plus:SI (reg/f:SI 185)
+            (const_int 11428 [0x2ca4]))
+        (nil)))
+
+(insn 92 91 93 4 (set (reg:SI 0 r0)
+        (reg/f:SI 190)) src/switch_core_media.c:4128 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 190)
+        (nil)))
+
+(insn 93 92 94 4 (set (reg:SI 1 r1)
+        (const_int 1 [0x1])) src/switch_core_media.c:4128 625 {*arm_movsi_vfp}
+     (nil))
+
+(insn 94 93 95 4 (set (reg:SI 2 r2)
+        (reg/v/f:SI 135 [ pool ])) src/switch_core_media.c:4128 625 {*arm_movsi_vfp}
+     (nil))
+
+(call_insn 95 94 98 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("switch_mutex_init") [flags 0x41]  <function_decl 0x40685900 switch_mutex_init>) [0 S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) src/switch_core_media.c:4128 236 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 2 r2)
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_UNUSED (reg:SI 0 r0)
+                (nil))))
+    (expr_list:REG_DEP_TRUE (use (reg:SI 2 r2))
+        (expr_list:REG_DEP_TRUE (use (reg:SI 1 r1))
+            (expr_list:REG_DEP_TRUE (use (reg:SI 0 r0))
+                (nil)))))
+
+(insn 98 95 99 4 (set (reg/f:SI 195)
+        (plus:SI (reg/f:SI 184)
+            (const_int 11392 [0x2c80]))) src/switch_core_media.c:4129 4 {*arm_addsi3}
+     (nil))
+
+(insn 99 98 100 4 (set (reg/f:SI 194)
+        (plus:SI (reg/f:SI 195)
+            (const_int 12 [0xc]))) src/switch_core_media.c:4129 4 {*arm_addsi3}
+     (expr_list:REG_EQUAL (plus:SI (reg/f:SI 185)
+            (const_int 11444 [0x2cb4]))
+        (nil)))
+
+(insn 100 99 101 4 (set (reg:SI 0 r0)
+        (reg/f:SI 194)) src/switch_core_media.c:4129 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 194)
+        (nil)))
+
+(insn 101 100 102 4 (set (reg:SI 1 r1)
+        (const_int 1 [0x1])) src/switch_core_media.c:4129 625 {*arm_movsi_vfp}
+     (nil))
+
+(insn 102 101 103 4 (set (reg:SI 2 r2)
+        (reg/v/f:SI 135 [ pool ])) src/switch_core_media.c:4129 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 135 [ pool ])
+        (nil)))
+
+(call_insn 103 102 104 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("switch_mutex_init") [flags 0x41]  <function_decl 0x40685900 switch_mutex_init>) [0 S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) src/switch_core_media.c:4129 236 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 2 r2)
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_UNUSED (reg:SI 0 r0)
+                (nil))))
+    (expr_list:REG_DEP_TRUE (use (reg:SI 2 r2))
+        (expr_list:REG_DEP_TRUE (use (reg:SI 1 r1))
+            (expr_list:REG_DEP_TRUE (use (reg:SI 0 r0))
+                (nil)))))
+
+(insn 104 103 105 4 (set (reg/f:SI 148 [ thd_attr.69 ])
+        (mem/f/c/i:SI (plus:SI (reg/f:SI 25 sfp)
+                (const_int -4 [0xfffffffffffffffc])) [2 thd_attr+0 S4 A32])) src/switch_core_media.c:4130 625 {*arm_movsi_vfp}
+     (nil))
+
+(insn 105 104 106 4 (set (reg:SI 0 r0)
+        (reg/v/f:SI 152 [ session ])) src/switch_core_media.c:4130 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 152 [ session ])
+        (nil)))
+
+(call_insn 106 105 107 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("switch_core_session_get_pool") [flags 0x41]  <function_decl 0x406f3780 switch_core_session_get_pool>) [0 S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) src/switch_core_media.c:4130 236 {*call_value_symbol}
+     (nil)
+    (expr_list:REG_DEP_TRUE (use (reg:SI 0 r0))
+        (nil)))
+
+(insn 107 106 111 4 (set (reg/f:SI 150 [ D.43812 ])
+        (reg:SI 0 r0)) src/switch_core_media.c:4130 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+
+(insn 111 107 112 4 (set (reg/f:SI 198)
+        (plus:SI (reg/f:SI 195)
+            (const_int 4 [0x4]))) src/switch_core_media.c:4130 4 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg/f:SI 195)
+        (expr_list:REG_EQUAL (plus:SI (reg/f:SI 185)
+                (const_int 11436 [0x2cac]))
+            (nil))))
+
+(insn 112 111 117 4 (set (reg/f:SI 201)
+        (unspec:SI [
+                (const:SI (unspec:SI [
+                            (symbol_ref:SI ("video_helper_thread") [flags 0x3]  <function_decl 0x414f3d00 video_helper_thread>)
+                            (const:SI (plus:SI (unspec:SI [
+                                            (const_int 87 [0x57])
+                                        ] 21)
+                                    (const_int 8 [0x8])))
+                        ] 27))
+                (const_int 87 [0x57])
+            ] 29)) src/switch_core_media.c:4130 170 {pic_load_addr_unified}
+     (expr_list:REG_EQUAL (symbol_ref:SI ("video_helper_thread") [flags 0x3]  <function_decl 0x414f3d00 video_helper_thread>)
+        (nil)))
+
+(insn 117 112 118 4 (set (reg/f:SI 204)
+        (plus:SI (reg/f:SI 187)
+            (const_int 52 [0x34]))) src/switch_core_media.c:4130 4 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg/f:SI 187)
+        (expr_list:REG_EQUAL (plus:SI (reg/f:SI 185)
+                (const_int 11420 [0x2c9c]))
+            (nil))))
+
+(insn 118 117 119 4 (set (mem:SI (reg/f:SI 13 sp) [0 S4 A32])
+        (reg/f:SI 150 [ D.43812 ])) src/switch_core_media.c:4130 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 150 [ D.43812 ])
+        (nil)))
+
+(insn 119 118 120 4 (set (reg:SI 0 r0)
+        (reg/f:SI 198)) src/switch_core_media.c:4130 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 198)
+        (nil)))
+
+(insn 120 119 121 4 (set (reg:SI 1 r1)
+        (reg/f:SI 148 [ thd_attr.69 ])) src/switch_core_media.c:4130 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 148 [ thd_attr.69 ])
+        (nil)))
+
+(insn 121 120 122 4 (set (reg:SI 2 r2)
+        (reg/f:SI 201)) src/switch_core_media.c:4130 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 201)
+        (expr_list:REG_EQUAL (symbol_ref:SI ("video_helper_thread") [flags 0x3]  <function_decl 0x414f3d00 video_helper_thread>)
+            (nil))))
+
+(insn 122 121 123 4 (set (reg:SI 3 r3)
+        (reg/f:SI 204)) src/switch_core_media.c:4130 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 204)
+        (nil)))
+
+(call_insn 123 122 6 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("switch_thread_create") [flags 0x41]  <function_decl 0x4069d880 switch_thread_create>) [0 S4 A32])
+                    (const_int 8 [0x8])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) src/switch_core_media.c:4130 236 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_DEAD (reg:SI 2 r2)
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_UNUSED (reg:SI 0 r0)
+                    (nil)))))
+    (expr_list:REG_DEP_TRUE (use (reg:SI 3 r3))
+        (expr_list:REG_DEP_TRUE (use (reg:SI 2 r2))
+            (expr_list:REG_DEP_TRUE (use (reg:SI 1 r1))
+                (expr_list:REG_DEP_TRUE (use (reg:SI 0 r0))
+                    (nil))))))
+
+(insn 6 123 138 4 (set (reg:SI 134 [ D.43797 ])
+        (reg/f:SI 159 [ MEM[(struct switch_rtp_engine_t *)smh_5 + 11496B].media_thread ])) src/switch_core_media.c:4132 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 159 [ MEM[(struct switch_rtp_engine_t *)smh_5 + 11496B].media_thread ])
+        (expr_list:REG_EQUAL (const_int 0 [0])
+            (nil))))
+
+(code_label 138 6 137 5 102 "" [1 uses])
+
+(note 137 138 4 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+
+(insn 4 137 142 5 (set (reg:SI 134 [ D.43797 ])
+        (const_int 1 [0x1])) src/switch_core_media.c:4111 625 {*arm_movsi_vfp}
+     (nil))
+
+(code_label 142 4 141 6 103 "" [1 uses])
+
+(note 141 142 5 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+
+(insn 5 141 124 6 (set (reg:SI 134 [ D.43797 ])
+        (const_int 1 [0x1])) src/switch_core_media.c:4117 625 {*arm_movsi_vfp}
+     (nil))
+
+(code_label 124 5 125 7 101 "" [0 uses])
+
+(note 125 124 130 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+(insn 130 125 133 7 (set (reg/i:SI 0 r0)
+        (reg:SI 134 [ D.43797 ])) src/switch_core_media.c:4133 625 {*arm_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 134 [ D.43797 ])
+        (nil)))
+
+(insn 133 130 0 7 (use (reg/i:SI 0 r0)) src/switch_core_media.c:4133 -1
+     (nil))
+starting the processing of deferred insns
+ending the processing of deferred insns
